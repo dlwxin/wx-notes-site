@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Git | wx-notes</title>
+    <meta name="generator" content="VuePress 1.9.5">
+    <link rel="icon" href="/assets/img/favicon.png">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_3129839_xft6cqs5gc.css">
+    <noscript><meta http-equiv="refresh" content="0; url=https://github.com/xugaoyi/vuepress-theme-vdoing"><style>.theme-vdoing-content { display:none }</noscript>
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.9d774b0a.css" as="style"><link rel="preload" href="/assets/js/app.d382a226.js" as="script"><link rel="preload" href="/assets/js/2.87a8012a.js" as="script"><link rel="preload" href="/assets/js/146.a18f49a0.js" as="script"><link rel="prefetch" href="/assets/js/10.8cef245d.js"><link rel="prefetch" href="/assets/js/100.de0de5b3.js"><link rel="prefetch" href="/assets/js/101.e32bb2b9.js"><link rel="prefetch" href="/assets/js/102.0ef9f132.js"><link rel="prefetch" href="/assets/js/103.1914eb13.js"><link rel="prefetch" href="/assets/js/104.b12325e1.js"><link rel="prefetch" href="/assets/js/105.4f29b02d.js"><link rel="prefetch" href="/assets/js/106.902b14af.js"><link rel="prefetch" href="/assets/js/107.34461d9b.js"><link rel="prefetch" href="/assets/js/108.720097f0.js"><link rel="prefetch" href="/assets/js/109.ec66db5b.js"><link rel="prefetch" href="/assets/js/11.06117714.js"><link rel="prefetch" href="/assets/js/110.f767f523.js"><link rel="prefetch" href="/assets/js/111.bcfbfa02.js"><link rel="prefetch" href="/assets/js/112.d8df71d9.js"><link rel="prefetch" href="/assets/js/113.c9a6c922.js"><link rel="prefetch" href="/assets/js/114.3d85868d.js"><link rel="prefetch" href="/assets/js/115.993787ed.js"><link rel="prefetch" href="/assets/js/116.5bd70a45.js"><link rel="prefetch" href="/assets/js/117.7c5ea865.js"><link rel="prefetch" href="/assets/js/118.575c2813.js"><link rel="prefetch" href="/assets/js/119.eff9f6bc.js"><link rel="prefetch" href="/assets/js/12.801127a7.js"><link rel="prefetch" href="/assets/js/120.91de158c.js"><link rel="prefetch" href="/assets/js/121.860d400f.js"><link rel="prefetch" href="/assets/js/122.954d04cd.js"><link rel="prefetch" href="/assets/js/123.5b3e835d.js"><link rel="prefetch" href="/assets/js/124.ec79fba8.js"><link rel="prefetch" href="/assets/js/125.1bbba1d0.js"><link rel="prefetch" href="/assets/js/126.5e7fded7.js"><link rel="prefetch" href="/assets/js/127.e43dfbff.js"><link rel="prefetch" href="/assets/js/128.cef089b9.js"><link rel="prefetch" href="/assets/js/129.326be7ae.js"><link rel="prefetch" href="/assets/js/13.35b92c07.js"><link rel="prefetch" href="/assets/js/130.7cca68b6.js"><link rel="prefetch" href="/assets/js/131.c7695993.js"><link rel="prefetch" href="/assets/js/132.66f9eb75.js"><link rel="prefetch" href="/assets/js/133.499ff9d6.js"><link rel="prefetch" href="/assets/js/134.2f1548d7.js"><link rel="prefetch" href="/assets/js/135.a0e10d3e.js"><link rel="prefetch" href="/assets/js/136.92a270c5.js"><link rel="prefetch" href="/assets/js/137.5b0ac09e.js"><link rel="prefetch" href="/assets/js/138.21de847d.js"><link rel="prefetch" href="/assets/js/139.c058c237.js"><link rel="prefetch" href="/assets/js/14.91560b85.js"><link rel="prefetch" href="/assets/js/140.93275f57.js"><link rel="prefetch" href="/assets/js/141.6c6df578.js"><link rel="prefetch" href="/assets/js/142.16de5023.js"><link rel="prefetch" href="/assets/js/143.6e03e08c.js"><link rel="prefetch" href="/assets/js/144.592bb4ed.js"><link rel="prefetch" href="/assets/js/145.b7bdadcc.js"><link rel="prefetch" href="/assets/js/147.dced2ea6.js"><link rel="prefetch" href="/assets/js/148.e06ea4d7.js"><link rel="prefetch" href="/assets/js/149.ac95d564.js"><link rel="prefetch" href="/assets/js/15.4606cb23.js"><link rel="prefetch" href="/assets/js/150.c9e28f94.js"><link rel="prefetch" href="/assets/js/151.a1997c81.js"><link rel="prefetch" href="/assets/js/152.3d479903.js"><link rel="prefetch" href="/assets/js/153.3073c76d.js"><link rel="prefetch" href="/assets/js/154.3bcbee0f.js"><link rel="prefetch" href="/assets/js/155.9dddaff4.js"><link rel="prefetch" href="/assets/js/156.f376855e.js"><link rel="prefetch" href="/assets/js/157.9eb774bc.js"><link rel="prefetch" href="/assets/js/158.44ee8e16.js"><link rel="prefetch" href="/assets/js/159.390af831.js"><link rel="prefetch" href="/assets/js/16.9bcf78d7.js"><link rel="prefetch" href="/assets/js/160.e9a320f2.js"><link rel="prefetch" href="/assets/js/161.2c70b400.js"><link rel="prefetch" href="/assets/js/162.363decbd.js"><link rel="prefetch" href="/assets/js/163.3ce1e512.js"><link rel="prefetch" href="/assets/js/164.e9313d92.js"><link rel="prefetch" href="/assets/js/165.1eb8d002.js"><link rel="prefetch" href="/assets/js/166.ab22eb15.js"><link rel="prefetch" href="/assets/js/167.b000f630.js"><link rel="prefetch" href="/assets/js/168.f25a631c.js"><link rel="prefetch" href="/assets/js/169.b7129356.js"><link rel="prefetch" href="/assets/js/17.0e700bd5.js"><link rel="prefetch" href="/assets/js/170.323672ca.js"><link rel="prefetch" href="/assets/js/171.49820adb.js"><link rel="prefetch" href="/assets/js/172.5367dfe3.js"><link rel="prefetch" href="/assets/js/173.87ce95d1.js"><link rel="prefetch" href="/assets/js/174.4733aac2.js"><link rel="prefetch" href="/assets/js/175.4c8b426b.js"><link rel="prefetch" href="/assets/js/176.34060d5c.js"><link rel="prefetch" href="/assets/js/177.d0404722.js"><link rel="prefetch" href="/assets/js/178.1a46b01f.js"><link rel="prefetch" href="/assets/js/179.9fcc84b5.js"><link rel="prefetch" href="/assets/js/18.d1fcff83.js"><link rel="prefetch" href="/assets/js/180.bdfedfa3.js"><link rel="prefetch" href="/assets/js/181.47e6d26e.js"><link rel="prefetch" href="/assets/js/182.2d878f03.js"><link rel="prefetch" href="/assets/js/183.7e9aace3.js"><link rel="prefetch" href="/assets/js/184.2eff2189.js"><link rel="prefetch" href="/assets/js/185.ba9aab94.js"><link rel="prefetch" href="/assets/js/186.93016b73.js"><link rel="prefetch" href="/assets/js/187.a617b993.js"><link rel="prefetch" href="/assets/js/188.2d5a02f4.js"><link rel="prefetch" href="/assets/js/189.939a191f.js"><link rel="prefetch" href="/assets/js/19.b636a521.js"><link rel="prefetch" href="/assets/js/190.bbbd77c8.js"><link rel="prefetch" href="/assets/js/191.3d110f91.js"><link rel="prefetch" href="/assets/js/192.61fab52d.js"><link rel="prefetch" href="/assets/js/193.07e8db8d.js"><link rel="prefetch" href="/assets/js/194.86983a62.js"><link rel="prefetch" href="/assets/js/195.ea852b80.js"><link rel="prefetch" href="/assets/js/196.f3f47585.js"><link rel="prefetch" href="/assets/js/197.67c354ba.js"><link rel="prefetch" href="/assets/js/198.561b321e.js"><link rel="prefetch" href="/assets/js/199.e25381a9.js"><link rel="prefetch" href="/assets/js/20.3be87fb7.js"><link rel="prefetch" href="/assets/js/200.010ba3c5.js"><link rel="prefetch" href="/assets/js/201.67ac619d.js"><link rel="prefetch" href="/assets/js/202.f09ce2ad.js"><link rel="prefetch" href="/assets/js/203.65d725b4.js"><link rel="prefetch" href="/assets/js/204.f3447d91.js"><link rel="prefetch" href="/assets/js/205.1f095751.js"><link rel="prefetch" href="/assets/js/206.d932f379.js"><link rel="prefetch" href="/assets/js/207.f1b07592.js"><link rel="prefetch" href="/assets/js/208.ae8c6256.js"><link rel="prefetch" href="/assets/js/209.35180e8c.js"><link rel="prefetch" href="/assets/js/21.49934eb6.js"><link rel="prefetch" href="/assets/js/210.2c20b67d.js"><link rel="prefetch" href="/assets/js/211.b6b9d090.js"><link rel="prefetch" href="/assets/js/212.9aabd8b9.js"><link rel="prefetch" href="/assets/js/213.af591f91.js"><link rel="prefetch" href="/assets/js/214.243220ba.js"><link rel="prefetch" href="/assets/js/215.91918129.js"><link rel="prefetch" href="/assets/js/216.d778718b.js"><link rel="prefetch" href="/assets/js/217.dac38162.js"><link rel="prefetch" href="/assets/js/218.3ad31069.js"><link rel="prefetch" href="/assets/js/219.9197a62a.js"><link rel="prefetch" href="/assets/js/22.a7d6a9eb.js"><link rel="prefetch" href="/assets/js/220.bbd7b124.js"><link rel="prefetch" href="/assets/js/221.0efe0337.js"><link rel="prefetch" href="/assets/js/222.700049fd.js"><link rel="prefetch" href="/assets/js/223.46405e41.js"><link rel="prefetch" href="/assets/js/224.6e350c81.js"><link rel="prefetch" href="/assets/js/225.1993613f.js"><link rel="prefetch" href="/assets/js/226.acb60b10.js"><link rel="prefetch" href="/assets/js/227.5c29d8d9.js"><link rel="prefetch" href="/assets/js/228.f2fa7cf9.js"><link rel="prefetch" href="/assets/js/229.ee960944.js"><link rel="prefetch" href="/assets/js/23.5400645b.js"><link rel="prefetch" href="/assets/js/230.068b06bc.js"><link rel="prefetch" href="/assets/js/231.34d85795.js"><link rel="prefetch" href="/assets/js/232.163f77c8.js"><link rel="prefetch" href="/assets/js/233.245df212.js"><link rel="prefetch" href="/assets/js/234.b889ca13.js"><link rel="prefetch" href="/assets/js/235.f8a222af.js"><link rel="prefetch" href="/assets/js/236.9741ba00.js"><link rel="prefetch" href="/assets/js/237.5cb51cf1.js"><link rel="prefetch" href="/assets/js/238.c7b8dbd4.js"><link rel="prefetch" href="/assets/js/239.a74a4736.js"><link rel="prefetch" href="/assets/js/24.854a29ed.js"><link rel="prefetch" href="/assets/js/240.3c8801b3.js"><link rel="prefetch" href="/assets/js/241.1930e71a.js"><link rel="prefetch" href="/assets/js/242.31d76505.js"><link rel="prefetch" href="/assets/js/243.36c52617.js"><link rel="prefetch" href="/assets/js/244.4adc8887.js"><link rel="prefetch" href="/assets/js/245.f221ffd4.js"><link rel="prefetch" href="/assets/js/246.03b3149d.js"><link rel="prefetch" href="/assets/js/247.cb26f1ac.js"><link rel="prefetch" href="/assets/js/248.e0b76f15.js"><link rel="prefetch" href="/assets/js/249.cde39b0c.js"><link rel="prefetch" href="/assets/js/25.d429e2ad.js"><link rel="prefetch" href="/assets/js/250.30e7e869.js"><link rel="prefetch" href="/assets/js/251.b14e683b.js"><link rel="prefetch" href="/assets/js/252.5a2a17bb.js"><link rel="prefetch" href="/assets/js/253.64575468.js"><link rel="prefetch" href="/assets/js/254.5ee1d4b0.js"><link rel="prefetch" href="/assets/js/255.a701e12c.js"><link rel="prefetch" href="/assets/js/256.205df8b5.js"><link rel="prefetch" href="/assets/js/257.62941e39.js"><link rel="prefetch" href="/assets/js/258.82c01d6a.js"><link rel="prefetch" href="/assets/js/259.74f3d1a1.js"><link rel="prefetch" href="/assets/js/26.3716f14a.js"><link rel="prefetch" href="/assets/js/260.a07fea6f.js"><link rel="prefetch" href="/assets/js/261.0e9cc558.js"><link rel="prefetch" href="/assets/js/262.8e381643.js"><link rel="prefetch" href="/assets/js/263.1da50740.js"><link rel="prefetch" href="/assets/js/264.3201225f.js"><link rel="prefetch" href="/assets/js/265.778e81a2.js"><link rel="prefetch" href="/assets/js/266.6fc8c8f2.js"><link rel="prefetch" href="/assets/js/267.6058e70a.js"><link rel="prefetch" href="/assets/js/268.90728fbe.js"><link rel="prefetch" href="/assets/js/269.57a1b247.js"><link rel="prefetch" href="/assets/js/27.90a02103.js"><link rel="prefetch" href="/assets/js/270.e1fbaf15.js"><link rel="prefetch" href="/assets/js/271.67bd6fa1.js"><link rel="prefetch" href="/assets/js/272.324204c9.js"><link rel="prefetch" href="/assets/js/273.3d723913.js"><link rel="prefetch" href="/assets/js/274.34e0cc99.js"><link rel="prefetch" href="/assets/js/275.c7b6a30a.js"><link rel="prefetch" href="/assets/js/276.4475ed4a.js"><link rel="prefetch" href="/assets/js/277.108044d1.js"><link rel="prefetch" href="/assets/js/278.dc6f0fad.js"><link rel="prefetch" href="/assets/js/279.c2c6595a.js"><link rel="prefetch" href="/assets/js/28.7d19fe1e.js"><link rel="prefetch" href="/assets/js/280.00b3a96f.js"><link rel="prefetch" href="/assets/js/281.35218fe6.js"><link rel="prefetch" href="/assets/js/282.833aa9a1.js"><link rel="prefetch" href="/assets/js/283.b854e98d.js"><link rel="prefetch" href="/assets/js/284.55390ee5.js"><link rel="prefetch" href="/assets/js/285.e60c8473.js"><link rel="prefetch" href="/assets/js/286.1fb42b39.js"><link rel="prefetch" href="/assets/js/287.76d416c4.js"><link rel="prefetch" href="/assets/js/288.cc30790d.js"><link rel="prefetch" href="/assets/js/289.fead2fdb.js"><link rel="prefetch" href="/assets/js/29.7eeb3de4.js"><link rel="prefetch" href="/assets/js/290.06e7dd5c.js"><link rel="prefetch" href="/assets/js/291.a073502f.js"><link rel="prefetch" href="/assets/js/292.ee597491.js"><link rel="prefetch" href="/assets/js/293.b55cd65c.js"><link rel="prefetch" href="/assets/js/294.ee3bbd54.js"><link rel="prefetch" href="/assets/js/295.5e680082.js"><link rel="prefetch" href="/assets/js/296.cc18faac.js"><link rel="prefetch" href="/assets/js/297.c421a612.js"><link rel="prefetch" href="/assets/js/298.01889782.js"><link rel="prefetch" href="/assets/js/299.2c4c2cb2.js"><link rel="prefetch" href="/assets/js/3.14f582e8.js"><link rel="prefetch" href="/assets/js/30.cba82c26.js"><link rel="prefetch" href="/assets/js/300.14aa1fc0.js"><link rel="prefetch" href="/assets/js/301.85d64cdf.js"><link rel="prefetch" href="/assets/js/302.e2815e7f.js"><link rel="prefetch" href="/assets/js/303.98c1febb.js"><link rel="prefetch" href="/assets/js/304.50df0bb2.js"><link rel="prefetch" href="/assets/js/305.41b537b2.js"><link rel="prefetch" href="/assets/js/306.40fc4ca0.js"><link rel="prefetch" href="/assets/js/307.e7f1fd37.js"><link rel="prefetch" href="/assets/js/308.9c019000.js"><link rel="prefetch" href="/assets/js/309.932890cc.js"><link rel="prefetch" href="/assets/js/31.09ae525c.js"><link rel="prefetch" href="/assets/js/310.4ee417ea.js"><link rel="prefetch" href="/assets/js/311.bb2655cc.js"><link rel="prefetch" href="/assets/js/312.8448f772.js"><link rel="prefetch" href="/assets/js/313.1cc95dd2.js"><link rel="prefetch" href="/assets/js/314.a0e4ce60.js"><link rel="prefetch" href="/assets/js/315.92099df1.js"><link rel="prefetch" href="/assets/js/316.4ccce55e.js"><link rel="prefetch" href="/assets/js/317.de8cc4ad.js"><link rel="prefetch" href="/assets/js/318.475f44de.js"><link rel="prefetch" href="/assets/js/319.f4f8a31f.js"><link rel="prefetch" href="/assets/js/32.cf5672f3.js"><link rel="prefetch" href="/assets/js/320.64cbd076.js"><link rel="prefetch" href="/assets/js/321.77581796.js"><link rel="prefetch" href="/assets/js/322.9fa19651.js"><link rel="prefetch" href="/assets/js/323.8dc23ccd.js"><link rel="prefetch" href="/assets/js/324.00d7ed12.js"><link rel="prefetch" href="/assets/js/325.0e9f380d.js"><link rel="prefetch" href="/assets/js/326.95883d38.js"><link rel="prefetch" href="/assets/js/327.b0415db7.js"><link rel="prefetch" href="/assets/js/328.89746536.js"><link rel="prefetch" href="/assets/js/329.c1a43c4d.js"><link rel="prefetch" href="/assets/js/33.a7f5ab01.js"><link rel="prefetch" href="/assets/js/330.9ddac96b.js"><link rel="prefetch" href="/assets/js/331.9d697ac8.js"><link rel="prefetch" href="/assets/js/332.6ee28795.js"><link rel="prefetch" href="/assets/js/333.170f7a62.js"><link rel="prefetch" href="/assets/js/334.cb9d727c.js"><link rel="prefetch" href="/assets/js/335.8a3b74f8.js"><link rel="prefetch" href="/assets/js/336.8c897ca1.js"><link rel="prefetch" href="/assets/js/34.0361ed84.js"><link rel="prefetch" href="/assets/js/35.7944f93a.js"><link rel="prefetch" href="/assets/js/36.cb553688.js"><link rel="prefetch" href="/assets/js/37.06e9f182.js"><link rel="prefetch" href="/assets/js/38.2472ee7f.js"><link rel="prefetch" href="/assets/js/39.82eca662.js"><link rel="prefetch" href="/assets/js/4.837e9ea1.js"><link rel="prefetch" href="/assets/js/40.022ad8aa.js"><link rel="prefetch" href="/assets/js/41.821fb36a.js"><link rel="prefetch" href="/assets/js/42.180ab912.js"><link rel="prefetch" href="/assets/js/43.d9375ce1.js"><link rel="prefetch" href="/assets/js/44.d212f8b3.js"><link rel="prefetch" href="/assets/js/45.ba520f2b.js"><link rel="prefetch" href="/assets/js/46.5447129c.js"><link rel="prefetch" href="/assets/js/47.3e3fdc9a.js"><link rel="prefetch" href="/assets/js/48.d96c69a1.js"><link rel="prefetch" href="/assets/js/49.96ac804b.js"><link rel="prefetch" href="/assets/js/5.94383f14.js"><link rel="prefetch" href="/assets/js/50.ff732aa7.js"><link rel="prefetch" href="/assets/js/51.cafabf54.js"><link rel="prefetch" href="/assets/js/52.8cbc09b9.js"><link rel="prefetch" href="/assets/js/53.7bc1ec87.js"><link rel="prefetch" href="/assets/js/54.45d36044.js"><link rel="prefetch" href="/assets/js/55.e7192e85.js"><link rel="prefetch" href="/assets/js/56.711184df.js"><link rel="prefetch" href="/assets/js/57.a617b81c.js"><link rel="prefetch" href="/assets/js/58.176a088e.js"><link rel="prefetch" href="/assets/js/59.41c6b746.js"><link rel="prefetch" href="/assets/js/6.2bd98a80.js"><link rel="prefetch" href="/assets/js/60.a9ad50e8.js"><link rel="prefetch" href="/assets/js/61.4d205bfa.js"><link rel="prefetch" href="/assets/js/62.ecefe86d.js"><link rel="prefetch" href="/assets/js/63.d3924f46.js"><link rel="prefetch" href="/assets/js/64.40f6beaf.js"><link rel="prefetch" href="/assets/js/65.001bcc37.js"><link rel="prefetch" href="/assets/js/66.f281aa40.js"><link rel="prefetch" href="/assets/js/67.4bd2ef0c.js"><link rel="prefetch" href="/assets/js/68.9ff84d3d.js"><link rel="prefetch" href="/assets/js/69.e21e77b0.js"><link rel="prefetch" href="/assets/js/7.f2ae7930.js"><link rel="prefetch" href="/assets/js/70.8715f006.js"><link rel="prefetch" href="/assets/js/71.0804d179.js"><link rel="prefetch" href="/assets/js/72.d47a4a99.js"><link rel="prefetch" href="/assets/js/73.a72ed2e1.js"><link rel="prefetch" href="/assets/js/74.bf813865.js"><link rel="prefetch" href="/assets/js/75.0f9354a3.js"><link rel="prefetch" href="/assets/js/76.521fe63b.js"><link rel="prefetch" href="/assets/js/77.da026e66.js"><link rel="prefetch" href="/assets/js/78.caf4ae61.js"><link rel="prefetch" href="/assets/js/79.0ca61053.js"><link rel="prefetch" href="/assets/js/8.bf1039e7.js"><link rel="prefetch" href="/assets/js/80.cd005ed5.js"><link rel="prefetch" href="/assets/js/81.6d9c7fc6.js"><link rel="prefetch" href="/assets/js/82.e90bac88.js"><link rel="prefetch" href="/assets/js/83.63b5d58f.js"><link rel="prefetch" href="/assets/js/84.6d112559.js"><link rel="prefetch" href="/assets/js/85.fb99dd6c.js"><link rel="prefetch" href="/assets/js/86.dde3c192.js"><link rel="prefetch" href="/assets/js/87.b011c014.js"><link rel="prefetch" href="/assets/js/88.493b12c1.js"><link rel="prefetch" href="/assets/js/89.c2e431ec.js"><link rel="prefetch" href="/assets/js/9.b42343bd.js"><link rel="prefetch" href="/assets/js/90.eecd1598.js"><link rel="prefetch" href="/assets/js/91.74f45fff.js"><link rel="prefetch" href="/assets/js/92.ea554734.js"><link rel="prefetch" href="/assets/js/93.aefaca74.js"><link rel="prefetch" href="/assets/js/94.9d983301.js"><link rel="prefetch" href="/assets/js/95.13a41e26.js"><link rel="prefetch" href="/assets/js/96.92799e4e.js"><link rel="prefetch" href="/assets/js/97.dc0873a3.js"><link rel="prefetch" href="/assets/js/98.1032eb92.js"><link rel="prefetch" href="/assets/js/99.b28f8efa.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9d774b0a.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">wx-notes</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/pages/948095/" class="nav-link">Top</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="BE" class="dropdown-title"><a href="/backend/" class="link-title">BE</a> <span class="title" style="display:none;">BE</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/0a3d16/" class="nav-link">Java</a></li><li class="dropdown-item"><!----> <a href="/pages/907e2d/" class="nav-link">Python</a></li><li class="dropdown-item"><!----> <a href="/pages/f1ea5b/" class="nav-link">Go</a></li><li class="dropdown-item"><!----> <a href="/pages/ee7ace/" class="nav-link">Framework</a></li><li class="dropdown-item"><!----> <a href="/pages/f1fcc1/" class="nav-link">Database</a></li><li class="dropdown-item"><!----> <a href="/pages/ab7fe2/" class="nav-link">MessageMiddleware</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="FE" class="dropdown-title"><a href="/frontend/" class="link-title">FE</a> <span class="title" style="display:none;">FE</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/0767c1/" class="nav-link">FE Docs</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="More" class="dropdown-title"><a href="/more/" class="link-title">More</a> <span class="title" style="display:none;">More</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/6f7935/" class="nav-link">OperatingSystem</a></li><li class="dropdown-item"><!----> <a href="/pages/570625/" class="nav-link">Container</a></li><li class="dropdown-item"><!----> <a href="/pages/b5bf02/" aria-current="page" class="nav-link router-link-exact-active router-link-active">DevOps</a></li><li class="dropdown-item"><!----> <a href="/pages/3e0468/" class="nav-link">WebServer</a></li><li class="dropdown-item"><!----> <a href="/pages/5c5daa/" class="nav-link">Cloud</a></li><li class="dropdown-item"><!----> <a href="/pages/49864f/" class="nav-link">GPT</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Others" class="dropdown-title"><a href="/others/" class="link-title">Others</a> <span class="title" style="display:none;">Others</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/b95cf8/" class="nav-link">PackageManager</a></li><li class="dropdown-item"><!----> <a href="/pages/6a8a1c/" class="nav-link">TestTool</a></li><li class="dropdown-item"><!----> <a href="/pages/8ca6e0/" class="nav-link">EditorAndIDE</a></li><li class="dropdown-item"><!----> <a href="/pages/b95cf8/" class="nav-link">CommandLineTool</a></li><li class="dropdown-item"><!----> <a href="/pages/ccee87/" class="nav-link">Browser</a></li><li class="dropdown-item"><!----> <a href="/pages/a9d7d6/" class="nav-link">Articles</a></li><li class="dropdown-item"><!----> <a href="/pages/9d47df/" class="nav-link">Others</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Index" class="dropdown-title"><a href="/archives/" class="link-title">Index</a> <span class="title" style="display:none;">Index</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">Categories</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">Tags</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">Archives</a></li></ul></div></div> <a href="https://github.com/dlwxin/wx-notes" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><div class="blogger"><img src="https://dlwang.xin:11796/image/avatar/avatar03-small.jpg"> <div class="blogger-info"><h3>wx</h3> <span>Tomorrow is always fresh, with no mistakes in it.</span></div></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/pages/948095/" class="nav-link">Top</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="BE" class="dropdown-title"><a href="/backend/" class="link-title">BE</a> <span class="title" style="display:none;">BE</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/0a3d16/" class="nav-link">Java</a></li><li class="dropdown-item"><!----> <a href="/pages/907e2d/" class="nav-link">Python</a></li><li class="dropdown-item"><!----> <a href="/pages/f1ea5b/" class="nav-link">Go</a></li><li class="dropdown-item"><!----> <a href="/pages/ee7ace/" class="nav-link">Framework</a></li><li class="dropdown-item"><!----> <a href="/pages/f1fcc1/" class="nav-link">Database</a></li><li class="dropdown-item"><!----> <a href="/pages/ab7fe2/" class="nav-link">MessageMiddleware</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="FE" class="dropdown-title"><a href="/frontend/" class="link-title">FE</a> <span class="title" style="display:none;">FE</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/0767c1/" class="nav-link">FE Docs</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="More" class="dropdown-title"><a href="/more/" class="link-title">More</a> <span class="title" style="display:none;">More</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/6f7935/" class="nav-link">OperatingSystem</a></li><li class="dropdown-item"><!----> <a href="/pages/570625/" class="nav-link">Container</a></li><li class="dropdown-item"><!----> <a href="/pages/b5bf02/" aria-current="page" class="nav-link router-link-exact-active router-link-active">DevOps</a></li><li class="dropdown-item"><!----> <a href="/pages/3e0468/" class="nav-link">WebServer</a></li><li class="dropdown-item"><!----> <a href="/pages/5c5daa/" class="nav-link">Cloud</a></li><li class="dropdown-item"><!----> <a href="/pages/49864f/" class="nav-link">GPT</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Others" class="dropdown-title"><a href="/others/" class="link-title">Others</a> <span class="title" style="display:none;">Others</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/b95cf8/" class="nav-link">PackageManager</a></li><li class="dropdown-item"><!----> <a href="/pages/6a8a1c/" class="nav-link">TestTool</a></li><li class="dropdown-item"><!----> <a href="/pages/8ca6e0/" class="nav-link">EditorAndIDE</a></li><li class="dropdown-item"><!----> <a href="/pages/b95cf8/" class="nav-link">CommandLineTool</a></li><li class="dropdown-item"><!----> <a href="/pages/ccee87/" class="nav-link">Browser</a></li><li class="dropdown-item"><!----> <a href="/pages/a9d7d6/" class="nav-link">Articles</a></li><li class="dropdown-item"><!----> <a href="/pages/9d47df/" class="nav-link">Others</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Index" class="dropdown-title"><a href="/archives/" class="link-title">Index</a> <span class="title" style="display:none;">Index</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">Categories</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">Tags</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">Archives</a></li></ul></div></div> <a href="https://github.com/dlwxin/wx-notes" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>OperatingSystem</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Container</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>DevOps</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading open"><span>Git</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/b5bf02/" aria-current="page" class="active sidebar-link">Git</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level2"><a href="/pages/b5bf02/#init-repository" class="sidebar-link">Init Repository</a></li><li class="sidebar-sub-header level2"><a href="/pages/b5bf02/#config" class="sidebar-link">Config</a></li><li class="sidebar-sub-header level2"><a href="/pages/b5bf02/#add-remove-file" class="sidebar-link">Add/Remove file</a></li><li class="sidebar-sub-header level2"><a href="/pages/b5bf02/#check-in-code" class="sidebar-link">Check in code</a></li><li class="sidebar-sub-header level2"><a href="/pages/b5bf02/#branch" class="sidebar-link">Branch</a></li><li class="sidebar-sub-header level2"><a href="/pages/b5bf02/#git-switch-and-restore" class="sidebar-link">git switch and restore</a></li><li class="sidebar-sub-header level2"><a href="/pages/b5bf02/#tag" class="sidebar-link">Tag</a></li><li class="sidebar-sub-header level2"><a href="/pages/b5bf02/#view-information" class="sidebar-link">View Information</a></li><li class="sidebar-sub-header level2"><a href="/pages/b5bf02/#remote-sync" class="sidebar-link">Remote Sync</a></li><li class="sidebar-sub-header level2"><a href="/pages/b5bf02/#rollback" class="sidebar-link">Rollback</a></li><li class="sidebar-sub-header level2"><a href="/pages/b5bf02/#merge" class="sidebar-link">Merge</a></li><li class="sidebar-sub-header level2"><a href="/pages/b5bf02/#stash" class="sidebar-link">Stash</a></li><li class="sidebar-sub-header level2"><a href="/pages/b5bf02/#clean" class="sidebar-link">Clean</a></li><li class="sidebar-sub-header level2"><a href="/pages/b5bf02/#patch" class="sidebar-link">Patch</a></li><li class="sidebar-sub-header level2"><a href="/pages/b5bf02/#archive" class="sidebar-link">archive</a></li><li class="sidebar-sub-header level2"><a href="/pages/b5bf02/#other" class="sidebar-link">Other</a></li><li class="sidebar-sub-header level2"><a href="/pages/b5bf02/#git-commit-guidelines" class="sidebar-link">Git Commit Guidelines</a></li><li class="sidebar-sub-header level2"><a href="/pages/b5bf02/#environment-variables" class="sidebar-link">Environment Variables</a></li><li class="sidebar-sub-header level2"><a href="/pages/b5bf02/#pre-commit" class="sidebar-link">pre-commit</a></li><li class="sidebar-sub-header level2"><a href="/pages/b5bf02/#monorepo" class="sidebar-link">Monorepo</a></li></ul></li><li><a href="/pages/2a5d48/" class="sidebar-link">Git merge conflict</a></li><li><a href="/pages/74311f/" class="sidebar-link">Git on MacOS</a></li><li><a href="/pages/3072e4/" class="sidebar-link">Git Common Problem</a></li><li><a href="/pages/cd3eff/" class="sidebar-link">How to exclude files from Git only on your computer</a></li><li><a href="/pages/b88ef7/" class="sidebar-link">Ignore modified but not committed files in Git</a></li><li><a href="/pages/090151/" class="sidebar-link">How to add the tree command to git-bash on Windows</a></li><li><a href="/pages/d3fc20/" class="sidebar-link">git diff</a></li><li><a href="/pages/279893/" class="sidebar-link">Git Chore</a></li></ul></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>GitHub</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>Bitbucket</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>Jenkins</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>TravisCI</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>ArgoCD</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>AgileDevelopment</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>Anchore</span> <span class="arrow right"></span></p> <!----></section></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>WebServer</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>GPT</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Cloud</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <div><main class="page"><div class="theme-vdoing-wrapper bg-style-1"><div class="articleInfo-wrap" data-v-057748f7><div class="articleInfo" data-v-057748f7><ul class="breadcrumbs" data-v-057748f7><li data-v-057748f7><a href="/" title="首页" class="iconfont icon-home router-link-active" data-v-057748f7></a></li> <li data-v-057748f7><a href="/more/#More" data-v-057748f7>More</a></li><li data-v-057748f7><a href="/more/#DevOps" data-v-057748f7>DevOps</a></li><li data-v-057748f7><a href="/more/#Git" data-v-057748f7>Git</a></li></ul> <div class="info" data-v-057748f7><div title="作者" class="author iconfont icon-touxiang" data-v-057748f7><a href="https://github.com/dlwxin/wx-notes" target="_blank" title="作者" class="beLink" data-v-057748f7>wx</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-057748f7><a href="javascript:;" data-v-057748f7>2020-05-16</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-title">目录</div> <div class="right-menu-content"></div></div></div> <h1><!---->Git<!----></h1> <!----> <div class="theme-vdoing-content content__default"><ul><li><a href="http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html" target="_blank" rel="noopener noreferrer">常用 Git 命令清单<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://stackoverflow.com/questions/30590083/how-do-i-rename-both-a-git-local-and-remote-branch-name" target="_blank" rel="noopener noreferrer">How do I rename both a Git local and remote branch name?<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://github.com/github/training-kit/blob/master/downloads/github-git-cheat-sheet.md" target="_blank" rel="noopener noreferrer">Git Reference<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/git/git.plugin.zsh" target="_blank" rel="noopener noreferrer">ohmyzsh/plugins/git/git.plugin.zsh<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://kapeli.com/cheat_sheets/Oh-My-Zsh_Git.docset/Contents/Resources/Documents/index" target="_blank" rel="noopener noreferrer">Oh-My-Zsh Git<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://pre-commit.com/" target="_blank" rel="noopener noreferrer">pre-commit<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h2 id="init-repository"><a href="#init-repository" class="header-anchor">#</a> Init Repository</h2> <ul><li><a href="https://stackoverflow.nilmap.com/question?dest_url=https://stackoverflow.com/questions/3959924/whats-the-difference-between-git-clone-mirror-and-git-clone-bare" target="_blank" rel="noopener noreferrer">What's the difference between git clone --mirror and git clone --bare<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 在当前目录新建一个Git代码库</span>
+<span class="token function">git</span> init
+
+<span class="token comment"># 新建一个目录，将其初始化为Git代码库</span>
+<span class="token function">git</span> init <span class="token punctuation">[</span>project-name<span class="token punctuation">]</span>
+
+<span class="token comment"># Print HTTP headers (similar to curl -v)</span>
+<span class="token assign-left variable">GIT_CURL_VERBOSE</span><span class="token operator">=</span><span class="token number">1</span>
+<span class="token comment"># 克隆一个项目和它的整个代码历史</span>
+<span class="token function">git</span> clone <span class="token punctuation">[</span>url<span class="token punctuation">]</span>
+
+<span class="token assign-left variable">GIT_SSL_NO_VERIFY</span><span class="token operator">=</span>true <span class="token function">git</span> clone <span class="token punctuation">[</span>url<span class="token punctuation">]</span>
+
+<span class="token comment"># 克隆指定分支的代码</span>
+<span class="token function">git</span> clone -b <span class="token punctuation">[</span>branch name<span class="token punctuation">]</span> <span class="token punctuation">[</span>url<span class="token punctuation">]</span>
+
+<span class="token comment"># 克隆一个项目和它的整个代码历史到指定路径下</span>
+<span class="token function">git</span> clone <span class="token punctuation">[</span>url<span class="token punctuation">]</span> <span class="token punctuation">[</span>path<span class="token punctuation">]</span>
+
+<span class="token comment"># 克隆最新一次 commit</span>
+<span class="token function">git</span> clone --depth<span class="token operator">=</span><span class="token number">1</span> <span class="token punctuation">[</span>url<span class="token punctuation">]</span>
+<span class="token comment"># to backfill history</span>
+<span class="token function">git</span> pull --unshallow
+<span class="token comment"># To backfill part of the history</span>
+<span class="token function">git</span> fetch --depth<span class="token operator">=</span><span class="token number">100</span>
+
+<span class="token comment"># You will get all of the tags copied, local branches master (HEAD), next, pu, and maint, no remote tracking branches.</span>
+<span class="token function">git</span> clone --bare origin-url
+
+<span class="token comment"># Every last one of those refs will be copied as-is.</span>
+<span class="token function">git</span> clone --mirror origin-url
+
+<span class="token function">git</span> clone https://<span class="token variable">${username}</span><span class="token builtin class-name">:</span><span class="token variable">${token}</span>@github.com/username/myrepo.git
+<span class="token function">git</span> clone https://<span class="token variable">${username}</span><span class="token builtin class-name">:</span><span class="token variable">${password}</span>@github.com/username/myrepo.git
+<span class="token function">git</span> clone https://<span class="token variable">${username}</span>@github.com/username/myrepo.git
+
+<span class="token assign-left variable">TOKEN</span><span class="token operator">=</span>github_pat_11AKT6WE<span class="token punctuation">..</span>.
+<span class="token assign-left variable">BASE64_ENCODED_TOKEN</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">echo</span> -n $<span class="token punctuation">{</span>TOKEN<span class="token punctuation">}</span> <span class="token operator">|</span> base64<span class="token variable">)</span></span>
+<span class="token assign-left variable">GIT_REPO</span><span class="token operator">=</span>https://github.com/test/hello-world.git
+<span class="token comment"># git clone -c http.extraheader=&quot;Authorization: Bearer ${BASE64_ENCODED_TOKEN}&quot; ${GIT_REPO}</span>
+<span class="token function">git</span> clone -c http.extraheader<span class="token operator">=</span><span class="token string">&quot;Authorization: Basic <span class="token variable">${BASE64_ENCODED_TOKEN}</span>&quot;</span> <span class="token variable">${GIT_REPO}</span>
+
+<span class="token comment"># Partial clone</span>
+<span class="token comment"># Partial clone is a performance optimization that “allows Git to function without having a complete copy of the repository.</span>
+<span class="token comment"># The goal of this work is to allow Git better handle extremely large repositories.”</span>
+<span class="token comment"># Git 2.22.0 or later is required.</span>
+<span class="token comment">#</span>
+<span class="token comment"># https://github.com/git/git/blob/master/Documentation/technical/partial-clone.txt</span>
+<span class="token comment"># https://docs.gitlab.com/ee/topics/git/partial_clone.html</span>
+<span class="token comment">#</span>
+<span class="token comment"># ## Filter by file size</span>
+<span class="token comment"># https://git-scm.com/docs/git-rev-list#Documentation/git-rev-list.txt---filterltfilter-specgt</span>
+<span class="token comment"># The form --filter=blob:limit=&lt;n&gt;[kmg] omits blobs larger than n bytes or units. n may be zero.</span>
+<span class="token comment"># The suffixes k, m, and g can be used to name units in KiB, MiB, or GiB.</span>
+<span class="token comment"># For example, blob:limit=1k is the same as blob:limit=1024.</span>
+<span class="token function">git</span> clone --filter<span class="token operator">=</span>blob:limit<span class="token operator">=</span>10k https://github.com/dlwxin/mock-server-koa2.git
+<span class="token comment"># ## Filter by file path</span>
+<span class="token function">git</span> clone --filter<span class="token operator">=</span>blob:none --no-checkout https://github.com/dlwxin/mock-server-koa2.git
+<span class="token comment"># git sparse-checkout set bin</span>
+<span class="token comment"># git sparse-checkout set bin/shell</span>
+<span class="token function">git</span> sparse-checkout <span class="token builtin class-name">set</span> bin/shell utils
+<span class="token comment"># echo &quot;bin/shell&quot; &gt;.git/info/sparse-checkout</span>
+<span class="token comment"># git sparse-checkout set 命令会进入 SPARSE 模式</span>
+<span class="token comment"># SPARSE 检出功能允许只检出 git 仓库的部分文件,而不是完整克隆整个仓库</span>
+<span class="token comment"># 如果执行完 git sparse-checkout set 命令后，没有看到对应的文件夹，可以执行 git checkout</span>
+<span class="token function">cat</span> .git/info/sparse-checkout
+bin/shell
+utils
+<span class="token comment"># 退出 git 的 SPARSE 检出模式</span>
+<span class="token function">git</span> sparse-checkout disable
+
+<span class="token function">git</span> clone --no-checkout --depth<span class="token operator">=</span><span class="token number">1</span> --branch<span class="token operator">=</span>main https://github.com/dlwxin/mock-server-koa2.git
+<span class="token function">git</span> sparse-checkout init --cone
+<span class="token function">git</span> sparse-checkout <span class="token builtin class-name">set</span> bin/shell utils
+<span class="token function">git</span> checkout main
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br></div></div><h2 id="config"><a href="#config" class="header-anchor">#</a> Config</h2> <p>Git 的配置文件为<code>.gitconfig</code>，它可以在用户主目录下（全局配置），也可以在项目目录下（项目配置）。</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 显示当前的Git配置</span>
+<span class="token function">git</span> config --list
+
+<span class="token function">git</span> config --global --list
+
+<span class="token comment"># 编辑Git配置文件</span>
+<span class="token function">git</span> config -e <span class="token punctuation">[</span>--global<span class="token punctuation">]</span>
+
+<span class="token comment"># 设置提交代码时的用户信息</span>
+<span class="token function">git</span> config <span class="token punctuation">[</span>--global<span class="token punctuation">]</span> user.name <span class="token string">&quot;[name]&quot;</span>
+<span class="token function">git</span> config <span class="token punctuation">[</span>--global<span class="token punctuation">]</span> user.email <span class="token string">&quot;[email address]&quot;</span>
+
+<span class="token comment"># fatal: unable to access 'https://username@git.example.com/scm/repository.git':</span>
+<span class="token comment"># SSL certificate problem: self signed certificate in certificate chain</span>
+
+<span class="token comment"># # Option2: Tell Git not to verify SSL certificates.</span>
+<span class="token comment"># Skip once</span>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">GIT_SSL_NO_VERIFY</span><span class="token operator">=</span>true
+<span class="token function">git</span> clone <span class="token operator">&lt;</span>url<span class="token operator">&gt;</span>
+
+<span class="token function">git</span> config --global http.sslVerify <span class="token boolean">false</span>
+
+<span class="token comment"># Option2:</span>
+<span class="token comment"># File containing the certificates to verify the peer with when fetching or pushing over HTTPS.</span>
+<span class="token comment"># Can be overridden by the GIT_SSL_CAINFO environment variable.</span>
+<span class="token function">git</span> config --global http.sslCAInfo /etc/ssl/certs/ca-certificates.crt
+
+<span class="token function">git</span> config --global http.proxy http://127.0.0.1:1080
+<span class="token function">git</span> config --global https.proxy https://127.0.0.1:1080
+
+<span class="token comment"># Remove the line matching the key from config file</span>
+<span class="token function">git</span> config <span class="token punctuation">[</span>--global<span class="token punctuation">]</span> --unset http.proxy
+
+<span class="token comment"># How can I save username and password in Git?</span>
+<span class="token comment"># https://stackoverflow.com/questions/35942754/how-can-i-save-username-and-password-in-git</span>
+<span class="token comment"># 缓存用户名和密码</span>
+<span class="token comment"># Set git to use the credential memory cache</span>
+$ <span class="token function">git</span> config --global credential.helper cache
+
+<span class="token comment"># Set the cache to timeout after 1 hour (setting is in seconds)</span>
+$ <span class="token function">git</span> config --global credential.helper <span class="token string">'cache --timeout=3600'</span>
+
+<span class="token comment"># When running this command, the first time you pull or push from the remote repository,</span>
+<span class="token comment"># you'll get asked about the username and password.</span>
+<span class="token comment"># The storage format is a .git-credentials file, stored in plaintext.</span>
+$ <span class="token function">git</span> config --global credential.helper store
+
+<span class="token comment"># ~/.git-credentials 文件会记录用户名和 token</span>
+<span class="token comment"># https://username:password@github.xxx.com/</span>
+<span class="token comment"># 每次执行 git pull, git push 都会修改这个文件</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br></div></div><h2 id="add-remove-file"><a href="#add-remove-file" class="header-anchor">#</a> Add/Remove file</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 添加指定文件到暂存区</span>
+<span class="token function">git</span> <span class="token function">add</span> <span class="token punctuation">[</span>file1<span class="token punctuation">]</span> <span class="token punctuation">[</span>file2<span class="token punctuation">]</span> <span class="token punctuation">..</span>.
+
+<span class="token comment"># 添加指定目录到暂存区，包括子目录</span>
+<span class="token function">git</span> <span class="token function">add</span> <span class="token punctuation">[</span>dir<span class="token punctuation">]</span>
+
+<span class="token comment"># 添加当前目录的所有文件到暂存区</span>
+<span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+
+<span class="token comment"># 添加每个变化前，都会要求确认</span>
+<span class="token comment"># 对于同一个文件的多处变化，可以实现分次提交</span>
+<span class="token function">git</span> <span class="token function">add</span> -p
+
+<span class="token comment"># 删除工作区文件，并且将这次删除放入暂存区</span>
+<span class="token function">git</span> <span class="token function">rm</span> <span class="token punctuation">[</span>file1<span class="token punctuation">]</span> <span class="token punctuation">[</span>file2<span class="token punctuation">]</span> <span class="token punctuation">..</span>.
+
+<span class="token comment"># 停止追踪指定文件，但该文件会保留在工作区</span>
+<span class="token function">git</span> <span class="token function">rm</span> --cached <span class="token punctuation">[</span>file<span class="token punctuation">]</span>
+
+<span class="token comment"># 改名文件，并且将这个改名放入暂存区</span>
+<span class="token function">git</span> <span class="token function">mv</span> <span class="token punctuation">[</span>file-original<span class="token punctuation">]</span> <span class="token punctuation">[</span>file-renamed<span class="token punctuation">]</span>
+<span class="token comment"># 等价于</span>
+$ <span class="token function">mv</span> <span class="token punctuation">[</span>file-original<span class="token punctuation">]</span> <span class="token punctuation">[</span>file-renamed<span class="token punctuation">]</span> $ <span class="token function">git</span> <span class="token function">rm</span> <span class="token punctuation">[</span>file-original<span class="token punctuation">]</span> $ <span class="token function">git</span> <span class="token function">add</span> <span class="token punctuation">[</span>file-renamed<span class="token punctuation">]</span>
+
+<span class="token comment"># 改变一个文件名字的大小写，而不修改内容</span>
+<span class="token function">git</span> <span class="token function">mv</span> --force myfile MyFile
+
+<span class="token comment"># 改变文件夹的大小写</span>
+<span class="token comment"># rename readme to README</span>
+<span class="token function">git</span> <span class="token function">mv</span> readme readme_tmp
+<span class="token function">git</span> readme_tmp README
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br></div></div><h2 id="check-in-code"><a href="#check-in-code" class="header-anchor">#</a> Check in code</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 提交暂存区到仓库区</span>
+<span class="token function">git</span> commit -m <span class="token punctuation">[</span>message<span class="token punctuation">]</span>
+
+<span class="token comment"># 提交暂存区的指定文件到仓库区</span>
+<span class="token function">git</span> commit <span class="token punctuation">[</span>file1<span class="token punctuation">]</span> <span class="token punctuation">[</span>file2<span class="token punctuation">]</span> <span class="token punctuation">..</span>. -m <span class="token punctuation">[</span>message<span class="token punctuation">]</span>
+
+<span class="token comment"># 提交工作区自上次commit之后的变化，直接到仓库区</span>
+<span class="token function">git</span> commit -a
+
+<span class="token comment"># 提交时显示所有diff信息</span>
+<span class="token function">git</span> commit -v
+
+<span class="token comment"># -n; --no-verify. This option bypasses the pre-commit and commit-msg hooks.</span>
+<span class="token function">git</span> commit -n
+
+<span class="token comment"># 修改 commit message</span>
+<span class="token function">git</span> commit --amend --only
+<span class="token comment"># or</span>
+<span class="token function">git</span> commit --amend --only -m <span class="token string">'xxxxxxx'</span>
+
+<span class="token comment"># 把暂存的内容添加到上一次的 commit</span>
+<span class="token function">git</span> commit --amend
+
+<span class="token comment"># 重做上一次commit，并包括指定文件的新变化</span>
+<span class="token function">git</span> commit --amend <span class="token punctuation">[</span>file1<span class="token punctuation">]</span> <span class="token punctuation">[</span>file2<span class="token punctuation">]</span> <span class="token punctuation">..</span>.
+
+<span class="token comment"># 从一个 commit 里移除一个文件</span>
+<span class="token function">git</span> checkout HEAD^ myfile
+<span class="token function">git</span> <span class="token function">add</span> -A
+<span class="token function">git</span> commit --amend
+
+<span class="token comment"># 如果你想跳过 GPG 签名，可以在 `git commit` 时使用 `-S` 或者 `--no-gpg-sign` 参数来避免对提交进行签名</span>
+<span class="token function">git</span> commit -S -m <span class="token string">&quot;Commit message&quot;</span>
+<span class="token function">git</span> commit --no-gpg-sign -m <span class="token string">&quot;Commit message&quot;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br></div></div><h2 id="branch"><a href="#branch" class="header-anchor">#</a> Branch</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 列出所有本地分支</span>
+<span class="token function">git</span> branch
+
+<span class="token comment"># 列出所有远程分支</span>
+<span class="token function">git</span> branch -r
+
+<span class="token comment"># 列出所有本地分支和远程分支</span>
+<span class="token function">git</span> branch -a
+
+<span class="token comment"># 以最后提交的顺序列出所有 Git 分支</span>
+<span class="token comment"># 最新的放在最上面</span>
+<span class="token function">git</span> for-each-ref --sort<span class="token operator">=</span>-committerdate --format<span class="token operator">=</span><span class="token string">'%(refname:short)'</span> refs/heads/
+
+<span class="token comment"># 新建一个分支，但依然停留在当前分支</span>
+<span class="token function">git</span> branch <span class="token punctuation">[</span>branch-name<span class="token punctuation">]</span>
+
+<span class="token comment"># 新建一个分支, 原来的同名分支会被新建分支覆盖， 但依然停留在当前分支。</span>
+<span class="token function">git</span> branch -f <span class="token punctuation">[</span>branch-name<span class="token punctuation">]</span>
+
+<span class="token comment"># 新建一个分支，指向指定commit</span>
+<span class="token function">git</span> branch <span class="token punctuation">[</span>branch<span class="token punctuation">]</span> <span class="token punctuation">[</span>commit<span class="token punctuation">]</span>
+
+<span class="token comment"># 新建一个分支，与指定的远程分支建立追踪关系</span>
+<span class="token function">git</span> branch --track <span class="token punctuation">[</span>branch<span class="token punctuation">]</span> <span class="token punctuation">[</span>remote-branch<span class="token punctuation">]</span>
+
+<span class="token comment"># 新建并切换到新分支上，同时这个分支没有任何 commit</span>
+<span class="token comment"># 相当于保存修改，但是重写 commit 历史</span>
+<span class="token function">git</span> checkout --orphan <span class="token punctuation">[</span>branch-name<span class="token punctuation">]</span>
+
+<span class="token comment"># 基于指定 stash 创建分支</span>
+<span class="token function">git</span> stash
+<span class="token comment"># 以最新的储藏创建一个分支</span>
+<span class="token function">git</span> stash branch <span class="token punctuation">[</span>branch-name<span class="token punctuation">]</span>
+
+<span class="token comment"># 新建一个分支，并切换到该分支</span>
+<span class="token function">git</span> checkout -b <span class="token punctuation">[</span>branch<span class="token punctuation">]</span>
+
+<span class="token comment"># If -B is given, [new_branch] is created if it doesn’t exist; otherwise, it is reset.</span>
+<span class="token function">git</span> checkout -B <span class="token punctuation">[</span>new_branch<span class="token punctuation">]</span>
+
+<span class="token comment"># 新建一个分支，指向某个tag</span>
+<span class="token function">git</span> checkout -b <span class="token punctuation">[</span>branch<span class="token punctuation">]</span> <span class="token punctuation">[</span>tag<span class="token punctuation">]</span>
+
+<span class="token comment"># 切换到指定分支，并更新工作区</span>
+<span class="token function">git</span> checkout <span class="token punctuation">[</span>branch-name<span class="token punctuation">]</span>
+
+<span class="token comment"># 切换到上一个分支</span>
+<span class="token function">git</span> checkout -
+
+<span class="token comment"># 远程分支 remotes/origin/dev</span>
+<span class="token comment"># 新建本地分支并关联远程分支</span>
+<span class="token function">git</span> checkout dev
+<span class="token comment"># Switched to a new branch 'dev'</span>
+<span class="token comment"># Branch 'dev' set up to track remote branch 'dev' from 'origin'.</span>
+
+<span class="token comment"># 从远程分支中创建并切换到本地分支</span>
+<span class="token function">git</span> checkout -b <span class="token punctuation">[</span>branch-name<span class="token punctuation">]</span> origin/<span class="token punctuation">[</span>branch-name<span class="token punctuation">]</span>
+
+<span class="token comment"># fatal: The current branch main has no upstream branch.</span>
+<span class="token comment"># To push the current branch and set the remote as upstream, use</span>
+<span class="token comment"># Note: No --set-upstream flag, also can work well</span>
+<span class="token function">git</span> push --set-upstream origin main
+
+<span class="token comment"># Push the branch to remote, even if the branch does not exist in the remote repository</span>
+<span class="token function">git</span> push origin <span class="token punctuation">[</span>branch<span class="token punctuation">]</span>
+<span class="token function">git</span> push <span class="token operator">&lt;</span>remote<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>new_branch<span class="token operator">&gt;</span>
+
+<span class="token comment"># 本地分支关联远程仓库</span>
+<span class="token function">git</span> branch --set-upstream-to<span class="token operator">=</span>origin/remote_branch  your_branch
+<span class="token comment"># 等价于</span>
+<span class="token function">git</span> branch -u origin/remote_branch your_branch
+
+<span class="token comment"># 删除分支</span>
+<span class="token function">git</span> branch -d <span class="token punctuation">[</span>branch-name<span class="token punctuation">]</span>
+<span class="token function">git</span> branch -d <span class="token punctuation">[</span>branch-name1<span class="token punctuation">]</span> <span class="token punctuation">[</span>branch-name2<span class="token punctuation">]</span>
+
+<span class="token comment"># 删除已经合并到 master 的分支</span>
+<span class="token function">git</span> branch --merged master <span class="token operator">|</span> <span class="token function">grep</span> -v <span class="token string">'^\*\|  master'</span> <span class="token operator">|</span> <span class="token function">xargs</span> -n <span class="token number">1</span> <span class="token function">git</span> branch -d
+
+<span class="token comment"># 如果一个分支未进行合并，Git 可能会阻止对它的删除，不过也可以强制删除</span>
+<span class="token function">git</span> branch -D <span class="token punctuation">[</span>branch-name<span class="token punctuation">]</span>
+
+<span class="token comment"># 删除远程分支</span>
+<span class="token function">git</span> push origin --delete <span class="token punctuation">[</span>branch-name<span class="token punctuation">]</span>
+<span class="token function">git</span> branch -dr <span class="token punctuation">[</span>remote/branch<span class="token punctuation">]</span>
+
+<span class="token comment"># 恢复被删除的分支</span>
+<span class="token function">git</span> branch -d dev
+Deleted branch dev <span class="token punctuation">(</span>was 96dc107<span class="token punctuation">)</span>.
+<span class="token comment"># 分支已经被成功删除掉，记住被删除分支所指向 commit 对象的sha-1值 (96dc107)</span>
+<span class="token comment"># 如果忘记了 commit 对象的 sha-1值，可以通过 git reflog 命令找回</span>
+<span class="token function">git</span> branch dev 96dc107
+
+<span class="token comment"># 修改分支的名字</span>
+<span class="token function">git</span> branch -m <span class="token punctuation">[</span>old-name<span class="token punctuation">]</span> <span class="token punctuation">[</span>new-name<span class="token punctuation">]</span>
+
+<span class="token comment">###### Renaming local and remote start ######</span>
+<span class="token comment"># Rename the local branch to the new name</span>
+<span class="token function">git</span> branch -m <span class="token operator">&lt;</span>old_name<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>new_name<span class="token operator">&gt;</span>
+
+<span class="token comment"># Delete the old branch on remote - where &lt;remote&gt; is, for example, origin</span>
+<span class="token function">git</span> push <span class="token operator">&lt;</span>remote<span class="token operator">&gt;</span> --delete <span class="token operator">&lt;</span>old_name<span class="token operator">&gt;</span>
+
+<span class="token comment"># Or shorter way to delete remote branch [:]</span>
+<span class="token function">git</span> push <span class="token operator">&lt;</span>remote<span class="token operator">&gt;</span> :<span class="token operator">&lt;</span>old_name<span class="token operator">&gt;</span>
+
+<span class="token comment"># Prevent git from using the old name when pushing in the next step.</span>
+<span class="token comment"># Otherwise, git will use the old upstream name instead of &lt;new_name&gt;.</span>
+<span class="token function">git</span> branch --unset-upstream <span class="token operator">&lt;</span>new_name<span class="token operator">&gt;</span>
+
+<span class="token comment"># Reset the upstream branch for the new_name local branch</span>
+<span class="token function">git</span> push <span class="token operator">&lt;</span>remote<span class="token operator">&gt;</span> -u <span class="token operator">&lt;</span>new_name<span class="token operator">&gt;</span>
+<span class="token comment">###### Renaming local and remote end ######</span>
+
+<span class="token comment"># 展示本地分支关联远程仓库的情况</span>
+<span class="token function">git</span> branch -vv
+
+<span class="token comment"># 查看远程分支和本地分支的对应关系</span>
+<span class="token function">git</span> remote show origin
+
+<span class="token comment"># 远程删除了分支本地也想删除</span>
+<span class="token function">git</span> remote prune origin
+
+<span class="token comment"># Clear Git History in Local and Remote Branches</span>
+<span class="token function">git</span> checkout --orphan tmp-master <span class="token comment"># create a temporary branch</span>
+<span class="token function">git</span> <span class="token function">add</span> -A  <span class="token comment"># Add all files and commit them</span>
+<span class="token function">git</span> commit -m <span class="token string">'Add files'</span>
+<span class="token function">git</span> branch -D master <span class="token comment"># Deletes the master branch</span>
+<span class="token function">git</span> branch -m master <span class="token comment"># Rename the current branch to master</span>
+<span class="token function">git</span> push -f origin master <span class="token comment"># Force push master branch to Git server</span>
+
+<span class="token comment"># Add description for branch</span>
+<span class="token function">git</span> config branch.BRANCH_NAME.description <span class="token string">&quot;TEST MESSAGE&quot;</span>
+
+<span class="token comment"># View branch description</span>
+<span class="token function">git</span> config branch.BRANCH_NAME.description
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br></div></div><h2 id="git-switch-and-restore"><a href="#git-switch-and-restore" class="header-anchor">#</a> git switch and restore</h2> <ul><li><a href="https://github.com/git/git/blob/master/Documentation/RelNotes/2.23.0.txt" target="_blank" rel="noopener noreferrer">Git 2.23 RelNotes<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://stackoverflow.com/questions/57265785/whats-the-difference-between-git-switch-and-git-checkout-branch" target="_blank" rel="noopener noreferrer">What's the difference between git switch and git checkout <code>&lt;branch&gt;</code> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://www.infoq.com/news/2019/08/git-2-23-switch-restore/" target="_blank" rel="noopener noreferrer">Git 2.23 Adds Switch and Restore Commands<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <blockquote><p>Aug 3, 2019</p> <p>Two new commands &quot;git switch&quot; and &quot;git restore&quot; are introduced to
+split &quot;checking out a branch to work on advancing its history&quot; and
+&quot;checking out paths out of the index and/or a tree-ish to work on
+advancing the current history&quot; out of the single &quot;git checkout&quot;
+command.</p></blockquote> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 切换到名为 &lt;branch-name&gt; 的分支</span>
+<span class="token function">git</span> switch <span class="token operator">&lt;</span>branch-name<span class="token operator">&gt;</span>
+
+<span class="token comment"># 创建并切换到名为 &lt;new-branch-name&gt; 的新分支</span>
+<span class="token function">git</span> switch -c <span class="token operator">&lt;</span>new-branch-name<span class="token operator">&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 将 &quot;file.txt&quot; 文件恢复到最近的一个本地提交</span>
+<span class="token function">git</span> restore file.txt
+
+<span class="token comment"># 删除工作区中尚未提交的指定文件 &lt;file&gt; 的改动</span>
+<span class="token function">git</span> restore --staged <span class="token operator">&lt;</span>file<span class="token operator">&gt;</span>
+<span class="token comment"># 撤销已经暂存但未提交的 &quot;file.txt&quot; 文件的更改</span>
+<span class="token function">git</span> restore --staged file.txt
+
+<span class="token comment"># 恢复指定文件 &lt;file&gt; 为之前某个版本（&lt;commit&gt; 为 commit ID）</span>
+<span class="token function">git</span> restore <span class="token operator">&lt;</span>file<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>commit<span class="token operator">&gt;</span>
+<span class="token comment"># 将 &quot;file.txt&quot; 文件恢复到指定 commit ID 的版本</span>
+<span class="token function">git</span> restore file.txt abc123
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h2 id="tag"><a href="#tag" class="header-anchor">#</a> Tag</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 列出所有tag</span>
+<span class="token function">git</span> tag
+
+<span class="token comment"># 使用通配符过滤 tag</span>
+ <span class="token function">git</span> tag -l <span class="token string">&quot;v1.0.*&quot;</span>
+ <span class="token function">git</span> tag --list <span class="token string">&quot;v1.?.1&quot;</span>
+ <span class="token function">git</span> tag <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">&quot;v1.0.*&quot;</span>
+
+<span class="token comment"># -n&lt;num&gt;</span>
+<span class="token comment"># &lt;num&gt; specifies how many lines from the annotation, if any, are printed when using -l. Implies --list.</span>
+<span class="token comment"># The default is not to print any annotation lines. If no number is given to -n,</span>
+<span class="token comment"># only the first line is printed. If the tag is not annotated, the commit message</span>
+<span class="token comment"># is displayed instead.</span>
+<span class="token function">git</span> tag -n
+<span class="token comment"># v1.0.1          refactor the directory structure</span>
+
+<span class="token comment"># sort by date</span>
+<span class="token comment"># more value of '--sort' refer to https://git-scm.com/docs/git-for-each-ref</span>
+<span class="token function">git</span> tag -n --sort<span class="token operator">=</span>taggerdate
+<span class="token function">git</span> tag -n --sort<span class="token operator">=</span>creatordate
+
+<span class="token comment"># 新建一个tag在当前commit</span>
+<span class="token function">git</span> tag <span class="token punctuation">[</span>tag<span class="token punctuation">]</span>
+
+<span class="token comment"># Replace an existing tag with the given name (instead of failing)</span>
+<span class="token function">git</span> tag -f <span class="token punctuation">[</span>tag<span class="token punctuation">]</span>
+
+<span class="token comment"># 新建一个带备注的tag在当前commit</span>
+<span class="token function">git</span> tag -a <span class="token punctuation">[</span>tag<span class="token punctuation">]</span> -m <span class="token string">&quot;comment&quot;</span>
+
+<span class="token comment"># 新建一个tag在指定commit</span>
+<span class="token function">git</span> tag <span class="token punctuation">[</span>tag<span class="token punctuation">]</span> <span class="token punctuation">[</span>commit<span class="token punctuation">]</span>
+
+<span class="token comment"># 删除本地tag</span>
+<span class="token function">git</span> tag -d <span class="token punctuation">[</span>tag<span class="token punctuation">]</span>
+
+<span class="token comment"># 删除远程tag</span>
+<span class="token function">git</span> push origin --delete tag <span class="token operator">&lt;</span>tagname<span class="token operator">&gt;</span>
+<span class="token comment"># 等价于</span>
+<span class="token function">git</span> push origin :refs/tags/<span class="token operator">&lt;</span>tagname<span class="token operator">&gt;</span>
+
+<span class="token comment"># 查看tag信息</span>
+<span class="token function">git</span> show <span class="token punctuation">[</span>tag<span class="token punctuation">]</span>
+
+<span class="token comment"># 查看当前 branch 的最近的 tag</span>
+<span class="token function">git</span> describe --tags --abbrev<span class="token operator">=</span><span class="token number">0</span>
+
+<span class="token comment"># 提交指定 tag到远程</span>
+<span class="token function">git</span> push <span class="token punctuation">[</span>remote<span class="token punctuation">]</span> <span class="token punctuation">[</span>tag<span class="token punctuation">]</span>
+
+<span class="token comment"># Replace an existing tag with the given name (instead of failing)</span>
+<span class="token function">git</span> push -f <span class="token punctuation">[</span>remote<span class="token punctuation">]</span> <span class="token punctuation">[</span>tag<span class="token punctuation">]</span>
+
+<span class="token comment"># 先推送新的 commit，成功后在单独推送 tag</span>
+<span class="token function">git</span> push <span class="token operator">&amp;&amp;</span> <span class="token function">git</span> push --tags
+
+<span class="token comment"># 提交所有 tag</span>
+<span class="token function">git</span> push <span class="token punctuation">[</span>remote<span class="token punctuation">]</span> --tags
+
+<span class="token comment"># tag 必须单独推送，'git push' 默认默认不会推送 tag</span>
+<span class="token comment"># --follow-tags 参数会使得 commit 以及与之相关的 tag 一起 推送</span>
+<span class="token comment"># 不是所有的 tag</span>
+<span class="token function">git</span> push --follow-tags
+
+<span class="token comment"># Git 有一个对应于 --follow-tags 的配置项，默认是关闭的，如果打开，以后执行</span>
+<span class="token comment"># git push 的时候， 默认就会带上 --follow-tags</span>
+<span class="token function">git</span> config --global push.followTags <span class="token boolean">true</span>
+
+<span class="token comment"># 恢复已删除的 tag</span>
+<span class="token function">git</span> <span class="token function">fsck</span> --unreachable <span class="token operator">|</span> <span class="token function">grep</span> tag
+<span class="token function">git</span> update-ref refs/tags/<span class="token operator">&lt;</span>tag_name<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>hash<span class="token operator">&gt;</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br></div></div><h2 id="view-information"><a href="#view-information" class="header-anchor">#</a> View Information</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 显示有变更的文件</span>
+<span class="token function">git</span> status
+<span class="token comment"># 查看忽略的文件</span>
+<span class="token function">git</span> status --ignored
+<span class="token comment"># 检查是否有任何未提交的更改</span>
+<span class="token function">git</span> status --porcelain
+
+<span class="token comment"># 显示当前分支的版本历史</span>
+<span class="token function">git</span> log
+<span class="token function">git</span> log --pretty<span class="token operator">=</span><span class="token string">&quot;oneline&quot;</span>
+<span class="token function">git</span> log --abbrev-commit --pretty<span class="token operator">=</span><span class="token string">&quot;oneline&quot;</span>
+<span class="token function">git</span> log --color --graph --pretty<span class="token operator">=</span>format:<span class="token string">'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset'</span> --abbrev-commit
+<span class="token function">git</span> log --graph --topo-order --abbrev-commit --date<span class="token operator">=</span>short --decorate --all --boundary --pretty<span class="token operator">=</span>format:<span class="token string">'%Cred%h %Cgreen%ad%Creset -%C(yellow)%d%Creset %s %C(bold blue)&lt;%an&gt;%Creset'</span>
+
+<span class="token comment"># How to get a tree-like view of the git commit history?</span>
+<span class="token function">git</span> log --graph --oneline
+<span class="token function">git</span> log --graph --pretty<span class="token operator">=</span>oneline
+
+<span class="token comment"># For listing all deleted files</span>
+<span class="token comment"># Warning: This lists all files which you've deleted. If you've deleted a</span>
+<span class="token comment"># file, then created a new file with the same name, it will show up on</span>
+<span class="token comment"># this list, even though there's a file with that name.</span>
+<span class="token function">git</span> log --diff-filter<span class="token operator">=</span>D --summary
+
+<span class="token comment"># If  you don’t need more details on which commit they were removed</span>
+<span class="token comment"># you could simply use:</span>
+<span class="token function">git</span> log --diff-filter<span class="token operator">=</span>D --summary <span class="token operator">|</span> <span class="token function">grep</span> delete
+
+<span class="token comment"># fing a deleted file in commit history</span>
+<span class="token function">git</span> log --all --full-history -- <span class="token string">&quot;*MyFile.*&quot;</span>
+<span class="token function">git</span> show --pretty<span class="token operator">=</span><span class="token string">&quot;&quot;</span> --name-only <span class="token operator">&lt;</span>commit-id<span class="token operator">&gt;</span>
+
+<span class="token comment"># or</span>
+<span class="token function">git</span> log --all --full-history -- <span class="token operator">&lt;</span>path-to-file<span class="token operator">&gt;</span>
+<span class="token function">git</span> show <span class="token operator">&lt;</span>commit-id<span class="token operator">&gt;</span> -- <span class="token operator">&lt;</span>path-to-file<span class="token operator">&gt;</span>
+
+<span class="token comment"># 显示 commit 历史，以及每次commit发生变更的文件</span>
+<span class="token function">git</span> log --stat
+
+<span class="token comment"># 显示指定用户的 commit 历史</span>
+<span class="token function">git</span> log --author<span class="token operator">=</span><span class="token string">&quot;test author&quot;</span>
+
+<span class="token comment"># 查看当前分支所有提交者及其提交次数，按次数由高到低排序</span>
+<span class="token function">git</span> log <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">&quot;^Author: &quot;</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{print $2}'</span> <span class="token operator">|</span> <span class="token function">sort</span> <span class="token operator">|</span> <span class="token function">uniq</span> -c <span class="token operator">|</span> <span class="token function">sort</span> -k1,1nr
+
+<span class="token comment"># 搜索提交历史，根据关键词</span>
+<span class="token function">git</span> log -S <span class="token punctuation">[</span>keyword<span class="token punctuation">]</span>
+
+<span class="token comment"># How to git log in reverse order?</span>
+<span class="token function">git</span> log --reverse
+
+<span class="token comment"># Check the validity of a signed commit object by passing the signature to gpg --verify and show the output.</span>
+<span class="token function">git</span> log --show-signature
+
+<span class="token comment"># 在 commit log 中查找相关内容</span>
+<span class="token comment"># 通过 grep 查找，given-text：所需要查找的字段</span>
+<span class="token function">git</span> log --all --grep<span class="token operator">=</span><span class="token string">'&lt;given-text&gt;'</span>
+
+<span class="token comment"># 显示某个commit之后的所有变动，每个commit占据一行</span>
+<span class="token function">git</span> log <span class="token punctuation">[</span>commmit_id<span class="token punctuation">]</span> HEAD --pretty<span class="token operator">=</span>format:%s
+
+<span class="token comment"># 显示某个commit之后的所有变动，其&quot;提交说明&quot;必须符合搜索条件</span>
+<span class="token function">git</span> log <span class="token punctuation">[</span>commmit_id<span class="token punctuation">]</span> HEAD --grep feature
+
+<span class="token comment"># 显示某个文件的版本历史，包括文件改名</span>
+<span class="token function">git</span> log --follow <span class="token punctuation">[</span>file<span class="token punctuation">]</span>
+<span class="token function">git</span> whatchanged <span class="token punctuation">[</span>file<span class="token punctuation">]</span>
+
+<span class="token comment"># 查看两个星期内的改动</span>
+<span class="token function">git</span> whatchanged --since<span class="token operator">=</span><span class="token string">'2 weeks ago'</span>
+<span class="token comment"># 指定日期范围</span>
+<span class="token function">git</span> log --after <span class="token string">'11-03-2020'</span>
+<span class="token function">git</span> log --before <span class="token string">'11-03-2020'</span>
+
+<span class="token comment"># 显示指定文件相关的每一次 diff</span>
+<span class="token function">git</span> log -p <span class="token punctuation">[</span>file<span class="token punctuation">]</span>
+
+<span class="token comment"># 显示过去 n 次提交</span>
+<span class="token function">git</span> log -n --pretty --oneline
+
+<span class="token comment"># Display the commits that have deleted files</span>
+<span class="token function">git</span> log --diff-filter<span class="token operator">=</span>D --summary
+
+<span class="token comment"># commit 历史中显示 Branch1 有的，但是 Branch2 没有的 commit</span>
+<span class="token function">git</span> log Branch1 ^Branch2
+
+<span class="token comment"># 显示分支创建时间</span>
+<span class="token comment"># 可以查看到指定分支的历次更改记录，最下面一条的时间即是分支创建时间。</span>
+<span class="token function">git</span> reflog show --date<span class="token operator">=</span>iso <span class="token punctuation">[</span>branch-name<span class="token punctuation">]</span>
+
+<span class="token comment"># 显示当前分支的最近几次提交</span>
+<span class="token function">git</span> reflog
+
+<span class="token comment"># 查看所有远程仓库</span>
+<span class="token function">git</span> remote
+
+<span class="token comment"># 显示暂存区和工作区的差异</span>
+<span class="token function">git</span> <span class="token function">diff</span>
+
+<span class="token comment"># 显示暂存区和上一个commit的差异</span>
+<span class="token function">git</span> <span class="token function">diff</span> --cached <span class="token punctuation">[</span>file<span class="token punctuation">]</span>
+
+<span class="token comment"># 显示工作区与当前分支最新commit之间的差异</span>
+<span class="token function">git</span> <span class="token function">diff</span> HEAD
+
+<span class="token comment"># --name-only   -&gt; 只显示有变化的文件名（包括路径），不显示具体的内容</span>
+<span class="token comment"># awk -F &quot;/&quot; '{print $NF}' -&gt; 用 &quot;/&quot; 作为分隔符， 提取最后一列</span>
+<span class="token function">git</span> <span class="token function">diff</span> HEAD --name-only <span class="token operator">|</span> <span class="token function">awk</span> -F <span class="token string">&quot;/&quot;</span> <span class="token string">'{print $NF}'</span>
+
+<span class="token comment"># 显示两次提交之间的差异</span>
+<span class="token comment"># 比较两个分支上最后 commit 的内容的差别</span>
+<span class="token function">git</span> <span class="token function">diff</span> <span class="token punctuation">[</span>first-branch<span class="token punctuation">]</span><span class="token punctuation">..</span>.<span class="token punctuation">[</span>second-branch<span class="token punctuation">]</span>
+
+<span class="token comment"># 展示本地仓库中任意两个 commit 之间的文件变动</span>
+<span class="token function">git</span> <span class="token function">diff</span> <span class="token operator">&lt;</span>commit-id<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>commit-id<span class="token operator">&gt;</span>
+
+<span class="token comment"># 显示同一个文件两个 commit 之间的变动</span>
+<span class="token comment"># diff the same file between two different commits on the same branch</span>
+<span class="token function">git</span> <span class="token function">diff</span> <span class="token punctuation">[</span>commit-id<span class="token punctuation">]</span> <span class="token punctuation">[</span>commit-id<span class="token punctuation">]</span> -- <span class="token punctuation">[</span>file<span class="token punctuation">]</span>
+
+<span class="token comment"># 展示本地仓库中任意两个 tag 之间发生变化的文件</span>
+<span class="token function">git</span> <span class="token function">diff</span> --name-only <span class="token punctuation">[</span>tag-name1<span class="token punctuation">]</span> <span class="token punctuation">[</span>tag-name2<span class="token punctuation">]</span>
+
+<span class="token comment"># 展示工作区的冲突文件列表</span>
+<span class="token function">git</span> <span class="token function">diff</span> --name-only --diff-filter<span class="token operator">=</span>U
+
+<span class="token comment"># 显示当前 HEAD 上的最近一次的 commit</span>
+<span class="token function">git</span> show
+<span class="token comment"># or</span>
+<span class="token function">git</span> log -n1 -p
+
+<span class="token comment"># 显示某次提交的元数据和内容变化</span>
+<span class="token function">git</span> show <span class="token punctuation">[</span>commit<span class="token punctuation">]</span>
+
+<span class="token comment"># 显示某次提交发生变化的文件</span>
+<span class="token function">git</span> show --name-only <span class="token punctuation">[</span>commit<span class="token punctuation">]</span>
+
+<span class="token comment"># 显示某次提交时，某个文件的内容</span>
+<span class="token function">git</span> show <span class="token punctuation">[</span>commit<span class="token punctuation">]</span>:<span class="token punctuation">[</span>filename<span class="token punctuation">]</span>
+
+<span class="token comment"># 显示任意分支某一文件的内容</span>
+<span class="token function">git</span> show <span class="token punctuation">[</span>branch<span class="token punctuation">]</span>:<span class="token punctuation">[</span>filename<span class="token punctuation">]</span>
+
+<span class="token comment"># 显示所有提交过的用户，按提交次数排序</span>
+<span class="token function">git</span> shortlog -sn
+
+<span class="token comment"># 显示指定文件是什么人在什么时间修改过</span>
+<span class="token function">git</span> blame <span class="token punctuation">[</span>file<span class="token punctuation">]</span>
+
+<span class="token comment"># 显示今天你写了多少行代码</span>
+<span class="token function">git</span> <span class="token function">diff</span> --shortstat <span class="token string">&quot;@{0 day ago}&quot;</span>
+
+<span class="token comment"># 显示历史提交次数（包含所有 branch 的）</span>
+<span class="token function">git</span> rev-list --all --count
+
+<span class="token function">git</span> rev-list --count --branches master --author<span class="token operator">=</span><span class="token string">&quot;dlwxin&quot;</span>
+
+<span class="token comment"># 查看当前分支所有提交者及其提交次数，按次数由高到低排序</span>
+<span class="token function">git</span> log <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">&quot;^Author: &quot;</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{print $2}'</span> <span class="token operator">|</span> <span class="token function">sort</span> <span class="token operator">|</span> <span class="token function">uniq</span> -c <span class="token operator">|</span> <span class="token function">sort</span> -k1,1nr
+
+<span class="token function">git</span> log --author<span class="token operator">=</span>yourname --since<span class="token operator">=</span><span class="token string">&quot;2014-07-01&quot;</span> --no-merges <span class="token operator">|</span> <span class="token function">grep</span> -e <span class="token string">'commit [a-zA-Z0-9]*'</span> <span class="token operator">|</span> <span class="token function">wc</span> -l
+
+<span class="token function">git</span> log --author<span class="token operator">=</span><span class="token string">&quot;<span class="token variable"><span class="token variable">$(</span><span class="token function">git</span> config --get user.name<span class="token variable">)</span></span>&quot;</span> --since<span class="token operator">=</span><span class="token string">&quot;<span class="token variable"><span class="token variable">$(</span><span class="token function">date</span> <span class="token string">'+%Y'</span><span class="token variable">)</span></span>-01-01&quot;</span> --no-merges <span class="token operator">|</span> <span class="token function">grep</span> -e <span class="token string">'commit [a-zA-Z0-9]*'</span> <span class="token operator">|</span> <span class="token function">wc</span> -l
+
+<span class="token function">git</span> log --author<span class="token operator">=</span><span class="token string">&quot;<span class="token variable"><span class="token variable">$(</span><span class="token function">git</span> config --get user.name<span class="token variable">)</span></span>&quot;</span> --after<span class="token operator">=</span><span class="token string">&quot;<span class="token variable"><span class="token variable">$(</span><span class="token function">date</span> <span class="token string">'+%Y'</span><span class="token variable">)</span></span>-01-01&quot;</span> --no-merges <span class="token operator">|</span> <span class="token function">grep</span> -e <span class="token string">'commit [a-zA-Z0-9]*'</span> <span class="token operator">|</span> <span class="token function">wc</span> -l
+
+<span class="token comment"># current_year=`date -d &quot;0 month ago&quot; +%Y`</span>
+<span class="token comment"># current_year=`date -d &quot;0 year ago&quot; +%Y`</span>
+<span class="token assign-left variable">current_year</span><span class="token operator">=</span><span class="token variable"><span class="token variable">`</span><span class="token function">date</span> +%Y<span class="token variable">`</span></span>
+<span class="token assign-left variable">last_year</span><span class="token operator">=</span><span class="token variable"><span class="token variable">`</span><span class="token function">date</span> -d <span class="token string">&quot;1 year ago&quot;</span> +%Y<span class="token variable">`</span></span>
+<span class="token function">git</span> log --author<span class="token operator">=</span><span class="token string">&quot;<span class="token variable"><span class="token variable">$(</span><span class="token function">git</span> config --get user.name<span class="token variable">)</span></span>&quot;</span> --after<span class="token operator">=</span><span class="token string">&quot;<span class="token variable">$last_year</span>-01-01&quot;</span>  --before<span class="token operator">=</span><span class="token string">&quot;<span class="token variable">$current_year</span>-01-01&quot;</span> --no-merges <span class="token operator">|</span> <span class="token function">grep</span> -e <span class="token string">'commit [a-zA-Z0-9]*'</span> <span class="token operator">|</span> <span class="token function">wc</span> -l
+
+<span class="token comment"># 按作者统计代码量</span>
+<span class="token function">git</span> log --author<span class="token operator">=</span><span class="token string">&quot;_your_name_&quot;</span> --pretty<span class="token operator">=</span>tformat: --numstat <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{ add += $1; subs += $2; loc += $1 - $2 } END { printf &quot;added lines: %s, removed lines: %s, total lines: %s\n&quot;, add, subs, loc }'</span> -
+
+<span class="token function">git</span> log --author<span class="token operator">=</span><span class="token string">&quot;<span class="token variable"><span class="token variable">$(</span><span class="token function">git</span> config --get user.name<span class="token variable">)</span></span>&quot;</span> --pretty<span class="token operator">=</span>tformat: --numstat <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{ add += $1; subs += $2; loc += $1 - $2 } END { printf &quot;added lines: %s, removed lines: %s, total lines: %s\n&quot;, add, subs, loc }'</span> -
+<span class="token comment"># added lines: 123569, removed lines: 30239, total lines: 93330</span>
+
+<span class="token comment"># 按作者，时间，指定文件类型统计代码量</span>
+<span class="token function">git</span> log --author<span class="token operator">=</span><span class="token string">&quot;<span class="token variable"><span class="token variable">$(</span><span class="token function">git</span> config --get user.name<span class="token variable">)</span></span>&quot;</span> --pretty<span class="token operator">=</span>tformat: --numstat --after<span class="token operator">=</span><span class="token number">2022</span>-01-01 <span class="token operator">|</span> <span class="token function">grep</span> .java <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{ add += $1 ; subs += $2 ; loc += $1 - $2 } END { printf &quot;added lines: %s removed lines : %s total lines: %s\n&quot;,add,subs,loc }'</span> -
+<span class="token comment"># added lines: 359 removed lines : 41 total lines: 318</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br><span class="line-number">179</span><br><span class="line-number">180</span><br><span class="line-number">181</span><br></div></div><h2 id="remote-sync"><a href="#remote-sync" class="header-anchor">#</a> Remote Sync</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 下载远程仓库的所有变动</span>
+<span class="token function">git</span> fetch <span class="token punctuation">[</span>remote<span class="token punctuation">]</span>
+
+<span class="token comment"># 显示所有远程仓库</span>
+<span class="token function">git</span> remote -v
+
+<span class="token comment"># 显示某个远程仓库的信息</span>
+<span class="token function">git</span> remote show <span class="token punctuation">[</span>remote<span class="token punctuation">]</span>
+
+<span class="token comment"># 增加一个新的远程仓库，并命名</span>
+<span class="token function">git</span> remote <span class="token function">add</span> <span class="token punctuation">[</span>shortname<span class="token punctuation">]</span> <span class="token punctuation">[</span>url<span class="token punctuation">]</span>
+<span class="token function">git</span> remote set-url origin git://new.url.here
+
+<span class="token comment"># 移除远程仓库</span>
+<span class="token function">git</span> remote <span class="token function">rm</span> <span class="token punctuation">[</span>shortname<span class="token punctuation">]</span>
+<span class="token function">git</span> remote remove origin
+
+<span class="token comment"># 取回远程仓库的变化，并与本地分支合并</span>
+<span class="token function">git</span> pull <span class="token punctuation">[</span>remote<span class="token punctuation">]</span> <span class="token punctuation">[</span>branch<span class="token punctuation">]</span>
+
+<span class="token comment"># 上传本地指定分支到远程仓库</span>
+<span class="token function">git</span> push <span class="token punctuation">[</span>remote<span class="token punctuation">]</span> <span class="token punctuation">[</span>branch<span class="token punctuation">]</span>
+<span class="token comment"># 等同于</span>
+<span class="token function">git</span> push <span class="token punctuation">[</span>remote<span class="token punctuation">]</span> <span class="token punctuation">[</span>branch<span class="token punctuation">]</span>:<span class="token punctuation">[</span>branch<span class="token punctuation">]</span>
+<span class="token comment"># [branch]:[branch] =&gt; [本地分支]:[远程分支]</span>
+<span class="token comment"># 如果后者不存在，则会被新建。如果省略本地分支名，则表示删除指定的远程分支，因为这等同于推送一个空的本地分支到远程分支。</span>
+
+<span class="token comment"># e.g:</span>
+<span class="token function">git</span> push origin master
+<span class="token function">git</span> push origin master:master
+
+<span class="token comment"># 将当前分支推送到 remote 主机的对应分支</span>
+<span class="token function">git</span> push <span class="token punctuation">[</span>remote<span class="token punctuation">]</span>
+
+<span class="token comment"># 当前分支只有一个追踪分支，那么主机名都可以省略</span>
+<span class="token function">git</span> push
+
+<span class="token comment"># 当前分支与多个主机存在追踪关系，则可以使用-u选项指定一个默认主机，这样后面就可以不加任何参数使用git push。</span>
+<span class="token function">git</span> push -u <span class="token punctuation">[</span>remote<span class="token punctuation">]</span> <span class="token punctuation">[</span>branch<span class="token punctuation">]</span>
+
+<span class="token comment"># note</span>
+<span class="token comment"># 不带任何参数的git push，默认只推送当前分支，这叫做simple方式。此外，还有一种matching方式，会推送所有有对应的远程分支的本地分支。Git 2.0版本之前，默认采用matching方法，现在改为默认采用simple方式</span>
+
+<span class="token comment"># 删除远程仓库的分支</span>
+<span class="token function">git</span> push <span class="token punctuation">[</span>remote<span class="token punctuation">]</span> :master
+<span class="token comment"># 等同于</span>
+<span class="token function">git</span> push <span class="token punctuation">[</span>remote<span class="token punctuation">]</span> --delete master
+
+<span class="token comment"># 强行推送当前分支到远程仓库，即使有冲突</span>
+<span class="token function">git</span> push <span class="token punctuation">[</span>remote<span class="token punctuation">]</span> --force
+<span class="token comment"># 等同于</span>
+<span class="token function">git</span> push <span class="token punctuation">[</span>remote<span class="token punctuation">]</span> -f
+
+<span class="token comment"># 推送所有分支到远程仓库</span>
+<span class="token function">git</span> push <span class="token punctuation">[</span>remote<span class="token punctuation">]</span> --all
+
+<span class="token comment"># push the complete local repository with all its Commit history and Branches to Remote repository.</span>
+<span class="token function">git</span> push --mirror origin-url
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br></div></div><h2 id="rollback"><a href="#rollback" class="header-anchor">#</a> Rollback</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#  Discard changes in working directory</span>
+<span class="token function">git</span> checkout -- <span class="token function">file</span>
+<span class="token function">git</span> restore <span class="token function">file</span>
+
+<span class="token comment"># git checkout -- readme.txt</span>
+<span class="token comment"># 把 readme.txt 文件在工作区的修改全部撤销，这里有两种情况：</span>
+<span class="token comment"># 一种是 readme.txt 自修改后还没有被放到暂存区，现在，撤销修改就回到和版本库一模一样的状态；</span>
+<span class="token comment"># 一种是 readme.txt 已经添加到暂存区后，又做了修改，现在，撤销修改就回到添加到暂存区后的状态。</span>
+
+<span class="token comment"># 如果 checkout 后面是文件名称，以下写法更为稳妥</span>
+<span class="token comment"># 文件名称前面有两个横杠，并且中间采用空格分隔（否则报错）。此种方式可以防止 Git 出现误判，加入暂存区有一个文件名为ant（没有后缀名），恰好当前项目也有有个名为 ant 的分支，这个时候 Git 会优先将 ant 当做分支处理，于是就有可能导致错误。</span>
+<span class="token comment"># git checkout file</span>
+<span class="token function">git</span> checkout -- <span class="token punctuation">[</span>file<span class="token punctuation">]</span>
+
+<span class="token comment"># 恢复某个commit的指定文件到暂存区和工作区</span>
+<span class="token function">git</span> checkout <span class="token punctuation">[</span>commit<span class="token punctuation">]</span> <span class="token punctuation">[</span>file<span class="token punctuation">]</span>
+
+<span class="token comment"># 恢复暂存区的所有文件到工作区</span>
+<span class="token function">git</span> reset HEAD -- <span class="token builtin class-name">.</span>
+<span class="token function">git</span> restore --staged <span class="token builtin class-name">.</span>
+
+<span class="token comment"># 重置暂存区的指定文件，与上一次commit保持一致，但工作区不变</span>
+<span class="token function">git</span> reset <span class="token punctuation">[</span>file<span class="token punctuation">]</span>
+
+<span class="token comment"># 重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变</span>
+<span class="token function">git</span> reset <span class="token punctuation">[</span>commit<span class="token punctuation">]</span>
+
+<span class="token comment"># 重置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致</span>
+<span class="token comment"># git reset --hard 只影响被跟踪的文件，如果工作区有新增的文件，并不会被影响</span>
+<span class="token function">git</span> reset --hard <span class="token punctuation">[</span>commit<span class="token punctuation">]</span>
+
+<span class="token comment"># 重置暂存区与工作区，与上一次commit保持一致</span>
+<span class="token comment"># one commit</span>
+<span class="token function">git</span> reset --hard HEAD^
+<span class="token comment"># two commits</span>
+<span class="token function">git</span> reset --hard HEAD^^
+<span class="token comment"># four commits</span>
+<span class="token function">git</span> reset --hard HEAD~4
+
+<span class="token comment"># 撤销 commit(仅仅是撤回commit操作，写的代码仍然保留)</span>
+<span class="token comment"># Does not touch the index file or the working tree at all</span>
+<span class="token comment"># 仅在本地库移动 HEAD 指针</span>
+<span class="token function">git</span> reset --soft HEAD^
+
+<span class="token comment">#</span>
+<span class="token comment"># 意外的做了一次硬重置(hard reset)，想找回内容</span>
+<span class="token comment"># 如果你意外的做了 git reset --hard, 你通常能找回你的提交(commit), 因为Git对每件事都会有日志，且都会保存几天。</span>
+<span class="token function">git</span> reflog
+<span class="token comment"># 你将会看到一个你过去提交(commit)的列表, 和一个重置的提交。 选择你想要回到的提交(commit)的SHA，再重置一次:</span>
+<span class="token function">git</span> reset --hard SHA1234
+<span class="token comment">#</span>
+
+<span class="token comment"># 重置当前HEAD为指定commit，但保持暂存区和工作区不变</span>
+<span class="token function">git</span> reset --keep <span class="token punctuation">[</span>commit<span class="token punctuation">]</span>
+
+<span class="token comment"># 新建一个commit，用来撤销指定commit</span>
+<span class="token comment"># 后者的所有变化都将被前者抵消，并且应用到当前分支</span>
+<span class="token function">git</span> revert <span class="token punctuation">[</span>commit<span class="token punctuation">]</span>
+
+<span class="token comment"># This command reverts last 3 commits with only one commit.</span>
+<span class="token comment"># Also doesn't rewrite history, so doesn't require a force push.</span>
+<span class="token comment"># The .. helps create a range. Meaning HEAD~3.. is the same as HEAD~3..HEAD</span>
+<span class="token function">git</span> revert --no-commit HEAD~3<span class="token punctuation">..</span>
+<span class="token function">git</span> commit -m <span class="token string">&quot;your message regarding reverting the multiple commits&quot;</span>
+
+<span class="token comment"># 放弃本次 revert</span>
+<span class="token comment"># 该命令仅仅在冲突时才使用</span>
+<span class="token function">git</span> revert --abort
+
+<span class="token comment"># 抛弃本地所有的修改，回到远程仓库的状态。</span>
+<span class="token function">git</span> fetch --all <span class="token operator">&amp;&amp;</span> <span class="token function">git</span> reset --hard origin/master
+
+<span class="token comment"># 重设第一个 commit</span>
+<span class="token comment"># 也就是把所有的改动都重新放回工作区，并清空所有的 commit，这样就可以重新提交第一个 commit 了</span>
+<span class="token function">git</span> update-ref -d HEAD
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br></div></div><h2 id="merge"><a href="#merge" class="header-anchor">#</a> Merge</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 合并指定分支到当前分支</span>
+<span class="token function">git</span> merge <span class="token punctuation">[</span>branch<span class="token punctuation">]</span>
+
+<span class="token comment"># With --no-commit perform the merge and stop just before creating a merge commit, to give the user a chance to inspect and further tweak the merge result before committing.</span>
+<span class="token function">git</span> merge --no-commit <span class="token punctuation">[</span>branch<span class="token punctuation">]</span>
+
+<span class="token comment"># 将待合并的分支的内容压缩成一个新的提交合并进来</span>
+<span class="token function">git</span> merge --squash <span class="token punctuation">[</span>branch<span class="token punctuation">]</span>
+
+<span class="token comment"># 抛弃合并过程并且尝试重建合并前的状态</span>
+<span class="token comment"># 该命令仅仅在合并后导致冲突时才使用</span>
+<span class="token function">git</span> merge --abort
+
+<span class="token function">git</span> rebase -i HEAD~2
+<span class="token function">git</span> rebase --abort
+
+<span class="token comment"># 选择一个 commit，合并进当前分支</span>
+<span class="token comment"># 会在当前分支产生一个新的 commit，当然它们的哈希值会不一样</span>
+<span class="token function">git</span> cherry-pick <span class="token punctuation">[</span>commit<span class="token punctuation">]</span>
+
+<span class="token comment"># 表示转移该分支的最新的 commit</span>
+<span class="token function">git</span> cherry-pick <span class="token punctuation">[</span>branch<span class="token punctuation">]</span>
+
+<span class="token comment"># 转移多个 commit</span>
+<span class="token function">git</span> cherry-pick <span class="token operator">&lt;</span>HashA<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>HashB<span class="token operator">&gt;</span>
+
+<span class="token comment"># 转移一系列连续的 commit ,NB: commit A 将不会包含在 Cherry pick 中</span>
+<span class="token function">git</span> cherry-pick A<span class="token punctuation">..</span>B
+
+<span class="token comment"># 包含 commit A</span>
+<span class="token function">git</span> cherry-pick A^<span class="token punctuation">..</span>B
+
+<span class="token comment"># 放弃本次 cherry-pick</span>
+<span class="token comment"># 该命令仅仅在冲突时才使用</span>
+<span class="token function">git</span> cherry-pick --abort
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br></div></div><h2 id="stash"><a href="#stash" class="header-anchor">#</a> Stash</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 暂时将未提交的变化移除，稍后再移入</span>
+<span class="token comment"># git stash 是 git stash push 的缩写形式</span>
+<span class="token function">git</span> stash
+<span class="token comment"># or</span>
+<span class="token function">git</span> stash push -m <span class="token string">&quot;test stash&quot;</span>
+
+<span class="token comment"># 将未跟踪文件一并存储</span>
+<span class="token function">git</span> stash push -u -m <span class="token string">&quot;include untracked&quot;</span>
+
+<span class="token comment"># 指定储藏路径</span>
+<span class="token function">git</span> stash push subDir/subDir.txt
+
+<span class="token comment"># 使用pop命令进行恢复，会将stash列表中的信息进行删除。</span>
+<span class="token function">git</span> stash pop
+<span class="token comment"># 等价于</span>
+<span class="token function">git</span> stash pop stash@<span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">}</span>
+
+<span class="token function">git</span> stash pop stash@<span class="token punctuation">{</span><span class="token number">2</span><span class="token punctuation">}</span>
+
+<span class="token comment"># 使用 apply 命令恢复，stash 列表中的信息是会继续保留的</span>
+<span class="token function">git</span> stash apply
+
+<span class="token comment"># 查看 stash</span>
+<span class="token function">git</span> stash list
+
+<span class="token comment"># 删除 stash</span>
+<span class="token function">git</span> stash drop
+
+<span class="token comment"># 未暂存的内容移动到另一个已存在的分支</span>
+<span class="token function">git</span> stash
+<span class="token function">git</span> checkout my-branch
+<span class="token function">git</span> stash pop
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br></div></div><h2 id="clean"><a href="#clean" class="header-anchor">#</a> Clean</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 仅列出将要被删除的文件，但是并不会真正将文件删除。</span>
+<span class="token function">git</span> clean -n
+
+<span class="token comment"># 删除当前目录下未被跟踪的文件，但是不会删除 .gitignore 文件指定的文件，无论是否被跟踪。</span>
+<span class="token function">git</span> clean -f
+
+<span class="token comment"># 删除指定目录下未跟踪的文件，但是不会删除 .gitignore 文件指定的文件，无论是否被跟踪。</span>
+<span class="token function">git</span> clean -f <span class="token punctuation">[</span>path<span class="token punctuation">]</span>
+
+<span class="token comment"># 删除当前目录下或者其后代目录下未跟踪的文件, 但是不会删除 .gitignore 文件指定的文件，无论是否被跟踪</span>
+<span class="token function">git</span> clean -df
+
+<span class="token comment"># 删除当前目录下所有的文件，无论是否在.gitignore文件指定。</span>
+<span class="token function">git</span> clean -xf
+
+<span class="token comment"># 清除 .gitignore 文件中记录的文件</span>
+<span class="token function">git</span> clean -X -f
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h2 id="patch"><a href="#patch" class="header-anchor">#</a> Patch</h2> <ul><li><a href="https://stackoverflow.nilmap.com/question?dest_url=https://stackoverflow.com/questions/2249852/how-to-apply-a-patch-generated-with-git-format-patch" target="_blank" rel="noopener noreferrer">How to apply a patch generated with git format-patch?<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://devconnected.com/how-to-create-and-apply-git-patch-files/" target="_blank" rel="noopener noreferrer">How To Create and Apply Git Patch Files<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">git</span> format-patch <span class="token operator">&lt;</span>branch<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>options<span class="token operator">&gt;</span>
+
+-k / --keep-subject: Do not strip/add <span class="token punctuation">[</span>PATCH<span class="token punctuation">]</span> from the first line of the commit log message.
+--stdout: Print all commits to the standard output <span class="token keyword">in</span> mbox format, instead of creating a <span class="token function">file</span> <span class="token keyword">for</span> each one.
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># Create Git Patch Files</span>
+<span class="token comment"># A series of successive commits，include commit A</span>
+<span class="token function">git</span> format-patch A^<span class="token punctuation">..</span>B --stdout <span class="token operator">&gt;</span> feature.patch
+<span class="token comment"># Path latest 5 commits</span>
+<span class="token function">git</span> format-patch HEAD~4^<span class="token punctuation">..</span>HEAD --stdout <span class="token operator">&gt;</span> feature.patch
+
+<span class="token comment"># Apply Git Patch Files</span>
+<span class="token comment"># Make sure to check out to the branch where you want your patch file to be applied.</span>
+<span class="token function">git</span> am <span class="token operator">&lt;</span>patch_file<span class="token operator">&gt;</span>
+<span class="token function">git</span> am feature.patch
+
+
+<span class="token comment"># Applying: docs(others): update notes</span>
+<span class="token comment"># error: docs/04.Others/65.others/15.Alipay/05.alipay-open-basic.md: does not match index</span>
+<span class="token comment"># hint: Use 'git am --show-current-patch=diff' to see the failed patch</span>
+<span class="token comment"># Applying: docs(others): update Alipay notes</span>
+<span class="token comment"># Patch failed at 0002 docs(others): update Alipay notes</span>
+<span class="token comment"># When you have resolved this problem, run &quot;git am --continue&quot;.</span>
+<span class="token comment"># If you prefer to skip this patch, run &quot;git am --skip&quot; instead.</span>
+<span class="token comment"># To restore the original branch and stop patching, run &quot;git am --abort&quot;.</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h2 id="archive"><a href="#archive" class="header-anchor">#</a> archive</h2> <ul><li><a href="https://git-scm.com/docs/git-archive" target="_blank" rel="noopener noreferrer">git-archive<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 生成一个可供发布的压缩包</span>
+$ <span class="token function">git</span> archive --list
+<span class="token function">tar</span>
+tgz
+tar.gz
+<span class="token function">zip</span>
+
+<span class="token comment"># Create a Zip archive that contains the contents of the latest commit on the current branch.</span>
+<span class="token function">git</span> archive -o latest.zip HEAD
+<span class="token function">git</span> archive --format <span class="token function">zip</span> --output <span class="token string">&quot;./latest.zip&quot;</span> HEAD -0
+<span class="token function">git</span> archive --format <span class="token function">zip</span> -o latest.zip HEAD
+
+<span class="token function">git</span> archive -o ./updated.zip HEAD <span class="token variable"><span class="token variable">$(</span><span class="token function">git</span> <span class="token function">diff</span> --name-only HEAD^<span class="token variable">)</span></span>
+
+<span class="token function">git</span> archive -o ./latest.zip NEW_COMMIT_ID_HERE <span class="token variable"><span class="token variable">$(</span><span class="token function">git</span> <span class="token function">diff</span> --name-only OLD_COMMIT_ID_HERE NEW_COMMIT_ID_HERE<span class="token variable">)</span></span>
+
+<span class="token comment"># Create a tar archive that contains the contents of the latest commit on the current branch, and extract it in the `/var/tmp/junk` directory.</span>
+<span class="token function">git</span> archive --format<span class="token operator">=</span>tar --prefix<span class="token operator">=</span>junk/ HEAD <span class="token operator">|</span> <span class="token punctuation">(</span>cd /var/tmp/ <span class="token operator">&amp;&amp;</span> <span class="token function">tar</span> xf -<span class="token punctuation">)</span>
+
+<span class="token function">git</span> archive --format<span class="token operator">=</span>tar --prefix<span class="token operator">=</span>junk/ HEAD <span class="token variable"><span class="token variable">$(</span><span class="token function">git</span> <span class="token function">diff</span> --name-only HEAD^<span class="token variable">)</span></span> <span class="token operator">|</span> <span class="token punctuation">(</span>cd /var/tmp/ <span class="token operator">&amp;&amp;</span> <span class="token function">tar</span> xf -<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h2 id="other"><a href="#other" class="header-anchor">#</a> Other</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># git version</span>
+<span class="token function">git</span> --version
+
+<span class="token function">git</span> filter-branch
+
+<span class="token comment"># 把某一个分支到导出成一个文件</span>
+<span class="token function">git</span> bundle create <span class="token punctuation">[</span>file<span class="token punctuation">]</span> <span class="token punctuation">[</span>branch-name<span class="token punctuation">]</span>
+
+<span class="token comment"># 从包中导入分支</span>
+<span class="token comment"># 新建一个分支，分支内容就是上面 git bundle create 命令导出的内容</span>
+<span class="token function">git</span> clone repo.bundle <span class="token operator">&lt;</span>repo-dir<span class="token operator">&gt;</span> -b <span class="token operator">&lt;</span>branch-name<span class="token operator">&gt;</span>
+
+<span class="token comment"># MD5 Encode by git</span>
+<span class="token comment"># git 客户端，里面集成了 md5sum 功能。</span>
+<span class="token builtin class-name">echo</span> <span class="token builtin class-name">test</span> <span class="token operator">|</span> md5sum
+
+<span class="token comment"># Forking a GitHub Repository and Using Pull Requests</span>
+<span class="token comment"># 1. Create a fork</span>
+<span class="token comment"># Just head over to GitHub page and click &quot;Fork&quot; button</span>
+<span class="token comment"># 2. Clone your forked repo to local machine</span>
+<span class="token function">git</span> clone git@github.com:USERNAME/FORKED-PROJECT.git
+<span class="token comment"># 3. Keep your fork up to date(Optional)</span>
+<span class="token comment"># Add &quot;upstream&quot; repo to list of remotes</span>
+<span class="token function">git</span> remote <span class="token function">add</span> upstream https://github.com/UPSTREAM-<span class="token environment constant">USER</span>/ORIGINAL-PROJECT.git
+<span class="token comment"># Verify the new remote named &quot;upstream&quot;</span>
+<span class="token function">git</span> remote -v
+<span class="token comment"># Fetch from upsteam remote</span>
+<span class="token function">git</span> fetch upstream
+<span class="token comment"># View all branches, including those from upstream</span>
+<span class="token function">git</span> branch -av
+<span class="token comment"># Checkout your master branch and merge upstream</span>
+<span class="token function">git</span> checkout master
+<span class="token function">git</span> merge upstream/master
+<span class="token comment"># git pull --rebase upstream master</span>
+
+<span class="token comment"># Merging two unrelated repositories</span>
+<span class="token comment"># 1. Clone your new repo</span>
+<span class="token function">git</span> clone git@github.com:USERNAME/NEW-PROJECT.git
+<span class="token comment"># 2. Add &quot;origin-dest&quot; repo to list of remotes</span>
+<span class="token function">git</span> remote <span class="token function">add</span> origin-dest git@github.com:UPSTREAM-<span class="token environment constant">USER</span>/ORIGINAL-PROJECT.git
+<span class="token comment"># Verify the new remote named &quot;upstream&quot;</span>
+<span class="token function">git</span> remote -v
+<span class="token comment"># Merge origin history into new repo</span>
+<span class="token comment"># Fetch from origin-dest remote</span>
+<span class="token function">git</span> fetch origin-dest
+<span class="token comment"># Checkout your master branch and merge upstream</span>
+<span class="token function">git</span> checkout master
+<span class="token function">git</span> merge origin-dest/master --allow-unrelated-histories
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br></div></div><h2 id="git-commit-guidelines"><a href="#git-commit-guidelines" class="header-anchor">#</a> Git Commit Guidelines</h2> <ul><li><a href="https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines" target="_blank" rel="noopener noreferrer">Angular 团队提交规范<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h2 id="environment-variables"><a href="#environment-variables" class="header-anchor">#</a> Environment Variables</h2> <ul><li><a href="https://git-scm.com/book/en/v2/Git-Internals-Environment-Variables" target="_blank" rel="noopener noreferrer">Git Internals - Environment Variables<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://www.shellhacks.com/git-verbose-mode-debug-fatal-errors/" target="_blank" rel="noopener noreferrer">Git – Verbose Mode: Debug Fatal Errors<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># Debug</span>
+<span class="token assign-left variable">GIT_TRACE</span><span class="token operator">=</span>true <span class="token punctuation">\</span>
+<span class="token assign-left variable">GIT_CURL_VERBOSE</span><span class="token operator">=</span>true <span class="token punctuation">\</span>
+<span class="token assign-left variable">GIT_SSH_COMMAND</span><span class="token operator">=</span><span class="token string">&quot;ssh -vvv&quot;</span> <span class="token punctuation">\</span>
+<span class="token function">git</span> clone <span class="token punctuation">[</span>url<span class="token punctuation">]</span>
+
+<span class="token assign-left variable">GIT_TRACE</span><span class="token operator">=</span>true <span class="token punctuation">\</span>
+<span class="token assign-left variable">GIT_CURL_VERBOSE</span><span class="token operator">=</span>true <span class="token punctuation">\</span>
+<span class="token assign-left variable">GIT_SSH_COMMAND</span><span class="token operator">=</span><span class="token string">&quot;ssh -vvv&quot;</span> <span class="token punctuation">\</span>
+<span class="token assign-left variable">GIT_TRACE_PACK_ACCESS</span><span class="token operator">=</span>true <span class="token punctuation">\</span>
+<span class="token assign-left variable">GIT_TRACE_PACKET</span><span class="token operator">=</span>true <span class="token punctuation">\</span>
+<span class="token assign-left variable">GIT_TRACE_PACKFILE</span><span class="token operator">=</span>true <span class="token punctuation">\</span>
+<span class="token assign-left variable">GIT_TRACE_PERFORMANCE</span><span class="token operator">=</span>true <span class="token punctuation">\</span>
+<span class="token assign-left variable">GIT_TRACE_SETUP</span><span class="token operator">=</span>true <span class="token punctuation">\</span>
+<span class="token assign-left variable">GIT_TRACE_SHALLOW</span><span class="token operator">=</span>true <span class="token punctuation">\</span>
+<span class="token function">git</span> clone <span class="token punctuation">[</span>url<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h2 id="pre-commit"><a href="#pre-commit" class="header-anchor">#</a> pre-commit</h2> <ul><li><a href="https://pre-commit.com/" target="_blank" rel="noopener noreferrer">pre-commit<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <p>A framework for managing and maintaining multi-language pre-commit hooks.</p> <h2 id="monorepo"><a href="#monorepo" class="header-anchor">#</a> Monorepo</h2> <ul><li><a href="https://zhuanlan.zhihu.com/p/77577415" target="_blank" rel="noopener noreferrer">Monorepo 是什么，为什么大家都在用？<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://segmentfault.com/a/1190000019309820?utm_source=tag-newest" target="_blank" rel="noopener noreferrer">Monorepo——大型前端项目的代码管理方式<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://classic.yarnpkg.com/en/docs/workspaces/" target="_blank" rel="noopener noreferrer">Workspaces | Yarn<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://www.perforce.com/blog/vcs/what-monorepo" target="_blank" rel="noopener noreferrer">What is a Monorepo?<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----> <div class="page-edit"><!----> <div class="tags"><a href="/tags/?tag=Git" title="标签">#Git</a></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">3/6/2024, 9:07:56 PM</span></div></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/pages/3da1fa/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">Buildpacks Basic</div></a> <a href="/pages/2a5d48/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">Git merge conflict</div></a></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/pages/3da1fa/" class="prev">Buildpacks Basic</a></span> <span class="next"><a href="/pages/2a5d48/">Git merge conflict</a>→
+      </span></p></div></div></div> <div class="article-list"><div class="article-title"><a href="/archives" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/pages/5a9395/"><div>
+            Ehcache3 Basic
+            <!----></div></a> <span class="date">01-30</span></dt></dl><dl><dd>02</dd> <dt><a href="/pages/71d94f/"><div>
+            Apache HTTP Client Basic
+            <!----></div></a> <span class="date">01-21</span></dt></dl><dl><dd>03</dd> <dt><a href="/pages/4a2fe4/"><div>
+            Oracle Index
+            <!----></div></a> <span class="date">12-27</span></dt></dl> <dl><dd></dd> <dt><a href="/archives" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><div class="icons"><a href="https://github.com/dlwxin/wx-notes" title="GitHub" target="_blank" class="iconfont icon-github"></a><a href="mailto:dlwxin@outlook.com" title="Email" target="_blank" class="iconfont icon-youjian"></a></div> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2020-2024
+    <span>wx | <a href="https://beian.miit.gov.cn" target="_blank">黑ICP备2022000430号</a> | <img src="https://dlwang.xin:11796/image/others/record_icon.png"/><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=23128302000114" target="_blank">黑公网安备 23128302000114号</a></span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.d382a226.js" defer></script><script src="/assets/js/2.87a8012a.js" defer></script><script src="/assets/js/146.a18f49a0.js" defer></script>
+  </body>
+</html>

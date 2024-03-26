@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Linux Command dmidecode | wx-notes</title>
+    <meta name="generator" content="VuePress 1.9.5">
+    <link rel="icon" href="/assets/img/favicon.png">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_3129839_xft6cqs5gc.css">
+    <noscript><meta http-equiv="refresh" content="0; url=https://github.com/xugaoyi/vuepress-theme-vdoing"><style>.theme-vdoing-content { display:none }</noscript>
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.9d774b0a.css" as="style"><link rel="preload" href="/assets/js/app.d382a226.js" as="script"><link rel="preload" href="/assets/js/2.87a8012a.js" as="script"><link rel="preload" href="/assets/js/93.aefaca74.js" as="script"><link rel="prefetch" href="/assets/js/10.8cef245d.js"><link rel="prefetch" href="/assets/js/100.de0de5b3.js"><link rel="prefetch" href="/assets/js/101.e32bb2b9.js"><link rel="prefetch" href="/assets/js/102.0ef9f132.js"><link rel="prefetch" href="/assets/js/103.1914eb13.js"><link rel="prefetch" href="/assets/js/104.b12325e1.js"><link rel="prefetch" href="/assets/js/105.4f29b02d.js"><link rel="prefetch" href="/assets/js/106.902b14af.js"><link rel="prefetch" href="/assets/js/107.34461d9b.js"><link rel="prefetch" href="/assets/js/108.720097f0.js"><link rel="prefetch" href="/assets/js/109.ec66db5b.js"><link rel="prefetch" href="/assets/js/11.06117714.js"><link rel="prefetch" href="/assets/js/110.f767f523.js"><link rel="prefetch" href="/assets/js/111.bcfbfa02.js"><link rel="prefetch" href="/assets/js/112.d8df71d9.js"><link rel="prefetch" href="/assets/js/113.c9a6c922.js"><link rel="prefetch" href="/assets/js/114.3d85868d.js"><link rel="prefetch" href="/assets/js/115.993787ed.js"><link rel="prefetch" href="/assets/js/116.5bd70a45.js"><link rel="prefetch" href="/assets/js/117.7c5ea865.js"><link rel="prefetch" href="/assets/js/118.575c2813.js"><link rel="prefetch" href="/assets/js/119.eff9f6bc.js"><link rel="prefetch" href="/assets/js/12.801127a7.js"><link rel="prefetch" href="/assets/js/120.91de158c.js"><link rel="prefetch" href="/assets/js/121.860d400f.js"><link rel="prefetch" href="/assets/js/122.954d04cd.js"><link rel="prefetch" href="/assets/js/123.5b3e835d.js"><link rel="prefetch" href="/assets/js/124.ec79fba8.js"><link rel="prefetch" href="/assets/js/125.1bbba1d0.js"><link rel="prefetch" href="/assets/js/126.5e7fded7.js"><link rel="prefetch" href="/assets/js/127.e43dfbff.js"><link rel="prefetch" href="/assets/js/128.cef089b9.js"><link rel="prefetch" href="/assets/js/129.326be7ae.js"><link rel="prefetch" href="/assets/js/13.35b92c07.js"><link rel="prefetch" href="/assets/js/130.7cca68b6.js"><link rel="prefetch" href="/assets/js/131.c7695993.js"><link rel="prefetch" href="/assets/js/132.66f9eb75.js"><link rel="prefetch" href="/assets/js/133.499ff9d6.js"><link rel="prefetch" href="/assets/js/134.2f1548d7.js"><link rel="prefetch" href="/assets/js/135.a0e10d3e.js"><link rel="prefetch" href="/assets/js/136.92a270c5.js"><link rel="prefetch" href="/assets/js/137.5b0ac09e.js"><link rel="prefetch" href="/assets/js/138.21de847d.js"><link rel="prefetch" href="/assets/js/139.c058c237.js"><link rel="prefetch" href="/assets/js/14.91560b85.js"><link rel="prefetch" href="/assets/js/140.93275f57.js"><link rel="prefetch" href="/assets/js/141.6c6df578.js"><link rel="prefetch" href="/assets/js/142.16de5023.js"><link rel="prefetch" href="/assets/js/143.6e03e08c.js"><link rel="prefetch" href="/assets/js/144.592bb4ed.js"><link rel="prefetch" href="/assets/js/145.b7bdadcc.js"><link rel="prefetch" href="/assets/js/146.a18f49a0.js"><link rel="prefetch" href="/assets/js/147.dced2ea6.js"><link rel="prefetch" href="/assets/js/148.e06ea4d7.js"><link rel="prefetch" href="/assets/js/149.ac95d564.js"><link rel="prefetch" href="/assets/js/15.4606cb23.js"><link rel="prefetch" href="/assets/js/150.c9e28f94.js"><link rel="prefetch" href="/assets/js/151.a1997c81.js"><link rel="prefetch" href="/assets/js/152.3d479903.js"><link rel="prefetch" href="/assets/js/153.3073c76d.js"><link rel="prefetch" href="/assets/js/154.3bcbee0f.js"><link rel="prefetch" href="/assets/js/155.9dddaff4.js"><link rel="prefetch" href="/assets/js/156.f376855e.js"><link rel="prefetch" href="/assets/js/157.9eb774bc.js"><link rel="prefetch" href="/assets/js/158.44ee8e16.js"><link rel="prefetch" href="/assets/js/159.390af831.js"><link rel="prefetch" href="/assets/js/16.9bcf78d7.js"><link rel="prefetch" href="/assets/js/160.e9a320f2.js"><link rel="prefetch" href="/assets/js/161.2c70b400.js"><link rel="prefetch" href="/assets/js/162.363decbd.js"><link rel="prefetch" href="/assets/js/163.3ce1e512.js"><link rel="prefetch" href="/assets/js/164.e9313d92.js"><link rel="prefetch" href="/assets/js/165.1eb8d002.js"><link rel="prefetch" href="/assets/js/166.ab22eb15.js"><link rel="prefetch" href="/assets/js/167.b000f630.js"><link rel="prefetch" href="/assets/js/168.f25a631c.js"><link rel="prefetch" href="/assets/js/169.b7129356.js"><link rel="prefetch" href="/assets/js/17.0e700bd5.js"><link rel="prefetch" href="/assets/js/170.323672ca.js"><link rel="prefetch" href="/assets/js/171.49820adb.js"><link rel="prefetch" href="/assets/js/172.5367dfe3.js"><link rel="prefetch" href="/assets/js/173.87ce95d1.js"><link rel="prefetch" href="/assets/js/174.4733aac2.js"><link rel="prefetch" href="/assets/js/175.4c8b426b.js"><link rel="prefetch" href="/assets/js/176.34060d5c.js"><link rel="prefetch" href="/assets/js/177.d0404722.js"><link rel="prefetch" href="/assets/js/178.1a46b01f.js"><link rel="prefetch" href="/assets/js/179.9fcc84b5.js"><link rel="prefetch" href="/assets/js/18.d1fcff83.js"><link rel="prefetch" href="/assets/js/180.bdfedfa3.js"><link rel="prefetch" href="/assets/js/181.47e6d26e.js"><link rel="prefetch" href="/assets/js/182.2d878f03.js"><link rel="prefetch" href="/assets/js/183.7e9aace3.js"><link rel="prefetch" href="/assets/js/184.2eff2189.js"><link rel="prefetch" href="/assets/js/185.ba9aab94.js"><link rel="prefetch" href="/assets/js/186.93016b73.js"><link rel="prefetch" href="/assets/js/187.a617b993.js"><link rel="prefetch" href="/assets/js/188.2d5a02f4.js"><link rel="prefetch" href="/assets/js/189.939a191f.js"><link rel="prefetch" href="/assets/js/19.b636a521.js"><link rel="prefetch" href="/assets/js/190.bbbd77c8.js"><link rel="prefetch" href="/assets/js/191.3d110f91.js"><link rel="prefetch" href="/assets/js/192.61fab52d.js"><link rel="prefetch" href="/assets/js/193.07e8db8d.js"><link rel="prefetch" href="/assets/js/194.86983a62.js"><link rel="prefetch" href="/assets/js/195.ea852b80.js"><link rel="prefetch" href="/assets/js/196.f3f47585.js"><link rel="prefetch" href="/assets/js/197.67c354ba.js"><link rel="prefetch" href="/assets/js/198.561b321e.js"><link rel="prefetch" href="/assets/js/199.e25381a9.js"><link rel="prefetch" href="/assets/js/20.3be87fb7.js"><link rel="prefetch" href="/assets/js/200.010ba3c5.js"><link rel="prefetch" href="/assets/js/201.67ac619d.js"><link rel="prefetch" href="/assets/js/202.f09ce2ad.js"><link rel="prefetch" href="/assets/js/203.65d725b4.js"><link rel="prefetch" href="/assets/js/204.f3447d91.js"><link rel="prefetch" href="/assets/js/205.1f095751.js"><link rel="prefetch" href="/assets/js/206.d932f379.js"><link rel="prefetch" href="/assets/js/207.f1b07592.js"><link rel="prefetch" href="/assets/js/208.ae8c6256.js"><link rel="prefetch" href="/assets/js/209.35180e8c.js"><link rel="prefetch" href="/assets/js/21.49934eb6.js"><link rel="prefetch" href="/assets/js/210.2c20b67d.js"><link rel="prefetch" href="/assets/js/211.b6b9d090.js"><link rel="prefetch" href="/assets/js/212.9aabd8b9.js"><link rel="prefetch" href="/assets/js/213.af591f91.js"><link rel="prefetch" href="/assets/js/214.243220ba.js"><link rel="prefetch" href="/assets/js/215.91918129.js"><link rel="prefetch" href="/assets/js/216.d778718b.js"><link rel="prefetch" href="/assets/js/217.dac38162.js"><link rel="prefetch" href="/assets/js/218.3ad31069.js"><link rel="prefetch" href="/assets/js/219.9197a62a.js"><link rel="prefetch" href="/assets/js/22.a7d6a9eb.js"><link rel="prefetch" href="/assets/js/220.bbd7b124.js"><link rel="prefetch" href="/assets/js/221.0efe0337.js"><link rel="prefetch" href="/assets/js/222.700049fd.js"><link rel="prefetch" href="/assets/js/223.46405e41.js"><link rel="prefetch" href="/assets/js/224.6e350c81.js"><link rel="prefetch" href="/assets/js/225.1993613f.js"><link rel="prefetch" href="/assets/js/226.acb60b10.js"><link rel="prefetch" href="/assets/js/227.5c29d8d9.js"><link rel="prefetch" href="/assets/js/228.f2fa7cf9.js"><link rel="prefetch" href="/assets/js/229.ee960944.js"><link rel="prefetch" href="/assets/js/23.5400645b.js"><link rel="prefetch" href="/assets/js/230.068b06bc.js"><link rel="prefetch" href="/assets/js/231.34d85795.js"><link rel="prefetch" href="/assets/js/232.163f77c8.js"><link rel="prefetch" href="/assets/js/233.245df212.js"><link rel="prefetch" href="/assets/js/234.b889ca13.js"><link rel="prefetch" href="/assets/js/235.f8a222af.js"><link rel="prefetch" href="/assets/js/236.9741ba00.js"><link rel="prefetch" href="/assets/js/237.5cb51cf1.js"><link rel="prefetch" href="/assets/js/238.c7b8dbd4.js"><link rel="prefetch" href="/assets/js/239.a74a4736.js"><link rel="prefetch" href="/assets/js/24.854a29ed.js"><link rel="prefetch" href="/assets/js/240.3c8801b3.js"><link rel="prefetch" href="/assets/js/241.1930e71a.js"><link rel="prefetch" href="/assets/js/242.31d76505.js"><link rel="prefetch" href="/assets/js/243.36c52617.js"><link rel="prefetch" href="/assets/js/244.4adc8887.js"><link rel="prefetch" href="/assets/js/245.f221ffd4.js"><link rel="prefetch" href="/assets/js/246.03b3149d.js"><link rel="prefetch" href="/assets/js/247.cb26f1ac.js"><link rel="prefetch" href="/assets/js/248.e0b76f15.js"><link rel="prefetch" href="/assets/js/249.cde39b0c.js"><link rel="prefetch" href="/assets/js/25.d429e2ad.js"><link rel="prefetch" href="/assets/js/250.30e7e869.js"><link rel="prefetch" href="/assets/js/251.b14e683b.js"><link rel="prefetch" href="/assets/js/252.5a2a17bb.js"><link rel="prefetch" href="/assets/js/253.64575468.js"><link rel="prefetch" href="/assets/js/254.5ee1d4b0.js"><link rel="prefetch" href="/assets/js/255.a701e12c.js"><link rel="prefetch" href="/assets/js/256.205df8b5.js"><link rel="prefetch" href="/assets/js/257.62941e39.js"><link rel="prefetch" href="/assets/js/258.82c01d6a.js"><link rel="prefetch" href="/assets/js/259.74f3d1a1.js"><link rel="prefetch" href="/assets/js/26.3716f14a.js"><link rel="prefetch" href="/assets/js/260.a07fea6f.js"><link rel="prefetch" href="/assets/js/261.0e9cc558.js"><link rel="prefetch" href="/assets/js/262.8e381643.js"><link rel="prefetch" href="/assets/js/263.1da50740.js"><link rel="prefetch" href="/assets/js/264.3201225f.js"><link rel="prefetch" href="/assets/js/265.778e81a2.js"><link rel="prefetch" href="/assets/js/266.6fc8c8f2.js"><link rel="prefetch" href="/assets/js/267.6058e70a.js"><link rel="prefetch" href="/assets/js/268.90728fbe.js"><link rel="prefetch" href="/assets/js/269.57a1b247.js"><link rel="prefetch" href="/assets/js/27.90a02103.js"><link rel="prefetch" href="/assets/js/270.e1fbaf15.js"><link rel="prefetch" href="/assets/js/271.67bd6fa1.js"><link rel="prefetch" href="/assets/js/272.324204c9.js"><link rel="prefetch" href="/assets/js/273.3d723913.js"><link rel="prefetch" href="/assets/js/274.34e0cc99.js"><link rel="prefetch" href="/assets/js/275.c7b6a30a.js"><link rel="prefetch" href="/assets/js/276.4475ed4a.js"><link rel="prefetch" href="/assets/js/277.108044d1.js"><link rel="prefetch" href="/assets/js/278.dc6f0fad.js"><link rel="prefetch" href="/assets/js/279.c2c6595a.js"><link rel="prefetch" href="/assets/js/28.7d19fe1e.js"><link rel="prefetch" href="/assets/js/280.00b3a96f.js"><link rel="prefetch" href="/assets/js/281.35218fe6.js"><link rel="prefetch" href="/assets/js/282.833aa9a1.js"><link rel="prefetch" href="/assets/js/283.b854e98d.js"><link rel="prefetch" href="/assets/js/284.55390ee5.js"><link rel="prefetch" href="/assets/js/285.e60c8473.js"><link rel="prefetch" href="/assets/js/286.1fb42b39.js"><link rel="prefetch" href="/assets/js/287.76d416c4.js"><link rel="prefetch" href="/assets/js/288.cc30790d.js"><link rel="prefetch" href="/assets/js/289.fead2fdb.js"><link rel="prefetch" href="/assets/js/29.7eeb3de4.js"><link rel="prefetch" href="/assets/js/290.06e7dd5c.js"><link rel="prefetch" href="/assets/js/291.a073502f.js"><link rel="prefetch" href="/assets/js/292.ee597491.js"><link rel="prefetch" href="/assets/js/293.b55cd65c.js"><link rel="prefetch" href="/assets/js/294.ee3bbd54.js"><link rel="prefetch" href="/assets/js/295.5e680082.js"><link rel="prefetch" href="/assets/js/296.cc18faac.js"><link rel="prefetch" href="/assets/js/297.c421a612.js"><link rel="prefetch" href="/assets/js/298.01889782.js"><link rel="prefetch" href="/assets/js/299.2c4c2cb2.js"><link rel="prefetch" href="/assets/js/3.14f582e8.js"><link rel="prefetch" href="/assets/js/30.cba82c26.js"><link rel="prefetch" href="/assets/js/300.14aa1fc0.js"><link rel="prefetch" href="/assets/js/301.85d64cdf.js"><link rel="prefetch" href="/assets/js/302.e2815e7f.js"><link rel="prefetch" href="/assets/js/303.98c1febb.js"><link rel="prefetch" href="/assets/js/304.50df0bb2.js"><link rel="prefetch" href="/assets/js/305.41b537b2.js"><link rel="prefetch" href="/assets/js/306.40fc4ca0.js"><link rel="prefetch" href="/assets/js/307.e7f1fd37.js"><link rel="prefetch" href="/assets/js/308.9c019000.js"><link rel="prefetch" href="/assets/js/309.932890cc.js"><link rel="prefetch" href="/assets/js/31.09ae525c.js"><link rel="prefetch" href="/assets/js/310.4ee417ea.js"><link rel="prefetch" href="/assets/js/311.bb2655cc.js"><link rel="prefetch" href="/assets/js/312.8448f772.js"><link rel="prefetch" href="/assets/js/313.1cc95dd2.js"><link rel="prefetch" href="/assets/js/314.a0e4ce60.js"><link rel="prefetch" href="/assets/js/315.92099df1.js"><link rel="prefetch" href="/assets/js/316.4ccce55e.js"><link rel="prefetch" href="/assets/js/317.de8cc4ad.js"><link rel="prefetch" href="/assets/js/318.475f44de.js"><link rel="prefetch" href="/assets/js/319.f4f8a31f.js"><link rel="prefetch" href="/assets/js/32.cf5672f3.js"><link rel="prefetch" href="/assets/js/320.64cbd076.js"><link rel="prefetch" href="/assets/js/321.77581796.js"><link rel="prefetch" href="/assets/js/322.9fa19651.js"><link rel="prefetch" href="/assets/js/323.8dc23ccd.js"><link rel="prefetch" href="/assets/js/324.00d7ed12.js"><link rel="prefetch" href="/assets/js/325.0e9f380d.js"><link rel="prefetch" href="/assets/js/326.95883d38.js"><link rel="prefetch" href="/assets/js/327.b0415db7.js"><link rel="prefetch" href="/assets/js/328.89746536.js"><link rel="prefetch" href="/assets/js/329.c1a43c4d.js"><link rel="prefetch" href="/assets/js/33.a7f5ab01.js"><link rel="prefetch" href="/assets/js/330.9ddac96b.js"><link rel="prefetch" href="/assets/js/331.9d697ac8.js"><link rel="prefetch" href="/assets/js/332.6ee28795.js"><link rel="prefetch" href="/assets/js/333.170f7a62.js"><link rel="prefetch" href="/assets/js/334.cb9d727c.js"><link rel="prefetch" href="/assets/js/335.8a3b74f8.js"><link rel="prefetch" href="/assets/js/336.8c897ca1.js"><link rel="prefetch" href="/assets/js/34.0361ed84.js"><link rel="prefetch" href="/assets/js/35.7944f93a.js"><link rel="prefetch" href="/assets/js/36.cb553688.js"><link rel="prefetch" href="/assets/js/37.06e9f182.js"><link rel="prefetch" href="/assets/js/38.2472ee7f.js"><link rel="prefetch" href="/assets/js/39.82eca662.js"><link rel="prefetch" href="/assets/js/4.837e9ea1.js"><link rel="prefetch" href="/assets/js/40.022ad8aa.js"><link rel="prefetch" href="/assets/js/41.821fb36a.js"><link rel="prefetch" href="/assets/js/42.180ab912.js"><link rel="prefetch" href="/assets/js/43.d9375ce1.js"><link rel="prefetch" href="/assets/js/44.d212f8b3.js"><link rel="prefetch" href="/assets/js/45.ba520f2b.js"><link rel="prefetch" href="/assets/js/46.5447129c.js"><link rel="prefetch" href="/assets/js/47.3e3fdc9a.js"><link rel="prefetch" href="/assets/js/48.d96c69a1.js"><link rel="prefetch" href="/assets/js/49.96ac804b.js"><link rel="prefetch" href="/assets/js/5.94383f14.js"><link rel="prefetch" href="/assets/js/50.ff732aa7.js"><link rel="prefetch" href="/assets/js/51.cafabf54.js"><link rel="prefetch" href="/assets/js/52.8cbc09b9.js"><link rel="prefetch" href="/assets/js/53.7bc1ec87.js"><link rel="prefetch" href="/assets/js/54.45d36044.js"><link rel="prefetch" href="/assets/js/55.e7192e85.js"><link rel="prefetch" href="/assets/js/56.711184df.js"><link rel="prefetch" href="/assets/js/57.a617b81c.js"><link rel="prefetch" href="/assets/js/58.176a088e.js"><link rel="prefetch" href="/assets/js/59.41c6b746.js"><link rel="prefetch" href="/assets/js/6.2bd98a80.js"><link rel="prefetch" href="/assets/js/60.a9ad50e8.js"><link rel="prefetch" href="/assets/js/61.4d205bfa.js"><link rel="prefetch" href="/assets/js/62.ecefe86d.js"><link rel="prefetch" href="/assets/js/63.d3924f46.js"><link rel="prefetch" href="/assets/js/64.40f6beaf.js"><link rel="prefetch" href="/assets/js/65.001bcc37.js"><link rel="prefetch" href="/assets/js/66.f281aa40.js"><link rel="prefetch" href="/assets/js/67.4bd2ef0c.js"><link rel="prefetch" href="/assets/js/68.9ff84d3d.js"><link rel="prefetch" href="/assets/js/69.e21e77b0.js"><link rel="prefetch" href="/assets/js/7.f2ae7930.js"><link rel="prefetch" href="/assets/js/70.8715f006.js"><link rel="prefetch" href="/assets/js/71.0804d179.js"><link rel="prefetch" href="/assets/js/72.d47a4a99.js"><link rel="prefetch" href="/assets/js/73.a72ed2e1.js"><link rel="prefetch" href="/assets/js/74.bf813865.js"><link rel="prefetch" href="/assets/js/75.0f9354a3.js"><link rel="prefetch" href="/assets/js/76.521fe63b.js"><link rel="prefetch" href="/assets/js/77.da026e66.js"><link rel="prefetch" href="/assets/js/78.caf4ae61.js"><link rel="prefetch" href="/assets/js/79.0ca61053.js"><link rel="prefetch" href="/assets/js/8.bf1039e7.js"><link rel="prefetch" href="/assets/js/80.cd005ed5.js"><link rel="prefetch" href="/assets/js/81.6d9c7fc6.js"><link rel="prefetch" href="/assets/js/82.e90bac88.js"><link rel="prefetch" href="/assets/js/83.63b5d58f.js"><link rel="prefetch" href="/assets/js/84.6d112559.js"><link rel="prefetch" href="/assets/js/85.fb99dd6c.js"><link rel="prefetch" href="/assets/js/86.dde3c192.js"><link rel="prefetch" href="/assets/js/87.b011c014.js"><link rel="prefetch" href="/assets/js/88.493b12c1.js"><link rel="prefetch" href="/assets/js/89.c2e431ec.js"><link rel="prefetch" href="/assets/js/9.b42343bd.js"><link rel="prefetch" href="/assets/js/90.eecd1598.js"><link rel="prefetch" href="/assets/js/91.74f45fff.js"><link rel="prefetch" href="/assets/js/92.ea554734.js"><link rel="prefetch" href="/assets/js/94.9d983301.js"><link rel="prefetch" href="/assets/js/95.13a41e26.js"><link rel="prefetch" href="/assets/js/96.92799e4e.js"><link rel="prefetch" href="/assets/js/97.dc0873a3.js"><link rel="prefetch" href="/assets/js/98.1032eb92.js"><link rel="prefetch" href="/assets/js/99.b28f8efa.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9d774b0a.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">wx-notes</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/pages/948095/" class="nav-link">Top</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="BE" class="dropdown-title"><a href="/backend/" class="link-title">BE</a> <span class="title" style="display:none;">BE</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/0a3d16/" class="nav-link">Java</a></li><li class="dropdown-item"><!----> <a href="/pages/907e2d/" class="nav-link">Python</a></li><li class="dropdown-item"><!----> <a href="/pages/f1ea5b/" class="nav-link">Go</a></li><li class="dropdown-item"><!----> <a href="/pages/ee7ace/" class="nav-link">Framework</a></li><li class="dropdown-item"><!----> <a href="/pages/f1fcc1/" class="nav-link">Database</a></li><li class="dropdown-item"><!----> <a href="/pages/ab7fe2/" class="nav-link">MessageMiddleware</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="FE" class="dropdown-title"><a href="/frontend/" class="link-title">FE</a> <span class="title" style="display:none;">FE</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/0767c1/" class="nav-link">FE Docs</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="More" class="dropdown-title"><a href="/more/" class="link-title">More</a> <span class="title" style="display:none;">More</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/6f7935/" class="nav-link">OperatingSystem</a></li><li class="dropdown-item"><!----> <a href="/pages/570625/" class="nav-link">Container</a></li><li class="dropdown-item"><!----> <a href="/pages/b5bf02/" class="nav-link">DevOps</a></li><li class="dropdown-item"><!----> <a href="/pages/3e0468/" class="nav-link">WebServer</a></li><li class="dropdown-item"><!----> <a href="/pages/5c5daa/" class="nav-link">Cloud</a></li><li class="dropdown-item"><!----> <a href="/pages/49864f/" class="nav-link">GPT</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Others" class="dropdown-title"><a href="/others/" class="link-title">Others</a> <span class="title" style="display:none;">Others</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/b95cf8/" class="nav-link">PackageManager</a></li><li class="dropdown-item"><!----> <a href="/pages/6a8a1c/" class="nav-link">TestTool</a></li><li class="dropdown-item"><!----> <a href="/pages/8ca6e0/" class="nav-link">EditorAndIDE</a></li><li class="dropdown-item"><!----> <a href="/pages/b95cf8/" class="nav-link">CommandLineTool</a></li><li class="dropdown-item"><!----> <a href="/pages/ccee87/" class="nav-link">Browser</a></li><li class="dropdown-item"><!----> <a href="/pages/a9d7d6/" class="nav-link">Articles</a></li><li class="dropdown-item"><!----> <a href="/pages/9d47df/" class="nav-link">Others</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Index" class="dropdown-title"><a href="/archives/" class="link-title">Index</a> <span class="title" style="display:none;">Index</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">Categories</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">Tags</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">Archives</a></li></ul></div></div> <a href="https://github.com/dlwxin/wx-notes" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><div class="blogger"><img src="https://dlwang.xin:11796/image/avatar/avatar03-small.jpg"> <div class="blogger-info"><h3>wx</h3> <span>Tomorrow is always fresh, with no mistakes in it.</span></div></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/pages/948095/" class="nav-link">Top</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="BE" class="dropdown-title"><a href="/backend/" class="link-title">BE</a> <span class="title" style="display:none;">BE</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/0a3d16/" class="nav-link">Java</a></li><li class="dropdown-item"><!----> <a href="/pages/907e2d/" class="nav-link">Python</a></li><li class="dropdown-item"><!----> <a href="/pages/f1ea5b/" class="nav-link">Go</a></li><li class="dropdown-item"><!----> <a href="/pages/ee7ace/" class="nav-link">Framework</a></li><li class="dropdown-item"><!----> <a href="/pages/f1fcc1/" class="nav-link">Database</a></li><li class="dropdown-item"><!----> <a href="/pages/ab7fe2/" class="nav-link">MessageMiddleware</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="FE" class="dropdown-title"><a href="/frontend/" class="link-title">FE</a> <span class="title" style="display:none;">FE</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/0767c1/" class="nav-link">FE Docs</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="More" class="dropdown-title"><a href="/more/" class="link-title">More</a> <span class="title" style="display:none;">More</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/6f7935/" class="nav-link">OperatingSystem</a></li><li class="dropdown-item"><!----> <a href="/pages/570625/" class="nav-link">Container</a></li><li class="dropdown-item"><!----> <a href="/pages/b5bf02/" class="nav-link">DevOps</a></li><li class="dropdown-item"><!----> <a href="/pages/3e0468/" class="nav-link">WebServer</a></li><li class="dropdown-item"><!----> <a href="/pages/5c5daa/" class="nav-link">Cloud</a></li><li class="dropdown-item"><!----> <a href="/pages/49864f/" class="nav-link">GPT</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Others" class="dropdown-title"><a href="/others/" class="link-title">Others</a> <span class="title" style="display:none;">Others</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/b95cf8/" class="nav-link">PackageManager</a></li><li class="dropdown-item"><!----> <a href="/pages/6a8a1c/" class="nav-link">TestTool</a></li><li class="dropdown-item"><!----> <a href="/pages/8ca6e0/" class="nav-link">EditorAndIDE</a></li><li class="dropdown-item"><!----> <a href="/pages/b95cf8/" class="nav-link">CommandLineTool</a></li><li class="dropdown-item"><!----> <a href="/pages/ccee87/" class="nav-link">Browser</a></li><li class="dropdown-item"><!----> <a href="/pages/a9d7d6/" class="nav-link">Articles</a></li><li class="dropdown-item"><!----> <a href="/pages/9d47df/" class="nav-link">Others</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Index" class="dropdown-title"><a href="/archives/" class="link-title">Index</a> <span class="title" style="display:none;">Index</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">Categories</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">Tags</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">Archives</a></li></ul></div></div> <a href="https://github.com/dlwxin/wx-notes" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>OperatingSystem</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading open"><span>Linux</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/6f7935/" class="sidebar-link">Linux</a></li><li><a href="/pages/1d457b/" class="sidebar-link">Create Bash Aliases</a></li><li><a href="/pages/908265/" class="sidebar-link">Linux common commamds</a></li><li><a href="/pages/74c82e/" class="sidebar-link">Linux Command find</a></li><li><a href="/pages/3b0abd/" class="sidebar-link">Linux Commands about user</a></li><li><a href="/pages/5baabb/" class="sidebar-link">Linux Commands scp and ftp</a></li><li><a href="/pages/73a157/" class="sidebar-link">Linux Command diff</a></li><li><a href="/pages/dcb1cd/" class="sidebar-link">Linux packaging and compression</a></li><li><a href="/pages/955dc3/" class="sidebar-link">Linux Vim text editor</a></li><li><a href="/pages/75c92e/" class="sidebar-link">Linux File Permissions</a></li><li><a href="/pages/d8d782/" aria-current="page" class="active sidebar-link">Linux Command dmidecode</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level2"><a href="/pages/d8d782/#overview" class="sidebar-link">Overview</a></li><li class="sidebar-sub-header level2"><a href="/pages/d8d782/#common-commands" class="sidebar-link">Common Commands</a></li><li class="sidebar-sub-header level2"><a href="/pages/d8d782/#dmidecode-支持的数字参数" class="sidebar-link">dmidecode 支持的数字参数</a></li></ul></li><li><a href="/pages/759582/" class="sidebar-link">Linux Command expect</a></li><li><a href="/pages/0b86b1/" class="sidebar-link">Linux Commands df and du</a></li><li><a href="/pages/1b05e3/" class="sidebar-link">Linux Run SCP SSH Without Password</a></li><li><a href="/pages/fa4788/" class="sidebar-link">Linux common question</a></li><li><a href="/pages/68f2bf/" class="sidebar-link">Shell</a></li><li><a href="/pages/ea121a/" class="sidebar-link">Shell Command sed</a></li><li><a href="/pages/cd6b1f/" class="sidebar-link">Shell Command test</a></li><li><a href="/pages/d664f6/" class="sidebar-link">Shell Command awk</a></li><li><a href="/pages/ac2689/" class="sidebar-link">Shell Command grep</a></li><li><a href="/pages/1677f0/" class="sidebar-link">Shell Input Output Redirection</a></li><li><a href="/pages/6e998d/" class="sidebar-link">Shell string interception</a></li><li><a href="/pages/151885/" class="sidebar-link">Shell Auto Completion</a></li><li><a href="/pages/84a54b/" class="sidebar-link">Shell reading content line by line</a></li><li><a href="/pages/dd1ecd/" class="sidebar-link">Shell Array and Map</a></li><li><a href="/pages/f46d1b/" class="sidebar-link">Shell script examples</a></li><li><a href="/pages/044c59/" class="sidebar-link">Shell Chore</a></li><li><a href="/pages/368de5/" class="sidebar-link">Linux interview question</a></li></ul></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>Windows</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>MacOS</span> <span class="arrow right"></span></p> <!----></section></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Container</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>DevOps</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>WebServer</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>GPT</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Cloud</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <div><main class="page"><div class="theme-vdoing-wrapper bg-style-1"><div class="articleInfo-wrap" data-v-057748f7><div class="articleInfo" data-v-057748f7><ul class="breadcrumbs" data-v-057748f7><li data-v-057748f7><a href="/" title="首页" class="iconfont icon-home router-link-active" data-v-057748f7></a></li> <li data-v-057748f7><a href="/more/#More" data-v-057748f7>More</a></li><li data-v-057748f7><a href="/more/#OperatingSystem" data-v-057748f7>OperatingSystem</a></li><li data-v-057748f7><a href="/more/#Linux" data-v-057748f7>Linux</a></li></ul> <div class="info" data-v-057748f7><div title="作者" class="author iconfont icon-touxiang" data-v-057748f7><a href="https://github.com/dlwxin/wx-notes" target="_blank" title="作者" class="beLink" data-v-057748f7>wx</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-057748f7><a href="javascript:;" data-v-057748f7>2021-10-30</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-title">目录</div> <div class="right-menu-content"></div></div></div> <h1><!---->Linux Command dmidecode<!----></h1> <!----> <div class="theme-vdoing-content content__default"><ul><li><a href="https://www.cnblogs.com/52py/p/10773678.html" target="_blank" rel="noopener noreferrer">linux 查看主板型号、CPU、显卡、硬盘等信息<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://blog.csdn.net/zhaomininternational/article/details/41725271" target="_blank" rel="noopener noreferrer">linux 下查看主板内存槽与内存信息<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://blog.csdn.net/weixin_35346265/article/details/116624252" target="_blank" rel="noopener noreferrer">linux 怎么看能装几个内存条,linux 怎么查看内存条数及每根内存大小<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h2 id="overview"><a href="#overview" class="header-anchor">#</a> Overview</h2> <p><code>dmidecode</code> 以一种可读的方式 dump 出机器的 DMI(Desktop Management Interface)信息。这些信息包括了硬件以及 BIOS，既可以得到当前的配置，也可以得到系统支持的最大配置，比如说支持的最大内存数等。</p> <p>DMI 有人也叫 SMBIOS(System Management BIOS)，这两个标准都由 DMTF(Desktop Management Task Force)开发。</p> <details class="custom-block details"><summary>Click me to view the full info via dmidecode command</summary> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>root:~<span class="token comment"># dmidecode | cat</span>
+<span class="token comment"># dmidecode 3.2</span>
+Getting SMBIOS data from sysfs.
+SMBIOS <span class="token number">3.0</span>.0 present.
+Table at 0xDCDF3000.
+
+Handle 0x0000, DMI <span class="token builtin class-name">type</span> <span class="token number">0</span>, <span class="token number">24</span> bytes
+BIOS Information
+        Vendor: LENOVO
+        Version: M1AKT3FA
+        Release Date: 03/22/2019
+        Address: 0xF0000
+        Runtime Size: <span class="token number">64</span> kB
+        ROM Size: <span class="token number">8</span> MB
+        Characteristics:
+                PCI is supported
+                BIOS is upgradeable
+                BIOS shadowing is allowed
+                Boot from CD is supported
+                Selectable boot is supported
+                BIOS ROM is socketed
+                EDD is supported
+                <span class="token number">5.25</span><span class="token string">&quot;/1.2 MB floppy services are supported (int 13h)
+                3.5&quot;</span>/720 kB floppy services are supported <span class="token punctuation">(</span>int 13h<span class="token punctuation">)</span>
+                <span class="token number">3.5</span>&quot;/2.88 MB floppy services are supported <span class="token punctuation">(</span>int 13h<span class="token punctuation">)</span>
+                Print <span class="token function">screen</span> <span class="token function">service</span> is supported <span class="token punctuation">(</span>int 5h<span class="token punctuation">)</span>
+                <span class="token number">8042</span> keyboard services are supported <span class="token punctuation">(</span>int 9h<span class="token punctuation">)</span>
+                Serial services are supported <span class="token punctuation">(</span>int 14h<span class="token punctuation">)</span>
+                Printer services are supported <span class="token punctuation">(</span>int 17h<span class="token punctuation">)</span>
+                ACPI is supported
+                USB legacy is supported
+                BIOS boot specification is supported
+                Targeted content distribution is supported
+                UEFI is supported
+        BIOS Revision: <span class="token number">1.45</span>
+        Firmware Revision: <span class="token number">1.9</span>
+
+Handle 0x0001, DMI <span class="token builtin class-name">type</span> <span class="token number">1</span>, <span class="token number">27</span> bytes
+System Information
+        <span class="token comment"># 服务器品牌</span>
+        Manufacturer: LENOVO
+        Product Name: 10MUS1EX1K
+        Version: ThinkCentre M910q
+        Serial Number: PC0QBVGK
+        UUID: 2c52f880-b6f4-11e7-968a-d8ac3e773200
+        Wake-up Type: Power Switch
+        SKU Number: LENOVO_MT_10MU_BU_Think_FM_ThinkCentre M910q
+        Family: ThinkCentre M910q
+
+Handle 0x0002, DMI <span class="token builtin class-name">type</span> <span class="token number">2</span>, <span class="token number">15</span> bytes
+Base Board Information
+        <span class="token comment"># 主板(mother board)型号/主板信息</span>
+        Manufacturer: LENOVO
+        Product Name: 310B
+        Version: SDK0J40697 WIN <span class="token number">3305070536729</span>
+        Serial Number:
+        Asset Tag:
+        Features:
+                Board is a hosting board
+                Board is replaceable
+        Location In Chassis: Default string
+        Chassis Handle: 0x0003
+        Type: Motherboard
+        Contained Object Handles: <span class="token number">0</span>
+
+Handle 0x0003, DMI <span class="token builtin class-name">type</span> <span class="token number">3</span>, <span class="token number">22</span> bytes
+Chassis Information
+        Manufacturer: LENOVO
+        Type: Mini PC
+        Lock: Not Present
+        Version: None
+        Serial Number: PC0QBVGK
+        Asset Tag:
+        Boot-up State: Safe
+        Power Supply State: Safe
+        Thermal State: Safe
+        Security Status: None
+        OEM Information: 0x00000000
+        Height: Unspecified
+        Number Of Power Cords: <span class="token number">1</span>
+        Contained Elements: <span class="token number">0</span>
+        SKU Number: Default string
+
+Handle 0x0004, DMI <span class="token builtin class-name">type</span> <span class="token number">8</span>, <span class="token number">9</span> bytes
+Port Connector Information
+        Internal Reference Designator: J1A1
+        Internal Connector Type: None
+        External Reference Designator: PS2Mouse
+        External Connector Type: PS/2
+        Port Type: Mouse Port
+
+Handle 0x0005, DMI <span class="token builtin class-name">type</span> <span class="token number">8</span>, <span class="token number">9</span> bytes
+Port Connector Information
+        Internal Reference Designator: J1A1
+        Internal Connector Type: None
+        External Reference Designator: Keyboard
+        External Connector Type: PS/2
+        Port Type: Keyboard Port
+
+Handle 0x0006, DMI <span class="token builtin class-name">type</span> <span class="token number">8</span>, <span class="token number">9</span> bytes
+Port Connector Information
+        Internal Reference Designator: J2A1
+        Internal Connector Type: None
+        External Reference Designator: TV Out
+        External Connector Type: Mini Centronics Type-14
+        Port Type: Other
+
+Handle 0x0007, DMI <span class="token builtin class-name">type</span> <span class="token number">8</span>, <span class="token number">9</span> bytes
+Port Connector Information
+        Internal Reference Designator: J2A2A
+        Internal Connector Type: None
+        External Reference Designator: COM A
+        External Connector Type: DB-9 male
+        Port Type: Serial Port 16550A Compatible
+
+Handle 0x0008, DMI <span class="token builtin class-name">type</span> <span class="token number">8</span>, <span class="token number">9</span> bytes
+Port Connector Information
+        Internal Reference Designator: J2A2B
+        Internal Connector Type: None
+        External Reference Designator: Video
+        External Connector Type: DB-15 female
+        Port Type: Video Port
+
+Handle 0x0009, DMI <span class="token builtin class-name">type</span> <span class="token number">8</span>, <span class="token number">9</span> bytes
+Port Connector Information
+        Internal Reference Designator: J3A1
+        Internal Connector Type: None
+        External Reference Designator: USB1
+        External Connector Type: Access Bus <span class="token punctuation">(</span>USB<span class="token punctuation">)</span>
+        Port Type: USB
+
+Handle 0x000A, DMI <span class="token builtin class-name">type</span> <span class="token number">8</span>, <span class="token number">9</span> bytes
+Port Connector Information
+        Internal Reference Designator: J3A1
+        Internal Connector Type: None
+        External Reference Designator: USB2
+        External Connector Type: Access Bus <span class="token punctuation">(</span>USB<span class="token punctuation">)</span>
+        Port Type: USB
+
+Handle 0x000B, DMI <span class="token builtin class-name">type</span> <span class="token number">8</span>, <span class="token number">9</span> bytes
+Port Connector Information
+        Internal Reference Designator: J3A1
+        Internal Connector Type: None
+        External Reference Designator: USB3
+        External Connector Type: Access Bus <span class="token punctuation">(</span>USB<span class="token punctuation">)</span>
+        Port Type: USB
+
+Handle 0x000C, DMI <span class="token builtin class-name">type</span> <span class="token number">8</span>, <span class="token number">9</span> bytes
+Port Connector Information
+        Internal Reference Designator: J9A1 - TPM HDR
+        Internal Connector Type: Other
+        External Reference Designator: Not Specified
+        External Connector Type: None
+        Port Type: Other
+
+Handle 0x000D, DMI <span class="token builtin class-name">type</span> <span class="token number">8</span>, <span class="token number">9</span> bytes
+Port Connector Information
+        Internal Reference Designator: J9C1 - PCIE DOCKING CONN
+        Internal Connector Type: Other
+        External Reference Designator: Not Specified
+        External Connector Type: None
+        Port Type: Other
+
+Handle 0x000E, DMI <span class="token builtin class-name">type</span> <span class="token number">8</span>, <span class="token number">9</span> bytes
+Port Connector Information
+        Internal Reference Designator: J2B3 - CPU FAN
+        Internal Connector Type: Other
+        External Reference Designator: Not Specified
+        External Connector Type: None
+        Port Type: Other
+
+Handle 0x000F, DMI <span class="token builtin class-name">type</span> <span class="token number">8</span>, <span class="token number">9</span> bytes
+Port Connector Information
+        Internal Reference Designator: J6C2 - EXT HDMI
+        Internal Connector Type: Other
+        External Reference Designator: Not Specified
+        External Connector Type: None
+        Port Type: Other
+
+Handle 0x0010, DMI <span class="token builtin class-name">type</span> <span class="token number">8</span>, <span class="token number">9</span> bytes
+Port Connector Information
+        Internal Reference Designator: J3C1 - GMCH FAN
+        Internal Connector Type: Other
+        External Reference Designator: Not Specified
+        External Connector Type: None
+        Port Type: Other
+
+Handle 0x0011, DMI <span class="token builtin class-name">type</span> <span class="token number">8</span>, <span class="token number">9</span> bytes
+Port Connector Information
+        Internal Reference Designator: J1D1 - ITP
+        Internal Connector Type: Other
+        External Reference Designator: Not Specified
+        External Connector Type: None
+        Port Type: Other
+
+Handle 0x0012, DMI <span class="token builtin class-name">type</span> <span class="token number">8</span>, <span class="token number">9</span> bytes
+Port Connector Information
+        Internal Reference Designator: J9E2 - MDC INTPSR
+        Internal Connector Type: Other
+        External Reference Designator: Not Specified
+        External Connector Type: None
+        Port Type: Other
+
+Handle 0x0013, DMI <span class="token builtin class-name">type</span> <span class="token number">8</span>, <span class="token number">9</span> bytes
+Port Connector Information
+        Internal Reference Designator: J9E4 - MDC INTPSR
+        Internal Connector Type: Other
+        External Reference Designator: Not Specified
+        External Connector Type: None
+        Port Type: Other
+
+Handle 0x0014, DMI <span class="token builtin class-name">type</span> <span class="token number">8</span>, <span class="token number">9</span> bytes
+Port Connector Information
+        Internal Reference Designator: J9E3 - LPC HOT DOCKING
+        Internal Connector Type: Other
+        External Reference Designator: Not Specified
+        External Connector Type: None
+        Port Type: Other
+
+Handle 0x0015, DMI <span class="token builtin class-name">type</span> <span class="token number">8</span>, <span class="token number">9</span> bytes
+Port Connector Information
+        Internal Reference Designator: J9E1 - SCAN MATRIX
+        Internal Connector Type: Other
+        External Reference Designator: Not Specified
+        External Connector Type: None
+        Port Type: Other
+
+Handle 0x0016, DMI <span class="token builtin class-name">type</span> <span class="token number">8</span>, <span class="token number">9</span> bytes
+Port Connector Information
+        Internal Reference Designator: J9G1 - LPC SIDE BAND
+        Internal Connector Type: Other
+        External Reference Designator: Not Specified
+        External Connector Type: None
+        Port Type: Other
+
+Handle 0x0017, DMI <span class="token builtin class-name">type</span> <span class="token number">8</span>, <span class="token number">9</span> bytes
+Port Connector Information
+        Internal Reference Designator: J8F1 - UNIFIED
+        Internal Connector Type: Other
+        External Reference Designator: Not Specified
+        External Connector Type: None
+        Port Type: Other
+
+Handle 0x0018, DMI <span class="token builtin class-name">type</span> <span class="token number">8</span>, <span class="token number">9</span> bytes
+Port Connector Information
+        Internal Reference Designator: J6F1 - LVDS
+        Internal Connector Type: Other
+        External Reference Designator: Not Specified
+        External Connector Type: None
+        Port Type: Other
+
+Handle 0x0019, DMI <span class="token builtin class-name">type</span> <span class="token number">8</span>, <span class="token number">9</span> bytes
+Port Connector Information
+        Internal Reference Designator: J2F1 - LAI FAN
+        Internal Connector Type: Other
+        External Reference Designator: Not Specified
+        External Connector Type: None
+        Port Type: Other
+
+Handle 0x001A, DMI <span class="token builtin class-name">type</span> <span class="token number">8</span>, <span class="token number">9</span> bytes
+Port Connector Information
+        Internal Reference Designator: J2G1 - GFX VID
+        Internal Connector Type: Other
+        External Reference Designator: Not Specified
+        External Connector Type: None
+        Port Type: Other
+
+Handle 0x001B, DMI <span class="token builtin class-name">type</span> <span class="token number">8</span>, <span class="token number">9</span> bytes
+Port Connector Information
+        Internal Reference Designator: J1G6 - AC JACK
+        Internal Connector Type: Other
+        External Reference Designator: Not Specified
+        External Connector Type: None
+        Port Type: Other
+
+Handle 0x001C, DMI <span class="token builtin class-name">type</span> <span class="token number">9</span>, <span class="token number">17</span> bytes
+System Slot Information
+        Designation: J6B2
+        Type: x16 PCI Express
+        Current Usage: In Use
+        Length: Long
+        ID: <span class="token number">0</span>
+        Characteristics:
+                <span class="token number">3.3</span> V is provided
+                Opening is shared
+                PME signal is supported
+        Bus Address: 0000:00:01.0
+
+Handle 0x001D, DMI <span class="token builtin class-name">type</span> <span class="token number">9</span>, <span class="token number">17</span> bytes
+System Slot Information
+        Designation: J6B1
+        Type: x1 PCI Express
+        Current Usage: In Use
+        Length: Short
+        ID: <span class="token number">1</span>
+        Characteristics:
+                <span class="token number">3.3</span> V is provided
+                Opening is shared
+                PME signal is supported
+        Bus Address: 0000:00:1c.3
+
+Handle 0x001E, DMI <span class="token builtin class-name">type</span> <span class="token number">9</span>, <span class="token number">17</span> bytes
+System Slot Information
+        Designation: J6D1
+        Type: x1 PCI Express
+        Current Usage: In Use
+        Length: Short
+        ID: <span class="token number">2</span>
+        Characteristics:
+                <span class="token number">3.3</span> V is provided
+                Opening is shared
+                PME signal is supported
+        Bus Address: 0000:00:1c.4
+
+Handle 0x001F, DMI <span class="token builtin class-name">type</span> <span class="token number">9</span>, <span class="token number">17</span> bytes
+System Slot Information
+        Designation: J7B1
+        Type: x1 PCI Express
+        Current Usage: In Use
+        Length: Short
+        ID: <span class="token number">3</span>
+        Characteristics:
+                <span class="token number">3.3</span> V is provided
+                Opening is shared
+                PME signal is supported
+        Bus Address: 0000:00:1c.5
+
+Handle 0x0020, DMI <span class="token builtin class-name">type</span> <span class="token number">9</span>, <span class="token number">17</span> bytes
+System Slot Information
+        Designation: J8B4
+        Type: x1 PCI Express
+        Current Usage: In Use
+        Length: Short
+        ID: <span class="token number">4</span>
+        Characteristics:
+                <span class="token number">3.3</span> V is provided
+                Opening is shared
+                PME signal is supported
+        Bus Address: 0000:00:1c.6
+
+Handle 0x0021, DMI <span class="token builtin class-name">type</span> <span class="token number">10</span>, <span class="token number">12</span> bytes
+On Board Device <span class="token number">1</span> Information
+        Type: Video
+        Status: Enabled
+        Description:    Onboard Video
+On Board Device <span class="token number">2</span> Information
+        Type: Ethernet
+        Status: Enabled
+        Description:    Onboard LAN
+On Board Device <span class="token number">3</span> Information
+        Type: Sound
+        Status: Enabled
+        Description:    Onboard Audio
+On Board Device <span class="token number">4</span> Information
+        Type: SATA Controller
+        Status: Enabled
+        Description:    Onboard SATA
+
+Handle 0x0022, DMI <span class="token builtin class-name">type</span> <span class="token number">11</span>, <span class="token number">5</span> bytes
+OEM Strings
+        String <span class="token number">1</span>: LENOVO ThinkCentre Embedded Controller -<span class="token punctuation">[</span>M1ACT09A-1.09<span class="token punctuation">]</span>-
+        String <span class="token number">2</span>: LENOVO ThinkCentre BIOS Boot Block Revision <span class="token number">1</span>.3F
+        String <span class="token number">3</span>: Lenovo Service Engine Not Supported
+        String <span class="token number">4</span>: INVALID
+        String <span class="token number">5</span>: INVALID
+        String <span class="token number">6</span>: INVALID
+        String <span class="token number">7</span>: INVALID
+        String <span class="token number">8</span>: INVALID
+        String <span class="token number">9</span>: INVALID
+        String <span class="token number">10</span>: INVALID
+        String <span class="token number">11</span>: INVALID
+        String <span class="token number">12</span>: INVALID
+        String <span class="token number">13</span>: INVALID
+        String <span class="token number">14</span>: INVALID
+        String <span class="token number">15</span>: INVALID
+
+Handle 0x0023, DMI <span class="token builtin class-name">type</span> <span class="token number">12</span>, <span class="token number">5</span> bytes
+System Configuration Options
+        Option <span class="token number">1</span>: scre++
+
+Handle 0x0024, DMI <span class="token builtin class-name">type</span> <span class="token number">24</span>, <span class="token number">5</span> bytes
+Hardware Security
+        Power-On Password Status: Disabled
+        Keyboard Password Status: Enabled
+        Administrator Password Status: Disabled
+        Front Panel Reset Status: Not Implemented
+
+Handle 0x0025, DMI <span class="token builtin class-name">type</span> <span class="token number">32</span>, <span class="token number">20</span> bytes
+System Boot Information
+        Status: No errors detected
+
+Handle 0x0026, DMI <span class="token builtin class-name">type</span> <span class="token number">34</span>, <span class="token number">11</span> bytes
+Management Device
+        Description: LM78-1
+        Type: LM78
+        Address: 0x00000000
+        Address Type: I/O Port
+
+Handle 0x0027, DMI <span class="token builtin class-name">type</span> <span class="token number">26</span>, <span class="token number">22</span> bytes
+Voltage Probe
+        Description: LM78A
+        Location: Motherboard
+        Status: OK
+        Maximum Value: Unknown
+        Minimum Value: Unknown
+        Resolution: Unknown
+        Tolerance: Unknown
+        Accuracy: Unknown
+        OEM-specific Information: 0x00000000
+        Nominal Value: Unknown
+
+Handle 0x0028, DMI <span class="token builtin class-name">type</span> <span class="token number">36</span>, <span class="token number">16</span> bytes
+Management Device Threshold Data
+        Lower Non-critical Threshold: <span class="token number">1</span>
+        Upper Non-critical Threshold: <span class="token number">2</span>
+        Lower Critical Threshold: <span class="token number">3</span>
+        Upper Critical Threshold: <span class="token number">4</span>
+        Lower Non-recoverable Threshold: <span class="token number">5</span>
+        Upper Non-recoverable Threshold: <span class="token number">6</span>
+
+Handle 0x0029, DMI <span class="token builtin class-name">type</span> <span class="token number">35</span>, <span class="token number">11</span> bytes
+Management Device Component
+        Description: Default string
+        Management Device Handle: 0x0026
+        Component Handle: 0x0027
+        Threshold Handle: 0x0028
+
+Handle 0x002A, DMI <span class="token builtin class-name">type</span> <span class="token number">28</span>, <span class="token number">22</span> bytes
+Temperature Probe
+        Description: LM78A
+        Location: Motherboard
+        Status: OK
+        Maximum Value: Unknown
+        Minimum Value: Unknown
+        Resolution: Unknown
+        Tolerance: Unknown
+        Accuracy: Unknown
+        OEM-specific Information: 0x00000000
+        Nominal Value: Unknown
+
+Handle 0x002B, DMI <span class="token builtin class-name">type</span> <span class="token number">36</span>, <span class="token number">16</span> bytes
+Management Device Threshold Data
+        Lower Non-critical Threshold: <span class="token number">1</span>
+        Upper Non-critical Threshold: <span class="token number">2</span>
+        Lower Critical Threshold: <span class="token number">3</span>
+        Upper Critical Threshold: <span class="token number">4</span>
+        Lower Non-recoverable Threshold: <span class="token number">5</span>
+        Upper Non-recoverable Threshold: <span class="token number">6</span>
+
+Handle 0x002C, DMI <span class="token builtin class-name">type</span> <span class="token number">35</span>, <span class="token number">11</span> bytes
+Management Device Component
+        Description: Default string
+        Management Device Handle: 0x0026
+        Component Handle: 0x002A
+        Threshold Handle: 0x002B
+
+Handle 0x002D, DMI <span class="token builtin class-name">type</span> <span class="token number">27</span>, <span class="token number">15</span> bytes
+Cooling Device
+        Temperature Probe Handle: 0x002A
+        Type: Power Supply Fan
+        Status: OK
+        Cooling Unit Group: <span class="token number">1</span>
+        OEM-specific Information: 0x00000000
+        Nominal Speed: Unknown Or Non-rotating
+        Description: Cooling Dev <span class="token number">1</span>
+
+Handle 0x002E, DMI <span class="token builtin class-name">type</span> <span class="token number">36</span>, <span class="token number">16</span> bytes
+Management Device Threshold Data
+        Lower Non-critical Threshold: <span class="token number">1</span>
+        Upper Non-critical Threshold: <span class="token number">2</span>
+        Lower Critical Threshold: <span class="token number">3</span>
+        Upper Critical Threshold: <span class="token number">4</span>
+        Lower Non-recoverable Threshold: <span class="token number">5</span>
+        Upper Non-recoverable Threshold: <span class="token number">6</span>
+
+Handle 0x002F, DMI <span class="token builtin class-name">type</span> <span class="token number">35</span>, <span class="token number">11</span> bytes
+Management Device Component
+        Description: Default string
+        Management Device Handle: 0x0026
+        Component Handle: 0x002D
+        Threshold Handle: 0x002E
+
+Handle 0x0030, DMI <span class="token builtin class-name">type</span> <span class="token number">27</span>, <span class="token number">15</span> bytes
+Cooling Device
+        Temperature Probe Handle: 0x002A
+        Type: Power Supply Fan
+        Status: OK
+        Cooling Unit Group: <span class="token number">1</span>
+        OEM-specific Information: 0x00000000
+        Nominal Speed: Unknown Or Non-rotating
+        Description: Not Specified
+
+Handle 0x0031, DMI <span class="token builtin class-name">type</span> <span class="token number">36</span>, <span class="token number">16</span> bytes
+Management Device Threshold Data
+        Lower Non-critical Threshold: <span class="token number">1</span>
+        Upper Non-critical Threshold: <span class="token number">2</span>
+        Lower Critical Threshold: <span class="token number">3</span>
+        Upper Critical Threshold: <span class="token number">4</span>
+        Lower Non-recoverable Threshold: <span class="token number">5</span>
+        Upper Non-recoverable Threshold: <span class="token number">6</span>
+
+Handle 0x0032, DMI <span class="token builtin class-name">type</span> <span class="token number">35</span>, <span class="token number">11</span> bytes
+Management Device Component
+        Description: Default string
+        Management Device Handle: 0x0026
+        Component Handle: 0x0030
+        Threshold Handle: 0x0031
+
+Handle 0x0033, DMI <span class="token builtin class-name">type</span> <span class="token number">29</span>, <span class="token number">22</span> bytes
+Electrical Current Probe
+        Description: ABC
+        Location: Motherboard
+        Status: OK
+        Maximum Value: Unknown
+        Minimum Value: Unknown
+        Resolution: Unknown
+        Tolerance: Unknown
+        Accuracy: Unknown
+        OEM-specific Information: 0x00000000
+        Nominal Value: Unknown
+
+Handle 0x0034, DMI <span class="token builtin class-name">type</span> <span class="token number">36</span>, <span class="token number">16</span> bytes
+Management Device Threshold Data
+
+Handle 0x0035, DMI <span class="token builtin class-name">type</span> <span class="token number">35</span>, <span class="token number">11</span> bytes
+Management Device Component
+        Description: Default string
+        Management Device Handle: 0x0026
+        Component Handle: 0x0033
+        Threshold Handle: 0x0034
+
+Handle 0x0036, DMI <span class="token builtin class-name">type</span> <span class="token number">26</span>, <span class="token number">22</span> bytes
+Voltage Probe
+        Description: LM78A
+        Location: Power Unit
+        Status: OK
+        Maximum Value: Unknown
+        Minimum Value: Unknown
+        Resolution: Unknown
+        Tolerance: Unknown
+        Accuracy: Unknown
+        OEM-specific Information: 0x00000000
+        Nominal Value: Unknown
+
+Handle 0x0037, DMI <span class="token builtin class-name">type</span> <span class="token number">28</span>, <span class="token number">22</span> bytes
+Temperature Probe
+        Description: LM78A
+        Location: Power Unit
+        Status: OK
+        Maximum Value: Unknown
+        Minimum Value: Unknown
+        Resolution: Unknown
+        Tolerance: Unknown
+        Accuracy: Unknown
+        OEM-specific Information: 0x00000000
+        Nominal Value: Unknown
+
+Handle 0x0038, DMI <span class="token builtin class-name">type</span> <span class="token number">27</span>, <span class="token number">15</span> bytes
+Cooling Device
+        Temperature Probe Handle: 0x0037
+        Type: Power Supply Fan
+        Status: OK
+        Cooling Unit Group: <span class="token number">1</span>
+        OEM-specific Information: 0x00000000
+        Nominal Speed: Unknown Or Non-rotating
+        Description: Cooling Dev <span class="token number">1</span>
+
+Handle 0x0039, DMI <span class="token builtin class-name">type</span> <span class="token number">29</span>, <span class="token number">22</span> bytes
+Electrical Current Probe
+        Description: ABC
+        Location: Power Unit
+        Status: OK
+        Maximum Value: Unknown
+        Minimum Value: Unknown
+        Resolution: Unknown
+        Tolerance: Unknown
+        Accuracy: Unknown
+        OEM-specific Information: 0x00000000
+        Nominal Value: Unknown
+
+Handle 0x003A, DMI <span class="token builtin class-name">type</span> <span class="token number">39</span>, <span class="token number">22</span> bytes
+System Power Supply
+        Power Unit Group: <span class="token number">1</span>
+        Location: To Be Filled By O.E.M.
+        Name: To Be Filled By O.E.M.
+        Manufacturer: To Be Filled By O.E.M.
+        Serial Number: To Be Filled By O.E.M.
+        Asset Tag: To Be Filled By O.E.M.
+        Model Part Number: To Be Filled By O.E.M.
+        Revision: To Be Filled By O.E.M.
+        Max Power Capacity: Unknown
+        Status: Present, OK
+        Type: Switching
+        Input Voltage Range Switching: Auto-switch
+        Plugged: Yes
+        Hot Replaceable: No
+        Input Voltage Probe Handle: 0x0036
+        Cooling Device Handle: 0x0038
+        Input Current Probe Handle: 0x0039
+
+Handle 0x003B, DMI <span class="token builtin class-name">type</span> <span class="token number">41</span>, <span class="token number">11</span> bytes
+Onboard Device
+        Reference Designation:  Onboard IGD
+        Type: Video
+        Status: Enabled
+        Type Instance: <span class="token number">1</span>
+        Bus Address: 0000:00:02.0
+
+Handle 0x003C, DMI <span class="token builtin class-name">type</span> <span class="token number">41</span>, <span class="token number">11</span> bytes
+Onboard Device
+        Reference Designation:  Onboard LAN
+        Type: Ethernet
+        Status: Enabled
+        Type Instance: <span class="token number">1</span>
+        Bus Address: 0000:00:19.0
+
+Handle 0x003D, DMI <span class="token builtin class-name">type</span> <span class="token number">41</span>, <span class="token number">11</span> bytes
+Onboard Device
+        Reference Designation:  Onboard <span class="token number">1394</span>
+        Type: Other
+        Status: Enabled
+        Type Instance: <span class="token number">1</span>
+        Bus Address: 0000:03:1c.2
+
+Handle 0x003E, DMI <span class="token builtin class-name">type</span> <span class="token number">16</span>, <span class="token number">23</span> bytes
+Physical Memory Array <span class="token comment"># 主板最大支持内存</span>
+        Location: System Board Or Motherboard
+        Use: System Memory
+        Error Correction Type: None
+        Maximum Capacity: <span class="token number">32</span> GB
+        Error Information Handle: Not Provided
+        Number Of Devices: <span class="token number">2</span>
+
+Handle 0x003F, DMI <span class="token builtin class-name">type</span> <span class="token number">17</span>, <span class="token number">40</span> bytes
+Memory Device
+        Array Handle: 0x003E
+        Error Information Handle: Not Provided
+        Total Width: <span class="token number">64</span> bits
+        Data Width: <span class="token number">64</span> bits
+        Size: <span class="token number">8</span> GB
+        Form Factor: SODIMM
+        Set: None
+        Locator: ChannelA-DIMM0
+        Bank Locator: BANK <span class="token number">0</span>
+        Type: DDR4
+        Type Detail: Synchronous Unbuffered <span class="token punctuation">(</span>Unregistered<span class="token punctuation">)</span>
+        Speed: <span class="token number">2667</span> MT/s
+        Manufacturer: 0443
+        Serial Number: 126AEC38
+        Asset Tag: <span class="token number">9876543210</span>
+        Part Number: RMSA3260MH78HAF-2666
+        Rank: <span class="token number">1</span>
+        Configured Memory Speed: <span class="token number">2400</span> MT/s
+        Minimum Voltage: <span class="token number">1.2</span> V
+        Maximum Voltage: <span class="token number">1.2</span> V
+        Configured Voltage: <span class="token number">1.2</span> V
+
+Handle 0x0040, DMI <span class="token builtin class-name">type</span> <span class="token number">17</span>, <span class="token number">40</span> bytes
+Memory Device
+        Array Handle: 0x003E
+        Error Information Handle: Not Provided
+        Total Width: Unknown
+        Data Width: Unknown
+        Size: No Module Installed
+        Form Factor: Unknown
+        Set: None
+        Locator: ChannelB-DIMM0
+        Bank Locator: BANK <span class="token number">2</span>
+        Type: Unknown
+        Type Detail: None
+
+Handle 0x0041, DMI <span class="token builtin class-name">type</span> <span class="token number">19</span>, <span class="token number">31</span> bytes
+Memory Array Mapped Address <span class="token comment"># 目前的内存</span>
+        Starting Address: 0x00000000000
+        Ending Address: 0x001FFFFFFFF
+        Range Size: <span class="token number">8</span> GB
+        Physical Array Handle: 0x003E
+        Partition Width: <span class="token number">1</span>
+
+Handle 0x0042, DMI <span class="token builtin class-name">type</span> <span class="token number">15</span>, <span class="token number">73</span> bytes
+System Event Log
+        Area Length: <span class="token number">4096</span> bytes
+        Header Start Offset: 0x0000
+        Header Length: <span class="token number">16</span> bytes
+        Data Start Offset: 0x0010
+        Access Method: Memory-mapped physical <span class="token number">32</span>-bit address
+        Access Address: 0xFFC81000
+        Status: Valid, Not Full
+        Change Token: 0x00000006
+        Header Format: Type <span class="token number">1</span>
+        Supported Log Type Descriptors: <span class="token number">25</span>
+        Descriptor <span class="token number">1</span>: Single-bit ECC memory error
+        Data Format <span class="token number">1</span>: Multiple-event handle
+        Descriptor <span class="token number">2</span>: Multi-bit ECC memory error
+        Data Format <span class="token number">2</span>: Multiple-event handle
+        Descriptor <span class="token number">3</span>: Parity memory error
+        Data Format <span class="token number">3</span>: None
+        Descriptor <span class="token number">4</span>: Bus <span class="token function">timeout</span>
+        Data Format <span class="token number">4</span>: None
+        Descriptor <span class="token number">5</span>: I/O channel block
+        Data Format <span class="token number">5</span>: None
+        Descriptor <span class="token number">6</span>: Software NMI
+        Data Format <span class="token number">6</span>: None
+        Descriptor <span class="token number">7</span>: POST memory resize
+        Data Format <span class="token number">7</span>: None
+        Descriptor <span class="token number">8</span>: POST error
+        Data Format <span class="token number">8</span>: POST results bitmap
+        Descriptor <span class="token number">9</span>: PCI parity error
+        Data Format <span class="token number">9</span>: Multiple-event handle
+        Descriptor <span class="token number">10</span>: PCI system error
+        Data Format <span class="token number">10</span>: Multiple-event handle
+        Descriptor <span class="token number">11</span>: CPU failure
+        Data Format <span class="token number">11</span>: None
+        Descriptor <span class="token number">12</span>: EISA failsafe timer <span class="token function">timeout</span>
+        Data Format <span class="token number">12</span>: None
+        Descriptor <span class="token number">13</span>: Correctable memory log disabled
+        Data Format <span class="token number">13</span>: None
+        Descriptor <span class="token number">14</span>: Logging disabled
+        Data Format <span class="token number">14</span>: None
+        Descriptor <span class="token number">15</span>: System limit exceeded
+        Data Format <span class="token number">15</span>: None
+        Descriptor <span class="token number">16</span>: Asynchronous hardware timer expired
+        Data Format <span class="token number">16</span>: None
+        Descriptor <span class="token number">17</span>: System configuration information
+        Data Format <span class="token number">17</span>: None
+        Descriptor <span class="token number">18</span>: Hard disk information
+        Data Format <span class="token number">18</span>: None
+        Descriptor <span class="token number">19</span>: System reconfigured
+        Data Format <span class="token number">19</span>: None
+        Descriptor <span class="token number">20</span>: Uncorrectable CPU-complex error
+        Data Format <span class="token number">20</span>: None
+        Descriptor <span class="token number">21</span>: Log area reset/cleared
+        Data Format <span class="token number">21</span>: None
+        Descriptor <span class="token number">22</span>: System boot
+        Data Format <span class="token number">22</span>: None
+        Descriptor <span class="token number">23</span>: End of log
+        Data Format <span class="token number">23</span>: None
+        Descriptor <span class="token number">24</span>: OEM-specific
+        Data Format <span class="token number">24</span>: OEM-specific
+        Descriptor <span class="token number">25</span>: OEM-specific
+        Data Format <span class="token number">25</span>: OEM-specific
+
+Handle 0x0043, DMI <span class="token builtin class-name">type</span> <span class="token number">7</span>, <span class="token number">19</span> bytes
+Cache Information <span class="token comment"># 硬件和CPU缓存情况</span>
+        Socket Designation: L1 Cache
+        Configuration: Enabled, Not Socketed, Level <span class="token number">1</span>
+        Operational Mode: Write Back
+        Location: Internal
+        Installed Size: <span class="token number">256</span> kB
+        Maximum Size: <span class="token number">256</span> kB
+        Supported SRAM Types:
+                Synchronous
+        Installed SRAM Type: Synchronous
+        Speed: Unknown
+        Error Correction Type: Parity
+        System Type: Unified
+        Associativity: <span class="token number">8</span>-way Set-associative
+
+Handle 0x0044, DMI <span class="token builtin class-name">type</span> <span class="token number">7</span>, <span class="token number">19</span> bytes
+Cache Information
+        Socket Designation: L2 Cache
+        Configuration: Enabled, Not Socketed, Level <span class="token number">2</span>
+        Operational Mode: Write Back
+        Location: Internal
+        Installed Size: <span class="token number">1</span> MB
+        Maximum Size: <span class="token number">1</span> MB
+        Supported SRAM Types:
+                Synchronous
+        Installed SRAM Type: Synchronous
+        Speed: Unknown
+        Error Correction Type: Single-bit ECC
+        System Type: Unified
+        Associativity: <span class="token number">4</span>-way Set-associative
+
+Handle 0x0045, DMI <span class="token builtin class-name">type</span> <span class="token number">7</span>, <span class="token number">19</span> bytes
+Cache Information
+        Socket Designation: L3 Cache
+        Configuration: Enabled, Not Socketed, Level <span class="token number">3</span>
+        Operational Mode: Write Back
+        Location: Internal
+        Installed Size: <span class="token number">6</span> MB
+        Maximum Size: <span class="token number">6</span> MB
+        Supported SRAM Types:
+                Synchronous
+        Installed SRAM Type: Synchronous
+        Speed: Unknown
+        Error Correction Type: Multi-bit ECC
+        System Type: Unified
+        Associativity: <span class="token number">12</span>-way Set-associative
+
+Handle 0x0046, DMI <span class="token builtin class-name">type</span> <span class="token number">4</span>, <span class="token number">48</span> bytes
+Processor Information <span class="token comment"># CPU信息/CPU型号/CPU主频</span>
+        Socket Designation: U3E1
+        Type: Central Processor
+        Family: Core i5
+        Manufacturer: Intel<span class="token punctuation">(</span>R<span class="token punctuation">)</span> Corporation
+        ID: E9 06 09 00 FF FB EB BF
+        Signature: Type <span class="token number">0</span>, Family <span class="token number">6</span>, Model <span class="token number">158</span>, Stepping <span class="token number">9</span>
+        Flags:
+                FPU <span class="token punctuation">(</span>Floating-point unit on-chip<span class="token punctuation">)</span>
+                VME <span class="token punctuation">(</span>Virtual mode extension<span class="token punctuation">)</span>
+                DE <span class="token punctuation">(</span>Debugging extension<span class="token punctuation">)</span>
+                PSE <span class="token punctuation">(</span>Page size extension<span class="token punctuation">)</span>
+                TSC <span class="token punctuation">(</span>Time stamp counter<span class="token punctuation">)</span>
+                MSR <span class="token punctuation">(</span>Model specific registers<span class="token punctuation">)</span>
+                PAE <span class="token punctuation">(</span>Physical address extension<span class="token punctuation">)</span>
+                MCE <span class="token punctuation">(</span>Machine check exception<span class="token punctuation">)</span>
+                CX8 <span class="token punctuation">(</span>CMPXCHG8 instruction supported<span class="token punctuation">)</span>
+                APIC <span class="token punctuation">(</span>On-chip APIC hardware supported<span class="token punctuation">)</span>
+                SEP <span class="token punctuation">(</span>Fast system call<span class="token punctuation">)</span>
+                MTRR <span class="token punctuation">(</span>Memory <span class="token builtin class-name">type</span> range registers<span class="token punctuation">)</span>
+                PGE <span class="token punctuation">(</span>Page global <span class="token builtin class-name">enable</span><span class="token punctuation">)</span>
+                MCA <span class="token punctuation">(</span>Machine check architecture<span class="token punctuation">)</span>
+                CMOV <span class="token punctuation">(</span>Conditional move instruction supported<span class="token punctuation">)</span>
+                PAT <span class="token punctuation">(</span>Page attribute table<span class="token punctuation">)</span>
+                PSE-36 <span class="token punctuation">(</span><span class="token number">36</span>-bit page size extension<span class="token punctuation">)</span>
+                CLFSH <span class="token punctuation">(</span>CLFLUSH instruction supported<span class="token punctuation">)</span>
+                DS <span class="token punctuation">(</span>Debug store<span class="token punctuation">)</span>
+                ACPI <span class="token punctuation">(</span>ACPI supported<span class="token punctuation">)</span>
+                MMX <span class="token punctuation">(</span>MMX technology supported<span class="token punctuation">)</span>
+                FXSR <span class="token punctuation">(</span>FXSAVE and FXSTOR instructions supported<span class="token punctuation">)</span>
+                SSE <span class="token punctuation">(</span>Streaming SIMD extensions<span class="token punctuation">)</span>
+                SSE2 <span class="token punctuation">(</span>Streaming SIMD extensions <span class="token number">2</span><span class="token punctuation">)</span>
+                SS <span class="token punctuation">(</span>Self-snoop<span class="token punctuation">)</span>
+                HTT <span class="token punctuation">(</span>Multi-threading<span class="token punctuation">)</span>
+                TM <span class="token punctuation">(</span>Thermal monitor supported<span class="token punctuation">)</span>
+                PBE <span class="token punctuation">(</span>Pending <span class="token builtin class-name">break</span> enabled<span class="token punctuation">)</span>
+        Version: Intel<span class="token punctuation">(</span>R<span class="token punctuation">)</span> Core<span class="token punctuation">(</span>TM<span class="token punctuation">)</span> i5-7500T CPU @ <span class="token number">2</span>.70GHz
+        Voltage: <span class="token number">0.8</span> V
+        External Clock: <span class="token number">100</span> MHz
+        Max Speed: <span class="token number">3300</span> MHz
+        Current Speed: <span class="token number">2600</span> MHz
+        Status: Populated, Enabled
+        Upgrade: Other
+        L1 Cache Handle: 0x0043
+        L2 Cache Handle: 0x0044
+        L3 Cache Handle: 0x0045
+        Serial Number: To Be Filled By O.E.M.
+        Asset Tag: To Be Filled By O.E.M.
+        Part Number: To Be Filled By O.E.M.
+        Core Count: <span class="token number">4</span>
+        Core Enabled: <span class="token number">4</span>
+        Thread Count: <span class="token number">4</span>
+        Characteristics:
+                <span class="token number">64</span>-bit capable
+                Multi-Core
+                Execute Protection
+                Enhanced Virtualization
+                Power/Performance Control
+
+Handle 0x0047, DMI <span class="token builtin class-name">type</span> <span class="token number">133</span>, <span class="token number">5</span> bytes
+OEM-specific Type
+        Header and Data:
+                <span class="token number">85</span> 05 <span class="token number">47</span> 00 01
+        Strings:
+                KHOIHGIUCCHHII
+
+Handle 0x004B, DMI <span class="token builtin class-name">type</span> <span class="token number">20</span>, <span class="token number">35</span> bytes
+Memory Device Mapped Address
+        Starting Address: 0x00000000000
+        Ending Address: 0x001FFFFFFFF
+        Range Size: <span class="token number">8</span> GB
+        Physical Device Handle: 0x003F
+        Memory Array Mapped Address Handle: 0x0041
+        Partition Row Position: Unknown
+
+Handle 0x004C, DMI <span class="token builtin class-name">type</span> <span class="token number">130</span>, <span class="token number">20</span> bytes
+OEM-specific Type
+        Header and Data:
+                <span class="token number">82</span> <span class="token number">14</span> 4C 00 <span class="token number">24</span> <span class="token number">41</span> 4D <span class="token number">54</span> 01 01 01 01 01 A5 AF 02
+                C0 00 01 00
+
+Handle 0x004D, DMI <span class="token builtin class-name">type</span> <span class="token number">131</span>, <span class="token number">64</span> bytes
+OEM-specific Type
+        Header and Data:
+                <span class="token number">83</span> <span class="token number">40</span> 4D 00 <span class="token number">35</span> 00 00 00 0B 00 00 00 00 00 0A 00
+                F8 00 C6 A2 00 00 00 00 09 C0 00 00 06 00 0B 00
+                7D 0C 0A 00 00 00 00 00 FE 00 B7 <span class="token number">15</span> 00 00 00 00
+                00 00 00 00 <span class="token number">26</span> 00 00 00 <span class="token number">76</span> <span class="token number">50</span> <span class="token number">72</span> 6F 00 00 00 00
+
+Handle 0x004E, DMI <span class="token builtin class-name">type</span> <span class="token number">221</span>, <span class="token number">26</span> bytes
+OEM-specific Type
+        Header and Data:
+                DD 1A 4E 00 03 01 00 01 04 00 00 00 02 00 00 00
+                00 8E 00 03 00 00 05 00 00 00
+        Strings:
+                Reference Code - CPU
+                uCode Version
+                TXT ACM version
+
+Handle 0x004F, DMI <span class="token builtin class-name">type</span> <span class="token number">221</span>, <span class="token number">26</span> bytes
+OEM-specific Type
+        Header and Data:
+                DD 1A 4F 00 03 01 00 01 04 00 00 00 02 00 0B 00
+                00 0A 00 03 04 0B 06 0A 7D 0C
+        Strings:
+                Reference Code - ME <span class="token number">11.0</span>
+                MEBx version
+                ME Firmware Version
+                Corporate SKU
+
+Handle 0x0050, DMI <span class="token builtin class-name">type</span> <span class="token number">221</span>, <span class="token number">75</span> bytes
+OEM-specific Type
+        Header and Data:
+                DD 4B <span class="token number">50</span> 00 0A 01 00 01 04 00 00 00 02 03 FF FF
+                FF FF FF 04 00 FF FF FF 00 00 05 00 FF FF FF 00
+                00 06 00 FF FF FF FF FF 07 00 3E 00 00 00 00 08
+                00 <span class="token number">34</span> 00 00 00 00 09 00 0B 00 00 00 00 0A 00 3E
+                00 00 00 00 0B 00 <span class="token number">34</span> 00 00 00 00
+        Strings:
+                Reference Code - SKL PCH
+                PCH-CRID Status
+                Disabled
+                PCH-CRID Original Value
+                PCH-CRID New Value
+                OPROM - RST - RAID
+                SKL PCH H Bx Hsio Version
+                SKL PCH H Dx Hsio Version
+                KBL PCH H Ax Hsio Version
+                SKL PCH LP Bx Hsio Version
+                SKL PCH LP Cx Hsio Version
+
+Handle 0x0051, DMI <span class="token builtin class-name">type</span> <span class="token number">221</span>, <span class="token number">54</span> bytes
+OEM-specific Type
+        Header and Data:
+                DD <span class="token number">36</span> <span class="token number">51</span> 00 07 01 00 01 04 00 00 00 02 00 01 04
+                00 00 00 03 00 01 04 00 00 00 04 05 FF FF FF FF
+                FF 06 00 FF FF FF 05 00 07 00 FF FF FF 05 00 08
+                00 FF FF FF FF FF
+        Strings:
+                Reference Code - SA - System Agent
+                Reference Code - MRC
+                SA - PCIe Version
+                SA-CRID Status
+                Enabled
+                SA-CRID Original Value
+                SA-CRID New Value
+                OPROM - VBIOS
+
+Handle 0x0052, DMI <span class="token builtin class-name">type</span> <span class="token number">221</span>, <span class="token number">103</span> bytes
+OEM-specific Type
+        Header and Data:
+                DD <span class="token number">67</span> <span class="token number">52</span> 00 0E 01 00 00 00 00 A6 00 02 00 FF FF
+                FF FF FF 03 04 FF FF FF FF FF 05 06 FF FF FF FF
+                FF 07 08 FF FF FF FF FF 09 00 00 00 00 00 00 0A
+                00 FF FF FF FF 00 0B 00 01 09 00 00 00 0C 00 00
+                09 00 <span class="token number">61</span> <span class="token number">10</span> 0D 00 02 00 00 00 00 0E 00 FF FF FF
+                FF FF 0F 00 FF FF FF FF FF <span class="token number">10</span> <span class="token number">11</span> 01 03 04 01 00
+                <span class="token number">12</span> 00 00 07 03 00 00
+        Strings:
+                Lan Phy Version
+                Sensor Firmware Version
+                Debug Mode Status
+                Disabled
+                Performance Mode Status
+                Disabled
+                Debug Use USB<span class="token punctuation">(</span>Disabled:Serial<span class="token punctuation">)</span>
+                Disabled
+                ICC Overclocking Version
+                UNDI Version
+                EC FW Version
+                GOP Version
+                BIOS Guard Version
+                Base EC FW Version
+                EC-EC Protocol Version
+                Royal Park Version
+                BP1.3.4.0_RP01
+                Platform Version
+
+Handle 0x0053, DMI <span class="token builtin class-name">type</span> <span class="token number">131</span>, <span class="token number">22</span> bytes
+ThinkVantage Technologies
+        Version: <span class="token number">1</span>
+        Diagnostics: Available
+
+Handle 0x0054, DMI <span class="token builtin class-name">type</span> <span class="token number">136</span>, <span class="token number">6</span> bytes
+OEM-specific Type
+        Header and Data:
+                <span class="token number">88</span> 06 <span class="token number">54</span> 00 5A 5A
+
+Handle 0x0055, DMI <span class="token builtin class-name">type</span> <span class="token number">14</span>, <span class="token number">20</span> bytes
+Group Associations
+        Name: Firmware Version Info
+        Items: <span class="token number">5</span>
+                0x004E <span class="token punctuation">(</span>OEM-specific<span class="token punctuation">)</span>
+                0x004F <span class="token punctuation">(</span>OEM-specific<span class="token punctuation">)</span>
+                0x0050 <span class="token punctuation">(</span>OEM-specific<span class="token punctuation">)</span>
+                0x0051 <span class="token punctuation">(</span>OEM-specific<span class="token punctuation">)</span>
+                0x0052 <span class="token punctuation">(</span>OEM-specific<span class="token punctuation">)</span>
+
+Handle 0x0056, DMI <span class="token builtin class-name">type</span> <span class="token number">13</span>, <span class="token number">22</span> bytes
+BIOS Language Information
+        Language Description Format: Long
+        Installable Languages: <span class="token number">3</span>
+                en<span class="token operator">|</span>US<span class="token operator">|</span>iso8859-1
+                fr<span class="token operator">|</span>FR<span class="token operator">|</span>iso8859-1
+                zh<span class="token operator">|</span>CN<span class="token operator">|</span>unicode
+        Currently Installed Language: en<span class="token operator">|</span>US<span class="token operator">|</span>iso8859-1
+
+Handle 0x0057, DMI <span class="token builtin class-name">type</span> <span class="token number">14</span>, <span class="token number">8</span> bytes
+Group Associations
+        Name: <span class="token variable">$MEI</span>
+        Items: <span class="token number">1</span>
+                0x0000 <span class="token punctuation">(</span>OEM-specific<span class="token punctuation">)</span>
+
+Handle 0x0058, DMI <span class="token builtin class-name">type</span> <span class="token number">219</span>, <span class="token number">81</span> bytes
+OEM-specific Type
+        Header and Data:
+                DB <span class="token number">51</span> <span class="token number">58</span> 00 01 03 01 <span class="token number">45</span> 02 00 <span class="token number">90</span> 06 <span class="token number">81</span> <span class="token number">10</span> <span class="token number">89</span> <span class="token number">30</span>
+                00 00 00 00 <span class="token number">40</span> 08 00 00 00 00 00 00 00 00 <span class="token number">40</span> 02
+                FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+                FF FF FF FF FF FF FF FF 03 00 00 00 <span class="token number">80</span> 00 00 00
+                00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+                00
+        Strings:
+                MEI1
+                MEI2
+                MEI3
+
+Handle 0x0059, DMI <span class="token builtin class-name">type</span> <span class="token number">127</span>, <span class="token number">4</span> bytes
+End Of Table
+
+root:~<span class="token comment">#</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br><span class="line-number">179</span><br><span class="line-number">180</span><br><span class="line-number">181</span><br><span class="line-number">182</span><br><span class="line-number">183</span><br><span class="line-number">184</span><br><span class="line-number">185</span><br><span class="line-number">186</span><br><span class="line-number">187</span><br><span class="line-number">188</span><br><span class="line-number">189</span><br><span class="line-number">190</span><br><span class="line-number">191</span><br><span class="line-number">192</span><br><span class="line-number">193</span><br><span class="line-number">194</span><br><span class="line-number">195</span><br><span class="line-number">196</span><br><span class="line-number">197</span><br><span class="line-number">198</span><br><span class="line-number">199</span><br><span class="line-number">200</span><br><span class="line-number">201</span><br><span class="line-number">202</span><br><span class="line-number">203</span><br><span class="line-number">204</span><br><span class="line-number">205</span><br><span class="line-number">206</span><br><span class="line-number">207</span><br><span class="line-number">208</span><br><span class="line-number">209</span><br><span class="line-number">210</span><br><span class="line-number">211</span><br><span class="line-number">212</span><br><span class="line-number">213</span><br><span class="line-number">214</span><br><span class="line-number">215</span><br><span class="line-number">216</span><br><span class="line-number">217</span><br><span class="line-number">218</span><br><span class="line-number">219</span><br><span class="line-number">220</span><br><span class="line-number">221</span><br><span class="line-number">222</span><br><span class="line-number">223</span><br><span class="line-number">224</span><br><span class="line-number">225</span><br><span class="line-number">226</span><br><span class="line-number">227</span><br><span class="line-number">228</span><br><span class="line-number">229</span><br><span class="line-number">230</span><br><span class="line-number">231</span><br><span class="line-number">232</span><br><span class="line-number">233</span><br><span class="line-number">234</span><br><span class="line-number">235</span><br><span class="line-number">236</span><br><span class="line-number">237</span><br><span class="line-number">238</span><br><span class="line-number">239</span><br><span class="line-number">240</span><br><span class="line-number">241</span><br><span class="line-number">242</span><br><span class="line-number">243</span><br><span class="line-number">244</span><br><span class="line-number">245</span><br><span class="line-number">246</span><br><span class="line-number">247</span><br><span class="line-number">248</span><br><span class="line-number">249</span><br><span class="line-number">250</span><br><span class="line-number">251</span><br><span class="line-number">252</span><br><span class="line-number">253</span><br><span class="line-number">254</span><br><span class="line-number">255</span><br><span class="line-number">256</span><br><span class="line-number">257</span><br><span class="line-number">258</span><br><span class="line-number">259</span><br><span class="line-number">260</span><br><span class="line-number">261</span><br><span class="line-number">262</span><br><span class="line-number">263</span><br><span class="line-number">264</span><br><span class="line-number">265</span><br><span class="line-number">266</span><br><span class="line-number">267</span><br><span class="line-number">268</span><br><span class="line-number">269</span><br><span class="line-number">270</span><br><span class="line-number">271</span><br><span class="line-number">272</span><br><span class="line-number">273</span><br><span class="line-number">274</span><br><span class="line-number">275</span><br><span class="line-number">276</span><br><span class="line-number">277</span><br><span class="line-number">278</span><br><span class="line-number">279</span><br><span class="line-number">280</span><br><span class="line-number">281</span><br><span class="line-number">282</span><br><span class="line-number">283</span><br><span class="line-number">284</span><br><span class="line-number">285</span><br><span class="line-number">286</span><br><span class="line-number">287</span><br><span class="line-number">288</span><br><span class="line-number">289</span><br><span class="line-number">290</span><br><span class="line-number">291</span><br><span class="line-number">292</span><br><span class="line-number">293</span><br><span class="line-number">294</span><br><span class="line-number">295</span><br><span class="line-number">296</span><br><span class="line-number">297</span><br><span class="line-number">298</span><br><span class="line-number">299</span><br><span class="line-number">300</span><br><span class="line-number">301</span><br><span class="line-number">302</span><br><span class="line-number">303</span><br><span class="line-number">304</span><br><span class="line-number">305</span><br><span class="line-number">306</span><br><span class="line-number">307</span><br><span class="line-number">308</span><br><span class="line-number">309</span><br><span class="line-number">310</span><br><span class="line-number">311</span><br><span class="line-number">312</span><br><span class="line-number">313</span><br><span class="line-number">314</span><br><span class="line-number">315</span><br><span class="line-number">316</span><br><span class="line-number">317</span><br><span class="line-number">318</span><br><span class="line-number">319</span><br><span class="line-number">320</span><br><span class="line-number">321</span><br><span class="line-number">322</span><br><span class="line-number">323</span><br><span class="line-number">324</span><br><span class="line-number">325</span><br><span class="line-number">326</span><br><span class="line-number">327</span><br><span class="line-number">328</span><br><span class="line-number">329</span><br><span class="line-number">330</span><br><span class="line-number">331</span><br><span class="line-number">332</span><br><span class="line-number">333</span><br><span class="line-number">334</span><br><span class="line-number">335</span><br><span class="line-number">336</span><br><span class="line-number">337</span><br><span class="line-number">338</span><br><span class="line-number">339</span><br><span class="line-number">340</span><br><span class="line-number">341</span><br><span class="line-number">342</span><br><span class="line-number">343</span><br><span class="line-number">344</span><br><span class="line-number">345</span><br><span class="line-number">346</span><br><span class="line-number">347</span><br><span class="line-number">348</span><br><span class="line-number">349</span><br><span class="line-number">350</span><br><span class="line-number">351</span><br><span class="line-number">352</span><br><span class="line-number">353</span><br><span class="line-number">354</span><br><span class="line-number">355</span><br><span class="line-number">356</span><br><span class="line-number">357</span><br><span class="line-number">358</span><br><span class="line-number">359</span><br><span class="line-number">360</span><br><span class="line-number">361</span><br><span class="line-number">362</span><br><span class="line-number">363</span><br><span class="line-number">364</span><br><span class="line-number">365</span><br><span class="line-number">366</span><br><span class="line-number">367</span><br><span class="line-number">368</span><br><span class="line-number">369</span><br><span class="line-number">370</span><br><span class="line-number">371</span><br><span class="line-number">372</span><br><span class="line-number">373</span><br><span class="line-number">374</span><br><span class="line-number">375</span><br><span class="line-number">376</span><br><span class="line-number">377</span><br><span class="line-number">378</span><br><span class="line-number">379</span><br><span class="line-number">380</span><br><span class="line-number">381</span><br><span class="line-number">382</span><br><span class="line-number">383</span><br><span class="line-number">384</span><br><span class="line-number">385</span><br><span class="line-number">386</span><br><span class="line-number">387</span><br><span class="line-number">388</span><br><span class="line-number">389</span><br><span class="line-number">390</span><br><span class="line-number">391</span><br><span class="line-number">392</span><br><span class="line-number">393</span><br><span class="line-number">394</span><br><span class="line-number">395</span><br><span class="line-number">396</span><br><span class="line-number">397</span><br><span class="line-number">398</span><br><span class="line-number">399</span><br><span class="line-number">400</span><br><span class="line-number">401</span><br><span class="line-number">402</span><br><span class="line-number">403</span><br><span class="line-number">404</span><br><span class="line-number">405</span><br><span class="line-number">406</span><br><span class="line-number">407</span><br><span class="line-number">408</span><br><span class="line-number">409</span><br><span class="line-number">410</span><br><span class="line-number">411</span><br><span class="line-number">412</span><br><span class="line-number">413</span><br><span class="line-number">414</span><br><span class="line-number">415</span><br><span class="line-number">416</span><br><span class="line-number">417</span><br><span class="line-number">418</span><br><span class="line-number">419</span><br><span class="line-number">420</span><br><span class="line-number">421</span><br><span class="line-number">422</span><br><span class="line-number">423</span><br><span class="line-number">424</span><br><span class="line-number">425</span><br><span class="line-number">426</span><br><span class="line-number">427</span><br><span class="line-number">428</span><br><span class="line-number">429</span><br><span class="line-number">430</span><br><span class="line-number">431</span><br><span class="line-number">432</span><br><span class="line-number">433</span><br><span class="line-number">434</span><br><span class="line-number">435</span><br><span class="line-number">436</span><br><span class="line-number">437</span><br><span class="line-number">438</span><br><span class="line-number">439</span><br><span class="line-number">440</span><br><span class="line-number">441</span><br><span class="line-number">442</span><br><span class="line-number">443</span><br><span class="line-number">444</span><br><span class="line-number">445</span><br><span class="line-number">446</span><br><span class="line-number">447</span><br><span class="line-number">448</span><br><span class="line-number">449</span><br><span class="line-number">450</span><br><span class="line-number">451</span><br><span class="line-number">452</span><br><span class="line-number">453</span><br><span class="line-number">454</span><br><span class="line-number">455</span><br><span class="line-number">456</span><br><span class="line-number">457</span><br><span class="line-number">458</span><br><span class="line-number">459</span><br><span class="line-number">460</span><br><span class="line-number">461</span><br><span class="line-number">462</span><br><span class="line-number">463</span><br><span class="line-number">464</span><br><span class="line-number">465</span><br><span class="line-number">466</span><br><span class="line-number">467</span><br><span class="line-number">468</span><br><span class="line-number">469</span><br><span class="line-number">470</span><br><span class="line-number">471</span><br><span class="line-number">472</span><br><span class="line-number">473</span><br><span class="line-number">474</span><br><span class="line-number">475</span><br><span class="line-number">476</span><br><span class="line-number">477</span><br><span class="line-number">478</span><br><span class="line-number">479</span><br><span class="line-number">480</span><br><span class="line-number">481</span><br><span class="line-number">482</span><br><span class="line-number">483</span><br><span class="line-number">484</span><br><span class="line-number">485</span><br><span class="line-number">486</span><br><span class="line-number">487</span><br><span class="line-number">488</span><br><span class="line-number">489</span><br><span class="line-number">490</span><br><span class="line-number">491</span><br><span class="line-number">492</span><br><span class="line-number">493</span><br><span class="line-number">494</span><br><span class="line-number">495</span><br><span class="line-number">496</span><br><span class="line-number">497</span><br><span class="line-number">498</span><br><span class="line-number">499</span><br><span class="line-number">500</span><br><span class="line-number">501</span><br><span class="line-number">502</span><br><span class="line-number">503</span><br><span class="line-number">504</span><br><span class="line-number">505</span><br><span class="line-number">506</span><br><span class="line-number">507</span><br><span class="line-number">508</span><br><span class="line-number">509</span><br><span class="line-number">510</span><br><span class="line-number">511</span><br><span class="line-number">512</span><br><span class="line-number">513</span><br><span class="line-number">514</span><br><span class="line-number">515</span><br><span class="line-number">516</span><br><span class="line-number">517</span><br><span class="line-number">518</span><br><span class="line-number">519</span><br><span class="line-number">520</span><br><span class="line-number">521</span><br><span class="line-number">522</span><br><span class="line-number">523</span><br><span class="line-number">524</span><br><span class="line-number">525</span><br><span class="line-number">526</span><br><span class="line-number">527</span><br><span class="line-number">528</span><br><span class="line-number">529</span><br><span class="line-number">530</span><br><span class="line-number">531</span><br><span class="line-number">532</span><br><span class="line-number">533</span><br><span class="line-number">534</span><br><span class="line-number">535</span><br><span class="line-number">536</span><br><span class="line-number">537</span><br><span class="line-number">538</span><br><span class="line-number">539</span><br><span class="line-number">540</span><br><span class="line-number">541</span><br><span class="line-number">542</span><br><span class="line-number">543</span><br><span class="line-number">544</span><br><span class="line-number">545</span><br><span class="line-number">546</span><br><span class="line-number">547</span><br><span class="line-number">548</span><br><span class="line-number">549</span><br><span class="line-number">550</span><br><span class="line-number">551</span><br><span class="line-number">552</span><br><span class="line-number">553</span><br><span class="line-number">554</span><br><span class="line-number">555</span><br><span class="line-number">556</span><br><span class="line-number">557</span><br><span class="line-number">558</span><br><span class="line-number">559</span><br><span class="line-number">560</span><br><span class="line-number">561</span><br><span class="line-number">562</span><br><span class="line-number">563</span><br><span class="line-number">564</span><br><span class="line-number">565</span><br><span class="line-number">566</span><br><span class="line-number">567</span><br><span class="line-number">568</span><br><span class="line-number">569</span><br><span class="line-number">570</span><br><span class="line-number">571</span><br><span class="line-number">572</span><br><span class="line-number">573</span><br><span class="line-number">574</span><br><span class="line-number">575</span><br><span class="line-number">576</span><br><span class="line-number">577</span><br><span class="line-number">578</span><br><span class="line-number">579</span><br><span class="line-number">580</span><br><span class="line-number">581</span><br><span class="line-number">582</span><br><span class="line-number">583</span><br><span class="line-number">584</span><br><span class="line-number">585</span><br><span class="line-number">586</span><br><span class="line-number">587</span><br><span class="line-number">588</span><br><span class="line-number">589</span><br><span class="line-number">590</span><br><span class="line-number">591</span><br><span class="line-number">592</span><br><span class="line-number">593</span><br><span class="line-number">594</span><br><span class="line-number">595</span><br><span class="line-number">596</span><br><span class="line-number">597</span><br><span class="line-number">598</span><br><span class="line-number">599</span><br><span class="line-number">600</span><br><span class="line-number">601</span><br><span class="line-number">602</span><br><span class="line-number">603</span><br><span class="line-number">604</span><br><span class="line-number">605</span><br><span class="line-number">606</span><br><span class="line-number">607</span><br><span class="line-number">608</span><br><span class="line-number">609</span><br><span class="line-number">610</span><br><span class="line-number">611</span><br><span class="line-number">612</span><br><span class="line-number">613</span><br><span class="line-number">614</span><br><span class="line-number">615</span><br><span class="line-number">616</span><br><span class="line-number">617</span><br><span class="line-number">618</span><br><span class="line-number">619</span><br><span class="line-number">620</span><br><span class="line-number">621</span><br><span class="line-number">622</span><br><span class="line-number">623</span><br><span class="line-number">624</span><br><span class="line-number">625</span><br><span class="line-number">626</span><br><span class="line-number">627</span><br><span class="line-number">628</span><br><span class="line-number">629</span><br><span class="line-number">630</span><br><span class="line-number">631</span><br><span class="line-number">632</span><br><span class="line-number">633</span><br><span class="line-number">634</span><br><span class="line-number">635</span><br><span class="line-number">636</span><br><span class="line-number">637</span><br><span class="line-number">638</span><br><span class="line-number">639</span><br><span class="line-number">640</span><br><span class="line-number">641</span><br><span class="line-number">642</span><br><span class="line-number">643</span><br><span class="line-number">644</span><br><span class="line-number">645</span><br><span class="line-number">646</span><br><span class="line-number">647</span><br><span class="line-number">648</span><br><span class="line-number">649</span><br><span class="line-number">650</span><br><span class="line-number">651</span><br><span class="line-number">652</span><br><span class="line-number">653</span><br><span class="line-number">654</span><br><span class="line-number">655</span><br><span class="line-number">656</span><br><span class="line-number">657</span><br><span class="line-number">658</span><br><span class="line-number">659</span><br><span class="line-number">660</span><br><span class="line-number">661</span><br><span class="line-number">662</span><br><span class="line-number">663</span><br><span class="line-number">664</span><br><span class="line-number">665</span><br><span class="line-number">666</span><br><span class="line-number">667</span><br><span class="line-number">668</span><br><span class="line-number">669</span><br><span class="line-number">670</span><br><span class="line-number">671</span><br><span class="line-number">672</span><br><span class="line-number">673</span><br><span class="line-number">674</span><br><span class="line-number">675</span><br><span class="line-number">676</span><br><span class="line-number">677</span><br><span class="line-number">678</span><br><span class="line-number">679</span><br><span class="line-number">680</span><br><span class="line-number">681</span><br><span class="line-number">682</span><br><span class="line-number">683</span><br><span class="line-number">684</span><br><span class="line-number">685</span><br><span class="line-number">686</span><br><span class="line-number">687</span><br><span class="line-number">688</span><br><span class="line-number">689</span><br><span class="line-number">690</span><br><span class="line-number">691</span><br><span class="line-number">692</span><br><span class="line-number">693</span><br><span class="line-number">694</span><br><span class="line-number">695</span><br><span class="line-number">696</span><br><span class="line-number">697</span><br><span class="line-number">698</span><br><span class="line-number">699</span><br><span class="line-number">700</span><br><span class="line-number">701</span><br><span class="line-number">702</span><br><span class="line-number">703</span><br><span class="line-number">704</span><br><span class="line-number">705</span><br><span class="line-number">706</span><br><span class="line-number">707</span><br><span class="line-number">708</span><br><span class="line-number">709</span><br><span class="line-number">710</span><br><span class="line-number">711</span><br><span class="line-number">712</span><br><span class="line-number">713</span><br><span class="line-number">714</span><br><span class="line-number">715</span><br><span class="line-number">716</span><br><span class="line-number">717</span><br><span class="line-number">718</span><br><span class="line-number">719</span><br><span class="line-number">720</span><br><span class="line-number">721</span><br><span class="line-number">722</span><br><span class="line-number">723</span><br><span class="line-number">724</span><br><span class="line-number">725</span><br><span class="line-number">726</span><br><span class="line-number">727</span><br><span class="line-number">728</span><br><span class="line-number">729</span><br><span class="line-number">730</span><br><span class="line-number">731</span><br><span class="line-number">732</span><br><span class="line-number">733</span><br><span class="line-number">734</span><br><span class="line-number">735</span><br><span class="line-number">736</span><br><span class="line-number">737</span><br><span class="line-number">738</span><br><span class="line-number">739</span><br><span class="line-number">740</span><br><span class="line-number">741</span><br><span class="line-number">742</span><br><span class="line-number">743</span><br><span class="line-number">744</span><br><span class="line-number">745</span><br><span class="line-number">746</span><br><span class="line-number">747</span><br><span class="line-number">748</span><br><span class="line-number">749</span><br><span class="line-number">750</span><br><span class="line-number">751</span><br><span class="line-number">752</span><br><span class="line-number">753</span><br><span class="line-number">754</span><br><span class="line-number">755</span><br><span class="line-number">756</span><br><span class="line-number">757</span><br><span class="line-number">758</span><br><span class="line-number">759</span><br><span class="line-number">760</span><br><span class="line-number">761</span><br><span class="line-number">762</span><br><span class="line-number">763</span><br><span class="line-number">764</span><br><span class="line-number">765</span><br><span class="line-number">766</span><br><span class="line-number">767</span><br><span class="line-number">768</span><br><span class="line-number">769</span><br><span class="line-number">770</span><br><span class="line-number">771</span><br><span class="line-number">772</span><br><span class="line-number">773</span><br><span class="line-number">774</span><br><span class="line-number">775</span><br><span class="line-number">776</span><br><span class="line-number">777</span><br><span class="line-number">778</span><br><span class="line-number">779</span><br><span class="line-number">780</span><br><span class="line-number">781</span><br><span class="line-number">782</span><br><span class="line-number">783</span><br><span class="line-number">784</span><br><span class="line-number">785</span><br><span class="line-number">786</span><br><span class="line-number">787</span><br><span class="line-number">788</span><br><span class="line-number">789</span><br><span class="line-number">790</span><br><span class="line-number">791</span><br><span class="line-number">792</span><br><span class="line-number">793</span><br><span class="line-number">794</span><br><span class="line-number">795</span><br><span class="line-number">796</span><br><span class="line-number">797</span><br><span class="line-number">798</span><br><span class="line-number">799</span><br><span class="line-number">800</span><br><span class="line-number">801</span><br><span class="line-number">802</span><br><span class="line-number">803</span><br><span class="line-number">804</span><br><span class="line-number">805</span><br><span class="line-number">806</span><br><span class="line-number">807</span><br><span class="line-number">808</span><br><span class="line-number">809</span><br><span class="line-number">810</span><br><span class="line-number">811</span><br><span class="line-number">812</span><br><span class="line-number">813</span><br><span class="line-number">814</span><br><span class="line-number">815</span><br><span class="line-number">816</span><br><span class="line-number">817</span><br><span class="line-number">818</span><br><span class="line-number">819</span><br><span class="line-number">820</span><br><span class="line-number">821</span><br><span class="line-number">822</span><br><span class="line-number">823</span><br><span class="line-number">824</span><br><span class="line-number">825</span><br><span class="line-number">826</span><br><span class="line-number">827</span><br><span class="line-number">828</span><br><span class="line-number">829</span><br><span class="line-number">830</span><br><span class="line-number">831</span><br><span class="line-number">832</span><br><span class="line-number">833</span><br><span class="line-number">834</span><br><span class="line-number">835</span><br><span class="line-number">836</span><br><span class="line-number">837</span><br><span class="line-number">838</span><br><span class="line-number">839</span><br><span class="line-number">840</span><br><span class="line-number">841</span><br><span class="line-number">842</span><br><span class="line-number">843</span><br><span class="line-number">844</span><br><span class="line-number">845</span><br><span class="line-number">846</span><br><span class="line-number">847</span><br><span class="line-number">848</span><br><span class="line-number">849</span><br><span class="line-number">850</span><br><span class="line-number">851</span><br><span class="line-number">852</span><br><span class="line-number">853</span><br><span class="line-number">854</span><br><span class="line-number">855</span><br><span class="line-number">856</span><br><span class="line-number">857</span><br><span class="line-number">858</span><br><span class="line-number">859</span><br><span class="line-number">860</span><br><span class="line-number">861</span><br><span class="line-number">862</span><br><span class="line-number">863</span><br><span class="line-number">864</span><br><span class="line-number">865</span><br><span class="line-number">866</span><br><span class="line-number">867</span><br><span class="line-number">868</span><br><span class="line-number">869</span><br><span class="line-number">870</span><br><span class="line-number">871</span><br><span class="line-number">872</span><br><span class="line-number">873</span><br><span class="line-number">874</span><br><span class="line-number">875</span><br><span class="line-number">876</span><br><span class="line-number">877</span><br><span class="line-number">878</span><br><span class="line-number">879</span><br><span class="line-number">880</span><br><span class="line-number">881</span><br><span class="line-number">882</span><br><span class="line-number">883</span><br><span class="line-number">884</span><br><span class="line-number">885</span><br><span class="line-number">886</span><br><span class="line-number">887</span><br><span class="line-number">888</span><br><span class="line-number">889</span><br><span class="line-number">890</span><br><span class="line-number">891</span><br><span class="line-number">892</span><br><span class="line-number">893</span><br><span class="line-number">894</span><br><span class="line-number">895</span><br><span class="line-number">896</span><br><span class="line-number">897</span><br><span class="line-number">898</span><br><span class="line-number">899</span><br><span class="line-number">900</span><br><span class="line-number">901</span><br><span class="line-number">902</span><br><span class="line-number">903</span><br><span class="line-number">904</span><br><span class="line-number">905</span><br><span class="line-number">906</span><br><span class="line-number">907</span><br><span class="line-number">908</span><br><span class="line-number">909</span><br><span class="line-number">910</span><br><span class="line-number">911</span><br><span class="line-number">912</span><br><span class="line-number">913</span><br><span class="line-number">914</span><br><span class="line-number">915</span><br><span class="line-number">916</span><br><span class="line-number">917</span><br><span class="line-number">918</span><br><span class="line-number">919</span><br><span class="line-number">920</span><br><span class="line-number">921</span><br><span class="line-number">922</span><br><span class="line-number">923</span><br><span class="line-number">924</span><br><span class="line-number">925</span><br><span class="line-number">926</span><br><span class="line-number">927</span><br><span class="line-number">928</span><br><span class="line-number">929</span><br><span class="line-number">930</span><br><span class="line-number">931</span><br><span class="line-number">932</span><br><span class="line-number">933</span><br><span class="line-number">934</span><br><span class="line-number">935</span><br><span class="line-number">936</span><br><span class="line-number">937</span><br><span class="line-number">938</span><br><span class="line-number">939</span><br><span class="line-number">940</span><br><span class="line-number">941</span><br><span class="line-number">942</span><br><span class="line-number">943</span><br><span class="line-number">944</span><br><span class="line-number">945</span><br><span class="line-number">946</span><br><span class="line-number">947</span><br><span class="line-number">948</span><br><span class="line-number">949</span><br><span class="line-number">950</span><br><span class="line-number">951</span><br><span class="line-number">952</span><br><span class="line-number">953</span><br><span class="line-number">954</span><br><span class="line-number">955</span><br><span class="line-number">956</span><br><span class="line-number">957</span><br><span class="line-number">958</span><br><span class="line-number">959</span><br><span class="line-number">960</span><br><span class="line-number">961</span><br><span class="line-number">962</span><br><span class="line-number">963</span><br><span class="line-number">964</span><br><span class="line-number">965</span><br><span class="line-number">966</span><br><span class="line-number">967</span><br><span class="line-number">968</span><br><span class="line-number">969</span><br><span class="line-number">970</span><br><span class="line-number">971</span><br><span class="line-number">972</span><br><span class="line-number">973</span><br><span class="line-number">974</span><br><span class="line-number">975</span><br><span class="line-number">976</span><br><span class="line-number">977</span><br><span class="line-number">978</span><br><span class="line-number">979</span><br><span class="line-number">980</span><br><span class="line-number">981</span><br><span class="line-number">982</span><br><span class="line-number">983</span><br><span class="line-number">984</span><br><span class="line-number">985</span><br><span class="line-number">986</span><br><span class="line-number">987</span><br><span class="line-number">988</span><br><span class="line-number">989</span><br><span class="line-number">990</span><br><span class="line-number">991</span><br><span class="line-number">992</span><br><span class="line-number">993</span><br><span class="line-number">994</span><br><span class="line-number">995</span><br><span class="line-number">996</span><br><span class="line-number">997</span><br><span class="line-number">998</span><br><span class="line-number">999</span><br><span class="line-number">1000</span><br><span class="line-number">1001</span><br><span class="line-number">1002</span><br><span class="line-number">1003</span><br><span class="line-number">1004</span><br><span class="line-number">1005</span><br><span class="line-number">1006</span><br><span class="line-number">1007</span><br><span class="line-number">1008</span><br><span class="line-number">1009</span><br><span class="line-number">1010</span><br><span class="line-number">1011</span><br><span class="line-number">1012</span><br><span class="line-number">1013</span><br><span class="line-number">1014</span><br><span class="line-number">1015</span><br><span class="line-number">1016</span><br><span class="line-number">1017</span><br><span class="line-number">1018</span><br><span class="line-number">1019</span><br><span class="line-number">1020</span><br><span class="line-number">1021</span><br><span class="line-number">1022</span><br></div></div></details> <h2 id="common-commands"><a href="#common-commands" class="header-anchor">#</a> Common Commands</h2> <p><strong>1. 查看内存槽数、哪个槽位插了内存，大小是多少</strong></p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>root:~<span class="token comment"># dmidecode|grep -P -A5 &quot;Memory\s+Device&quot;|grep Size|grep -v Range</span>
+        Size: <span class="token number">8</span> GB
+        Size: No Module Installed
+root:~<span class="token comment">#</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong>2. 查看最大支持内存数</strong></p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>root:~<span class="token comment"># dmidecode|grep -P 'Maximum\s+Capacity'</span>
+        Maximum Capacity: <span class="token number">32</span> GB
+root:~<span class="token comment">#</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><strong>3. 查看槽位上内存的速率，没插就是 unknown</strong></p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>root:~<span class="token comment"># dmidecode|grep -A16 &quot;Memory Device&quot;|grep 'Speed'</span>
+        Speed: <span class="token number">2667</span> MT/s
+root:~<span class="token comment">#</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><strong>4. <code>dmidecode -t 17</code></strong></p> <div class="language-shell line-numbers-mode"><div class="highlight-lines"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div class="highlighted"> </div><br><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-shell"><code>root:~<span class="token comment"># dmidecode -t 17</span>
+<span class="token comment"># dmidecode 3.2</span>
+Getting SMBIOS data from sysfs.
+SMBIOS <span class="token number">3.0</span>.0 present.
+
+Handle 0x003F, DMI <span class="token builtin class-name">type</span> <span class="token number">17</span>, <span class="token number">40</span> bytes
+Memory Device
+        Array Handle: 0x003E
+        Error Information Handle: Not Provided
+        Total Width: <span class="token number">64</span> bits
+        Data Width: <span class="token number">64</span> bits
+        Size: <span class="token number">8</span> GB
+        Form Factor: SODIMM
+        Set: None
+        Locator: ChannelA-DIMM0
+        Bank Locator: BANK <span class="token number">0</span>
+        Type: DDR4
+        Type Detail: Synchronous Unbuffered <span class="token punctuation">(</span>Unregistered<span class="token punctuation">)</span>
+        Speed: <span class="token number">2667</span> MT/s
+        Manufacturer: 0443
+        Serial Number: 126AEC38
+        Asset Tag: <span class="token number">9876543210</span>
+        Part Number: RMSA3260MH78HAF-2666
+        Rank: <span class="token number">1</span>
+        Configured Memory Speed: <span class="token number">2400</span> MT/s
+        Minimum Voltage: <span class="token number">1.2</span> V
+        Maximum Voltage: <span class="token number">1.2</span> V
+        Configured Voltage: <span class="token number">1.2</span> V
+
+Handle 0x0040, DMI <span class="token builtin class-name">type</span> <span class="token number">17</span>, <span class="token number">40</span> bytes
+Memory Device
+        Array Handle: 0x003E
+        Error Information Handle: Not Provided
+        Total Width: Unknown
+        Data Width: Unknown
+        Size: No Module Installed
+        Form Factor: Unknown
+        Set: None
+        Locator: ChannelB-DIMM0
+        Bank Locator: BANK <span class="token number">2</span>
+        Type: Unknown
+        Type Detail: None
+
+root:~<span class="token comment">#</span>
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br></div></div><h2 id="dmidecode-支持的数字参数"><a href="#dmidecode-支持的数字参数" class="header-anchor">#</a> <code>dmidecode 支持的数字参数</code></h2> <details class="custom-block details"><summary>Click me to view the detail info</summary> <div class="language- line-numbers-mode"><pre class="language-text"><code>Type Information
+
+----------------------------------------
+
+0 BIOS
+
+1 System
+
+2 Base Board
+
+3 Chassis
+
+4 Processor
+
+5 Memory Controller
+
+6 Memory Module
+
+7 Cache
+
+8 Port Connector
+
+9 System Slots
+
+10 On Board Devices
+
+11 OEM Strings
+
+12 System Configuration Options
+
+13 BIOS Language
+
+14 Group Associations
+
+15 System Event Log
+
+16 Physical Memory Array
+
+17 Memory Device
+
+18 32-bit Memory Error
+
+19 Memory Array Mapped Address
+
+20 Memory Device Mapped Address
+
+21 Built-in Pointing Device
+
+22 Portable Battery
+
+23 System Reset
+
+24 Hardware Security
+
+25 System Power Controls
+
+26 Voltage Probe
+
+27 Cooling Device
+
+28 Temperature Probe
+
+29 Electrical Current Probe
+
+30 Out-of-band Remote Access
+
+31 Boot Integrity Services
+
+32 System Boot
+
+33 64-bit Memory Error
+
+34 Management Device
+
+35 Management Device Component
+
+36 Management Device Threshold Data
+
+37 Memory Channel
+
+38 IPMI Device
+
+39 Power Supply
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br></div></div></details></div></div> <!----> <div class="page-edit"><!----> <div class="tags"><a href="/tags/?tag=Linux" title="标签">#Linux</a></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">12/10/2022, 6:13:34 PM</span></div></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/pages/75c92e/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">Linux File Permissions</div></a> <a href="/pages/759582/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">Linux Command expect</div></a></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/pages/75c92e/" class="prev">Linux File Permissions</a></span> <span class="next"><a href="/pages/759582/">Linux Command expect</a>→
+      </span></p></div></div></div> <div class="article-list"><div class="article-title"><a href="/archives" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/pages/5a9395/"><div>
+            Ehcache3 Basic
+            <!----></div></a> <span class="date">01-30</span></dt></dl><dl><dd>02</dd> <dt><a href="/pages/71d94f/"><div>
+            Apache HTTP Client Basic
+            <!----></div></a> <span class="date">01-21</span></dt></dl><dl><dd>03</dd> <dt><a href="/pages/4a2fe4/"><div>
+            Oracle Index
+            <!----></div></a> <span class="date">12-27</span></dt></dl> <dl><dd></dd> <dt><a href="/archives" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><div class="icons"><a href="https://github.com/dlwxin/wx-notes" title="GitHub" target="_blank" class="iconfont icon-github"></a><a href="mailto:dlwxin@outlook.com" title="Email" target="_blank" class="iconfont icon-youjian"></a></div> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2020-2024
+    <span>wx | <a href="https://beian.miit.gov.cn" target="_blank">黑ICP备2022000430号</a> | <img src="https://dlwang.xin:11796/image/others/record_icon.png"/><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=23128302000114" target="_blank">黑公网安备 23128302000114号</a></span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.d382a226.js" defer></script><script src="/assets/js/2.87a8012a.js" defer></script><script src="/assets/js/93.aefaca74.js" defer></script>
+  </body>
+</html>
